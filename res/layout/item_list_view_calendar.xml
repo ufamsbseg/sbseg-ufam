@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal">
+    
+	<TextView 
+	    android:id="@+id/text_infor"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:textSize="15dp"
+	    android:textStyle="bold"
+	    android:gravity="center_horizontal"
+	    android:layout_margin="5dp"
+	    android:padding="5dp"
+	    android:text="Item do ListView"
+	    android:background="#5F9EA0"/> 
+	    
+	<View
+	    android:id="@+id/divider"
+	    android:layout_width="fill_parent"
+	    android:layout_height="1dp"
+	    android:background="#1578736E"
+	    android:visibility="invisible"
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp"
+	/>
+
+</LinearLayout>

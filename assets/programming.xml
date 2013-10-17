@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<calendario>
+    
+    <dias>
+        
+        <dia>
+            <data>11/11/2013</data> 
+            <eventos>
+                
+            	<evento duracao="8:00-8:30">
+            	    <nomes>
+            	    	<nome tag="INSC">Inscrição</nome>
+            	    </nomes>
+            	</evento>
+            	
+            	<evento duracao="8:30-10:00">
+            	    <nomes>
+            	        <nome tag="WTICG">Workshop de Trabalhos de Iniciação Científica e de Graduação</nome>
+            	        <nome tag="WGID">Workshop de Gestão de Identidades Digitais</nome>
+            	        <nome tag="MC1">Minicurso 1</nome>
+            	    </nomes>
+            	</evento>
+            	
+            	<evento duracao="10:00-10:30">
+            	    <nomes>
+            	        <nome tag="COFFB">Coffee break</nome>
+            	    </nomes>
+            	</evento>
+            	
+            	<evento duracao="10:30-12:30">
+            	    <nomes>
+            	        <nome tag="WTICG">Workshop de Trabalhos de Iniciação Científica e de Graduação</nome>
+            	        <nome tag="WGID">Workshop de Gestão de Identidades Digitais</nome>
+            	        <nome tag="MC1">Minicurso 1</nome>
+            	    </nomes>
+            	</evento>
+            	
+            	<evento duracao="12:30-14:30">
+            	    <nomes>
+            	        <nome tag="ALM">Almoço</nome>
+            	    </nomes>
+            	</evento>
+            	
+            	<evento duracao="14:30-16:00">
+            	    <nomes>
+            	        <nome tag="WTICG">Workshop de Trabalhos de Iniciação Científica e de Graduação</nome>
+            	        <nome tag="WGID">Workshop de Gestão de Identidades Digitais</nome>
+            	        <nome tag="MC1">Minicurso 2</nome>
+            	    </nomes>
+            	</evento>
+            	
+            	<evento duracao="16:00-16:30">
+            	    <nomes>
+            	        <nome tag="COFFB">Coffee break</nome>
+            	    </nomes>
+            	</evento>
+            	
+            	<evento duracao="16:30-18:30">
+            	    <nomes>
+            	        <nome tag="WTICG">Workshop de Trabalhos de Iniciação Científica e de Graduação</nome>
+            	        <nome tag="WGID">Workshop de Gestão de Identidades Digitais</nome>
+            	        <nome tag="MC1">Minicurso 2</nome>
+            	    </nomes>
+            	</evento>
+            	
+            	<evento duracao="19:00-19:30">
+            	    <nomes>
+            	        <nome tag="ABER">Abertura</nome>
+            	    </nomes>
+            	</evento>
+            	
+            	<evento duracao="19:30-21:00">
+            	    <nomes>
+            	        <nome tag="COQ">Coquetel</nome>
+            	    </nomes>
+            	</evento>
+            	
+            </eventos>
+        </dia>
+        
+        <dia>
+            <data>12/11/2013</data>
+       		<eventos>
+       		    <evento duracao="8:00-8:30">
+            	    <nomes>
+            	    	<nome tag="INSC">Inscrição</nome>
+            	    </nomes>
+           	    </evento>
+           	    
+       		    <evento duracao="8:30-10:00">
+       		        <nomes>
+       		            <nome tag="ST1">Sessão Técnica 1</nome>
+       		            <nome tag="ST2">Sessão Técnica 2</nome>
+       		        </nomes>
+       		    </evento>
+       		    
+       		    <evento duracao="10:00-10:30">
+            	    <nomes>
+            	        <nome tag="COFFB">Coffee break</nome>
+            	    </nomes>
+            	</evento>
+            	
+       		    <evento duracao="10:30-11:30">
+            	    <nomes>
+            	        <nome tag="PI1">Palestra Internacional 1</nome>
+            	    </nomes>
+            	</evento>
+            	
+       		    <evento duracao="11:30-12:30">
+            	    <nomes>
+            	        <nome tag="PI2">Palestra Internacional 2</nome>
+            	    </nomes>
+            	</evento>
+            	
+       		    <evento duracao="12:30-14:30">
+            	    <nomes>
+            	        <nome tag="ALM">Almoço</nome>
+            	    </nomes>
+            	</evento>
+            	
+       		    <evento duracao="14:30-16:00">
+            	    <nomes>
+            	        <nome tag="ST3">Sessaão Técnica 3</nome>
+            	         <nome tag="ST4">Sessão Técnica 4</nome>
+            	    </nomes>
+            	</evento>
+            	
+       		    <evento duracao="16:00-16:30">
+            	    <nomes>
+            	        <nome tag="COFFB">Coffee break</nome>
+            	    </nomes>
+            	</evento>
+            	
+       		    <evento duracao="16:30-18:30">
+            	    <nomes>
+            	        <nome tag="PI3">Palestra Internacional 3</nome>
+            	    </nomes>
+            	</evento>
+            	
+            	<evento duracao="19:00-21:00">
+            	    <nomes>
+            	        <nome tag="CESEG">Comissão Especial de Segurança da Informação da SBC</nome>
+            	    </nomes>
+            	</evento>
+       		    
+           	</eventos>
+        </dia>
+        
+         <dia>
+            <data>13/11/2013</data>
+       		<eventos>
+       		    
+       		    <evento duracao="8:00-8:30">
+            	    <nomes>
+            	    	<nome tag="INSC">Inscrição</nome>
+            	    </nomes>
+           	    </evento>
+           	    
+       		    <evento duracao="8:30-10:00">
+            	    <nomes>
+            	    	<nome tag="ST5">Sessão Técnica 5</nome>
+            	    	<nome tag="ST6">Sessão Técnica 6</nome>
+            	    </nomes>
+           	    </evento>
+           	    
+       		    <evento duracao="10:00-10:30">
+            	    <nomes>
+            	    	<nome tag="COFFB">Coffee break</nome>
+            	    </nomes>
+           	    </evento>
+           	    
+       		    <evento duracao="10:30-11:30">
+            	    <nomes>
+            	    	<nome tag="PN1">Palestra Nacional 1</nome>
+            	    </nomes>
+           	    </evento>
+           	    
+       		    <evento duracao="12:30-14:30">
+            	    <nomes>
+            	    	<nome tag="ALM">Almoço</nome>
+            	    </nomes>
+           	    </evento>
+       		
+       		    <evento duracao="14:30-16:00">
+            	    <nomes>
+            	    	<nome tag="ST7">Sessão Técnica 7</nome>
+            	    	<nome tag="ST8">Sessão Técnica 8</nome>
+            	    </nomes>
+           	    </evento>
+           	    
+       		    <evento duracao="16:00-16:30">
+            	    <nomes>
+            	    	<nome tag="COFFB">Coffee break</nome>
+            	    </nomes>
+           	    </evento>
+           	    
+       		    <evento duracao="16:30-18:30">
+            	    <nomes>
+            	    	<nome tag="PI4">Palestra Internacional 4</nome>
+            	    </nomes>
+           	    </evento>
+           	    
+       		    <evento duracao="19:30-23:00">
+            	    <nomes>
+            	    	<nome tag="JE">Jantar do Evento</nome>
+            	    </nomes>
+           	    </evento>
+       		    
+           	</eventos>
+         </dia>
+         
+         <dia>
+            <data>14/11/2013</data>
+       		<eventos>
+       		    
+       		    <evento duracao="8:00-8:30">
+            	    <nomes>
+            	    	<nome tag="INSC">Inscrição</nome>
+            	    </nomes>
+           	    </evento>
+           	    
+       		    <evento duracao="8:30-10:00">
+            	    <nomes>
+            	    	<nome tag="FSC">Fórum de Segurança corporativa</nome>
+            	    	<nome tag="WFC">Workshop de Forense Computacional</nome>
+            	    	<nome tag="MC3">Minicurso 3</nome>
+            	    </nomes>
+           	    </evento>
+           	    
+       		    <evento duracao="10:00-10:30">
+            	    <nomes>
+            	    	<nome tag="COFFB">Coffee break</nome>
+            	    </nomes>
+           	    </evento>
+           	    
+       		    <evento duracao="10:30-12:30">
+            	    <nomes>
+            	    	<nome tag="FSC">Fórum de Segurança corporativa</nome>
+            	    	<nome tag="WFC">Workshop de Forense Computacional</nome>
+            	    	<nome tag="MC3">Minicurso 3</nome>
+            	    </nomes>
+           	    </evento>
+           	    
+       		    <evento duracao="12:30-14:30">
+            	    <nomes>
+            	    	<nome tag="ALM">Almoço</nome>
+            	    </nomes>
+           	    </evento>
+       		
+       		    <evento duracao="14:30-16:00">
+            	    <nomes>
+            	    	<nome tag="FSC">Fórum de Segurança corporativa</nome>
+            	    	<nome tag="WFC">Workshop de Forense Computacional</nome>
+            	    	<nome tag="MC4">Minicurso 4</nome>
+            	    </nomes>
+           	    </evento>
+           	    
+       		    <evento duracao="16:00-16:30">
+            	    <nomes>
+            	    	<nome tag="COFFB">Coffee break</nome>
+            	    </nomes>
+           	    </evento>
+           	    
+       		    <evento duracao="16:30-18:30">
+            	    <nomes>
+            	    	<nome tag="FSC">Fórum de Segurança corporativa</nome>
+            	    	<nome tag="WFC">Workshop de Forense Computacional</nome>
+            	    	<nome tag="MC4">Minicurso 4</nome>
+            	    </nomes>
+           	    </evento>
+           	    
+           	</eventos>
+         </dia>
+        
+    </dias>
+    
+</calendario>
+
