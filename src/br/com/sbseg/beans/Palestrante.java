@@ -11,6 +11,7 @@ public class Palestrante implements Serializable{
 	private String filiation;
 	private Talk talk;
 	private String biography;
+	private String photo;
 	
 	public Palestrante(){}
 	
@@ -52,6 +53,15 @@ public class Palestrante implements Serializable{
 	}
 	public void setBiography(String biography) {
 		this.biography = biography;
+	
+	}
+
+	
+	public String getPhoto() {
+		return photo;
+	}
+	public void setPhoto(String photo) {
+		this.photo = photo;
 	}
 	
 }
