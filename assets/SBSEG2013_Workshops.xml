@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<technical_sessions identifier="day_1">
+	<technical_session>
+		<date>11/11/2013</date>
+		<id>WTICG1</id>
+		<weekday>Segunda-feira</weekday>
+		<beginning>09:00</beginning>
+		<end>10:00</end>
+   		<name>Segurança em Redes e Sistemas Computacionais</name>
+   		<local>Não informado</local>
+   		<chair>
+      		<name>Não informado</name>
+   		  	<affiliation>Não informado</affiliation>
+  	 	</chair> 
+  	 	<papers>
+  	 		<paper>
+  	 			<beginning>Ñão informado</beginning>
+				<end>Não informado</end>
+				<name>Avaliação Energética de Ferramentas de Segurança de Software em Sistemas Embarcados</name>
+				<authors>
+		    		<author>
+		        		<name>Willer F. Santos</name>
+		        		<affiliation>UFMG</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Jean H. F. Freire</name>
+		        		<affiliation>UFMG</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Fernando M. Q. Pereira</name>
+		        		<affiliation>UFMG</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Diógenes C. da Silva Jr.</name>
+		        		<affiliation>UFMG</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Leonardo B. Oliveira</name>
+		        		<affiliation>UFMG</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        </authors>		        	
+  	 		</paper>
+  	 		<paper>
+  	 			<beginning>Não informado</beginning>
+				<end>Não informado</end>
+				<name>Influência de Ataques Jamming sobre Protocolos de Roteamento em Redes Veiculares</name>
+				<authors>
+		    		<author>
+		        		<name>Alexandre Sombra</name>
+		        		<affiliation>UFC</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Wellington Albano</name>
+		        		<affiliation>UFC</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Michele Nogueira</name>
+		        		<affiliation>UFPR</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>José Neuman de Souza</name>
+		        		<affiliation>UFC</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        </authors>		        	
+  	 		</paper>
+  	 	</papers>
+	</technical_session>
+	<technical_session>
+		<date>11/11/2013</date>
+		<id>WTICG2</id>
+		<weekday>Segunda-feira</weekday>
+		<beginning>10:30</beginning>
+		<end>12:30</end>
+   		<name>Segurança na Web</name>
+   		<local>Não informado</local>
+   		<chair>
+      		<name>Não informado</name>
+   		  	<affiliation>Não informado</affiliation>
+  	 	</chair>
+  	 	<papers>
+  	 		<paper>
+  	 			<beginning>Não informado</beginning>
+				<end>Não informado</end>
+				<name>ABSecurity: Uma ferramenta para controle de acesso baseado em papéis por meio de Web Services</name>
+				<authors>
+		    		<author>
+		        		<name>Adriano Reiné Bueno</name>
+		        		<affiliation>UFJF</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Evaldo de Oliveira da Silva</name>
+		        		<affiliation>UNIVERSO</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Tadeu de Classe</name>
+		        		<affiliation>UFJF</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        </authors>		        	
+  	 		</paper>
+  	 		<paper>
+  	 			<beginning>Não informado</beginning>
+				<end>Não informado</end>
+				<name>Identificando SPAM no Twitter através da Análise Empírica dos Trending Topics Brasil</name>
+				<authors>
+		    		<author>
+		        		<name>Adeilson Souza</name>
+		        		<affiliation>UFAM</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Kaio R. S. Barbosa</name>
+		        		<affiliation>UFAM</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Eduardo Feitosa</name>
+		        		<affiliation>UFAM</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        </authors>		        	
+  	 		</paper>
+  	 		<paper>
+  	 			<beginning>Não informado</beginning>
+				<end>Não informado</end>
+				<name>Aplicação Web para Criação de Atas Notariais Eletrônicas para Cartórios Digitais</name>
+				<authors>
+		    		<author>
+		        		<name>Eduardo Jorge dos Santos Cordeiro</name>
+		        		<affiliation>UNIVALI</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Michelle S. Wangham</name>
+		        		<affiliation>UNIVALI</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        </authors>		        	
+  	 		</paper>
+  	 		<paper>
+  	 			<beginning>Não informado</beginning>
+				<end>Não informado</end>
+				<name>Uso do OpenID e do OAuth para prover a Gestão de Identidades em um Portal Participativo de Governo Eletrônico</name>
+				<authors>
+		    		<author>
+		        		<name>Daniel Leite de Oliveira</name>
+		        		<affiliation>UNIVALI</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Michelle S. Wangham</name>
+		        		<affiliation>UNIVALI</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        </authors>		        	
+  	 		</paper>
+  	 	</papers>
+	</technical_session>
+	<technical_session>
+		<date>11/11/2013</date>
+		<id>WTICG3</id>
+		<weekday>Segunda-feira</weekday>
+		<beginning>14:30</beginning>
+		<end>16:00</end>
+   		<name>Segurança da Informação</name>
+   		<local>Não informado</local>
+   		<chair>
+      		<name>Não informado</name>
+   		  	<affiliation>Não informado</affiliation>
+  	 	</chair>
+  	 	<papers>
+  	 		<paper>
+  	 			<beginning>Ñão informado</beginning>
+				<end>Não informado</end>
+				<name>Análise da Aplicação da Esteganografia Combinada com o Método Criptográfico AES</name>
+				<authors>
+		    		<author>
+		        		<name>Suelen Graff</name>
+		        		<affiliation>UNOESC</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Andrey Kuehlkamp</name>
+		        		<affiliation>UNOESC</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Marlon Cordeiro Domenech</name>
+		        		<affiliation>UNIVALI</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        </authors>		        	
+  	 		</paper>
+  	 		<paper>
+  	 			<beginning>Não informado</beginning>
+				<end>Não informado</end>
+				<name>Implementação eficiente de emparelhamentos bilineares sobre curvas elípticas na plataforma ARM</name>
+				<authors>
+		    		<author>
+		        		<name>Victor Henrique Hisao Taira</name>
+		        		<affiliation>UnB</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Diego F. Aranha</name>
+		        		<affiliation>UnB</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        </authors>		        	
+  	 		</paper>
+  	 		<paper>
+  	 			<beginning>Não informado</beginning>
+				<end>Não informado</end>
+				<name>Aritmética eficiente em curvas de Huff</name>
+				<authors>
+		    		<author>
+		        		<name>Edson Floriano S. Junior</name>
+		        		<affiliation>UnB</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Diego F. Aranha</name>
+		        		<affiliation>UnB</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        </authors>		        	
+  	 		</paper>
+  	 	</papers>
+	</technical_session>
+	<technical_session>
+		<date>14/11/2013</date>
+		<id>WFC1</id>
+		<weekday>Quinta-feira</weekday>
+		<beginning>08:30</beginning>
+		<end>10:00</end>
+   		<name>Workshop de Forense Computacional - Sessão 1</name>
+   		<local>Não informado</local>
+   		<chair>
+      		<name>Não informado</name>
+   		  	<affiliation>Não informado</affiliation>
+  	 	</chair>
+  	 	<papers>
+  	 		<paper>
+  	 			<beginning>08:30</beginning>
+				<end>09:00</end>
+				<name>Palestra: Detecção de Pornografia e Pornografia Infantil</name>
+				<authors>
+		    		<author>
+		        		<name>Wagner de Oliveira Lima</name>
+		        		<affiliation>DPF-AM, Perito Criminal Federal - Departamento de Polícia Federal Superintendência Regional do Amazonas Chefe do Setor Técnico-Científico</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        </authors>		        	
+  	 		</paper>
+  	 		<paper>
+  	 			<beginning>09:00</beginning>
+				<end>09:30</end>
+				<name>Artigo: SiCReT - Sistema de Cruzamento de Registros Telefônicos</name>
+				<authors>
+		    		<author>
+		        		<name>Luiz Rodrigo Grochocki</name>
+		        		<affiliation>IC-PR</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Alexandre Vrube</name>
+		        		<affiliation>IC-PR</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Raphael Laércio Zago</name>
+		        		<affiliation>IC-PR</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Alonso Decarli</name>
+		        		<affiliation>PUCPR</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Cinthia O. A. Freitas</name>
+		        		<affiliation>PUCPR</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        </authors>		        	
+  	 		</paper>
+  	 		<paper>
+  	 			<beginning>09:30</beginning>
+				<end>10:00</end>
+				<name>Palestra: Aspectos Juridicos da Forense Computacional</name>
+				<authors>
+		    		<author>
+		        		<name>Paulo Henrique Batimarchi</name>
+		        		<affiliation>IFIP – International Federation on Intellectual Property</affiliation>
+		        		<country>Latin America</country>
+		        	</author>
+		        </authors>		        	
+  	 		</paper>
+  	 	</papers>
+	</technical_session>
+	<!-- *** -->
+	<technical_session>
+		<date>14/11/2013</date>
+		<id>WFC2</id>
+		<weekday>Quinta-feira</weekday>
+		<beginning>10:30</beginning>
+		<end>12:30</end>
+   		<name>Workshop de Forense Computacional - Sessão 2</name>
+   		<local>Não informado</local>
+   		<chair>
+      		<name>Não informado</name>
+   		  	<affiliation>Não informado</affiliation>
+  	 	</chair>
+  	 	<papers>
+  	 		<paper>
+  	 			<beginning>10:30</beginning>
+				<end>11:00</end>
+				<name>Palestra: Desafios em Multimídia Forense</name>
+				<authors>
+		    		<author>
+		        		<name>Jorge de A. Lambert</name>
+		        		<affiliation>DPF-DF, Instituto Nacional de Criminalística Departamento de Polícia Federal - DF - Brasília</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        </authors>		        	
+  	 		</paper>
+  	 		<paper>
+  	 			<beginning>11:00</beginning>
+				<end>11:30</end>
+				<name>Palestra: Desafios em Informática Forense</name>
+				<authors>
+		    		<author>
+		        		<name>Marcelo Caldeira Ruback</name>
+		        		<affiliation>DPF-DF, Instituto Nacional de Criminalística Departamento de Polícia Federal - DF - Brasília</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        </authors>		        	
+  	 		</paper>
+  	 		<paper>
+  	 			<beginning>11:30</beginning>
+				<end>12:30</end>
+				<name>Palestra: A importância de Ferramentas de Analise Forense para Dispositivos Móveis</name>
+				<authors>
+		    		<author>
+		        		<name>Magnus Anseklev??</name> <!-- VERIFICAR ESSA INFORMAÇÃO -->
+		        		<affiliation>Micro Systemation??</affiliation>
+		        		<country>Brasil??</country>
+		        	</author>
+		        </authors>		        	
+  	 		</paper>
+  	 	</papers>
+	</technical_session>
+	<technical_session>
+		<date>14/11/2013</date>
+		<id>WFC3</id>
+		<weekday>Quinta-feira</weekday>
+		<beginning>14:30</beginning>
+		<end>16:00</end>
+   		<name>Workshop de Forense Computacional - Sessão 3</name>
+   		<local>Não informado</local>
+   		<chair>
+      		<name>Não informado</name>
+   		  	<affiliation>Não informado</affiliation>
+  	 	</chair>
+  	 	<papers>
+  	 		<paper>
+  	 			<beginning>14:30</beginning>
+				<end>15:00</end>
+				<name>Palestra: Demonstração de Equipamento para Coleta de Evidências em Dispositivos Móveis</name>
+				<authors>
+		    		<author>
+		        		<name>Magnus Anseklev??</name> <!-- VERIFICAR ESSA INFORMAÇÃO -->
+		        		<affiliation>Micro Systemation??</affiliation>
+		        		<country>Brasil??</country>
+		        	</author>
+		        </authors>		        	
+  	 		</paper>
+  	 		<paper>
+  	 			<beginning>15:00</beginning>
+				<end>15:30</end>
+				<name>Artigo: Detecção Cega de Tráfego Malicioso Através da Variação Temporal do Maior Autovalor</name>
+				<authors>
+		    		<author>
+		        		<name>Danilo Tenório</name>
+		        		<affiliation>UnB</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>João Paulo da Costa</name>
+		        		<affiliation>UnB</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Edison de Freitas</name>
+		        		<affiliation>UnB/UFSM</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Rafael de Sousa Jr</name>
+		        		<affiliation>UnB</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        </authors>		        	
+  	 		</paper>
+  	 		<paper>
+  	 			<beginning>15:30</beginning>
+				<end>16:00</end>
+				<name>Palestra: Perícias e Laudos Técnicos</name>
+				<authors>
+		    		<author>
+		        		<name>Cinthia O. A. Freitas</name>
+		        		<affiliation>PUCPR</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        </authors>		        	
+  	 		</paper>
+  	 	</papers>
+	</technical_session>
+	<technical_session>
+		<date>14/11/2013</date>
+		<id>WFC4</id>
+		<weekday>Quinta-feira</weekday>
+		<beginning>16:30</beginning>
+		<end>17:30</end>
+   		<name>Workshop de Forense Computacional - Sessão 4</name>
+   		<local>Não informado</local>
+   		<chair>
+      		<name>Não informado</name>
+   		  	<affiliation>Não informado</affiliation>
+  	 	</chair>
+  	 	<papers>
+  	 		<paper>
+  	 			<beginning>16:30</beginning>
+				<end>17:30</end>
+				<name>Palestra: Perícias e Laudos Técnicos</name>
+				<authors>
+		    		<author>
+		        		<name>Luiz Rodrigo Grochocki</name>
+		        		<affiliation>IC-PR, Perito Oficial Criminal da Polícia Científica do Estado do Paraná, Setor de Computação Forense</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        </authors>		        	
+  	 		</paper>
+  	 		<paper>
+  	 			<beginning>17:30</beginning>
+				<end>18:30</end>
+				<name>Mesa Redonda e Encerramento</name>
+				<authors>
+		    		<author>
+		        		<name>Não informado</name>
+		        		<affiliation>Não informado</affiliation>
+		        		<country>Não informado</country>
+		        	</author>
+		        </authors>		        	
+  	 		</paper>
+  	 	</papers>
+	</technical_session>
+</technical_sessions>
