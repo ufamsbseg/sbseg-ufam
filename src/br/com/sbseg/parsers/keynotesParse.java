@@ -30,19 +30,17 @@ public class keynotesParse {
 	private static ArrayList<Session> arraySessions;
 	private static ArrayList<Palestrante> arraySpeakers;
 	private static InputStream is;
-	private static String idKeynote;
-	private static String idSpeaker;
-	private static String idSession;
 	
 	 public static ArrayList<Keynote> parse(Context context) throws IOException, SAXException {
 	       
 	        final RootElement root = new RootElement("keynotes");
 	        
 	        arrayKeynotes = new ArrayList<Keynote>();
-	        is = context.getResources().getAssets().open("Keynotes_Speakers.xml");
+	        is = context.getResources().getAssets().open("keynoteSpeakers_sbseg.xml");
 	        
 	        // use setStartElementListener para ter acesso aos atributos do item atual 
 	        root.setStartElementListener(new StartElementListener() {				
+				
 				public void start(Attributes attrb) {
 					//versao = attrb.getValue("versao");
 				
@@ -55,10 +53,11 @@ public class keynotesParse {
 	        //sempre inicie com esse método no KN
 	        KN.setStartElementListener(new StartElementListener() {
 				
+				
 				public void start(Attributes attr) {
 					//aproveite e instancie aqui um novo objeto para armazar as informações desse KN
 					keynote = new Keynote();
-					idKeynote = attr.getValue("id");
+					String idKeynote = attr.getValue("id");
 					keynote.setId(Integer.parseInt(idKeynote.trim()));
 				}
 			});
@@ -77,6 +76,7 @@ public class keynotesParse {
 	        	Element elementSessions = KN.getChild("sessions");
 		        elementSessions.setStartElementListener(new StartElementListener() {
 					
+					
 					public void start(Attributes attr) {
 						//aproveite e instancie aqui um novo objeto para armazar as informações desse KN
 						arraySessions = new ArrayList<Session>();
@@ -90,11 +90,12 @@ public class keynotesParse {
 		        	Element elementSession = elementSessions.getChild("session");
 		        	elementSession.setStartElementListener(new StartElementListener() {
 					
+					
 					public void start(Attributes attr) {
 						//aproveite e instancie aqui um novo objeto para armazar as informações desse KN
 					//	arraySpeakers = new ArrayList<Speaker>();
 						session = new Session();
-						idSession = attr.getValue("id");
+						String idSession = attr.getValue("id");
 						session.setId(Integer.parseInt(idSession.trim()));
 						}
 					});
@@ -115,6 +116,7 @@ public class keynotesParse {
 			        Element speakers =  elementSession.getChild("speakers");
 			        speakers.setStartElementListener(new StartElementListener() {
 						
+						
 						public void start(Attributes attr) {
 							//aproveite e instancie aqui um novo objeto para armazar as informações desse KN
 							arraySpeakers = new ArrayList<Palestrante>();
@@ -128,15 +130,22 @@ public class keynotesParse {
 			        
 				        speaker.setStartElementListener(new StartElementListener() {
 							
+							
 							public void start(Attributes attr) {
 								//aproveite e instancie aqui um novo objeto para armazar as informações desse KN
 								
 								ObejectSpeaker = new Palestrante();
-								idSpeaker = attr.getValue("id");
+								String idSpeaker = attr.getValue("id");
 								ObejectSpeaker.setId(Integer.parseInt(idSpeaker.trim()));
 							}
 						});
 			        
+				        speaker.getChild("photo").setEndTextElementListener(new EndTextElementListener(){
+				            public void end(String photo) {
+				            	ObejectSpeaker.setPhoto(photo);
+				            }
+				        });
+				        
 				        speaker.getChild("name").setEndTextElementListener(new EndTextElementListener(){
 				            public void end(String name) {
 				            	ObejectSpeaker.setName(name);
@@ -153,6 +162,7 @@ public class keynotesParse {
 				        	Element tlk = speaker.getChild("talk");
 				        
 					        tlk.setStartElementListener(new StartElementListener() {				
+								
 								public void start(Attributes attrb) {
 								talk = new Talk();
 							}});
@@ -170,6 +180,7 @@ public class keynotesParse {
 					        });
 					        tlk.setEndElementListener(new EndElementListener() {
 								
+								
 								public void end() {
 									ObejectSpeaker.setTalk(talk);
 								}
@@ -183,6 +194,7 @@ public class keynotesParse {
 				        
 				        speaker.setEndElementListener(new EndElementListener() {
 							
+							
 							public void end() {
 								arraySpeakers.add(ObejectSpeaker);
 							}
@@ -192,6 +204,7 @@ public class keynotesParse {
 			        
 			        elementSession.setEndElementListener(new EndElementListener() {
 						
+						
 						public void end() {
 							session.setListSpeaker(arraySpeakers);
 							arraySessions.add(session);
@@ -199,6 +212,7 @@ public class keynotesParse {
 					});
 		        //quando os itens acabarem, chame esse método e adicione a instancia atual de Pessoo no ArrayList
 	        KN.setEndElementListener(new EndElementListener() {
+				
 				
 				public void end() {
 					keynote.setListSession(arraySessions);
