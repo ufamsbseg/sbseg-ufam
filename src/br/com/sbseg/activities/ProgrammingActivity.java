@@ -23,7 +23,6 @@ import br.com.sbseg.parsers.ParseProgramming;
 
 public class ProgrammingActivity extends Activity {
 	
-	public String newValue;
 	
 	public Context context;
 	private ViewPager vpDays;
@@ -36,7 +35,7 @@ public class ProgrammingActivity extends Activity {
         
         ActionBar ab = getActionBar();
         ab.setTitle("SBSeg");
-        ab.setSubtitle("Calendário");
+        ab.setSubtitle("Calendï¿½rio");
         
         context = this;
         
