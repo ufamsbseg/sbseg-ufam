@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <technical_sessions identifier="day_1">
 	<technical_session>
-		<date>12/11/2013</date>
+		<date>12/11/2013</date> 
 		<id>ST1</id>
 		<weekday>Terça-feira</weekday>
 		<beginning>08:30</beginning>
