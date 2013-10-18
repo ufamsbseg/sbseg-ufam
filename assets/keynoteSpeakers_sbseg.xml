@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<keynotes>
+    <keynote id = "0">
+		<date> 12/11/2013 </date>
+		<weekday> Terça-Feira </weekday>
+		<sessions>
+			<session id ="0">
+				<start> 10:30 </start>
+				<end> 11:30 </end>
+				<speakers>
+					<speaker id = "0">
+					    <photo>georgecox</photo>
+						<name> George W. Cox </name>
+						<filiation> INTEL </filiation>
+						<talk> 
+								<title> Security Hardware</title> 
+								<resume> Potential for abuse of HW security elements (e.g., secrets, cryptographic functionality) in SoC/platform environments (e.g., misconfiguration, observation, and misuse) by other platform agents (e.g., HW, SW, and/or FW); Approaches to constrain the behavior (either intentional or errouneous) of those agents; and Intel's product response in current/future products.</resume>	
+						</talk>		
+						<biography> During his 38 year career at Intel, George has lead research and development teams delivering processors, I/O subsystems, supercomputers, interconnects, and security elements. His current Digital Random Number Generator (DRNG) work is the second Intel RNG that his teams have deployed in product. He looks forward to attacking other such low level, fundamental, long term, platform security problems.</biography>
+					</speaker>
+				</speakers>
+			</session>
+			
+		  	<session id ="1">
+				<start> 11:30 </start>
+				<end> 12:30 </end>
+				<speakers>
+					<speaker id = "0">
+					    <photo>davidott</photo>
+						<name> David Ott </name>
+						<filiation> INTEL </filiation>
+						<talk> 
+								<title> Trust Evidence for Software Runtime Environments</title> 
+								<resume> Intel Labs collaborates with university researchers across the world to explore new computing paradigms that could become the future of technology. In this talk, we discuss the challenge of providing evidence that software execution can be trusted in the face of myriad attack types and vectors. One approach to the problem is that of software baselining in which expected paths of execution provide a basis for judging the trustworthiness of software runtime behavior and generating evidence that computation has not been subverted. After discussing the problem, we present several university approaches that explore the paradigm in different ways.  Each suggests a way to make future software runtime systems generate evidence of trustworthy operation, something that could be used by interacting systems or components to evaluate risk.</resume>	
+						</talk>		
+						<biography> Biografia: David Ott is a Research Director for the University Research Office in Intel Labs.  His work involves identifying key research challenges and opportunities for innovative technology development in the areas of computer security and communications. David Ott joined Intel in 2005 as a senior software engineer and has worked in a variety of technical roles over the years focusing on enterprise computing, software aspects of future Intel platforms, performance analysis, and computer security.  David holds M.S. and Ph.D. degrees in Computer Science from the University of North Carolina at Chapel Hill.</biography>
+					</speaker>
+				</speakers>
+			</session>
+
+			<session id ="2">
+				<start> 16:30 </start>
+				<end> 18:30 </end>
+				<speakers>
+					<speaker id = "0">
+					    <photo>fabianmonrose</photo>
+						<name> Fabian Monrose </name>
+						<filiation>  University of North Carolina </filiation>
+						<talk> 
+								<title> Hooked On Phonics: Learning to Read Encrypted VoIP Conversations</title> 
+								<resume> Over the past decade, Voice-over-IP (VoIP) telephony has witnessed spectacular growth. Today, VoIP is being used everywhere, and is making steady headway as a replacement for traditional telephony in both the residential and commercial sectors. Yet, even with this widespread adoption, the security and privacy implications of VoIP are still not well understood. In this talk we will explore why current practices for encrypting VoIP packets are insufficient for ensuring privacy. In particular, we will examine how two common design decisions made in VoIP protocols---namely, the use of variable-bit-rate (VBR) codecs for speech encoding and length-preserving stream ciphers for encryption---interact to leak substantial information about a given conversation. More specifically, I will recap our recent attempts to reconstruct a hypothesized transcript of a conversation from a bottom up approach that has striking parallels to how infants find words in a speech stream. Time permitting, I'll share some interesting stories about the events that unfolded since publication of our work.</resume>	
+						</talk>		
+						<biography> Fabian Monrose is a Professor of Computer Science at University of North Carolina at Chapel Hill. Prior to joining UNC, he was an Associate Professor at Johns Hopkins University, and a founding member of the Johns Hopkins Information Security Institute. From 1999-2002, he served as a member of technical staff at Bell Labs, Lucent Technologies. He has received several awards including a National Science Foundation CAREER award in 2006, and best paper awards at flagship security conferences including the IEEE Security and Privacy and USENIX Security Symposiums. He has published over 75 papers in computer and communications security. He received his Ph.D. and M.Sc. from the Courant Institute of Mathematical Sciences at New York University.</biography>
+					</speaker>
+				</speakers>
+			</session>
+		</sessions>
+    </keynote>
+    
+    <keynote id = "1">
+		<date> 13/11/2013 </date>
+		<weekday> Quarta-Feira </weekday>
+		<sessions>
+			<session id="0">
+				<start> 10:30 </start>
+				<end> 11:30 </end>
+				<speakers>
+					<speaker id = "0">
+					    <photo>antonio</photo>
+						<name> Antônio M. Moreiras </name>
+						<filiation>  CEPTRO/NIC.br </filiation>
+						<talk> 
+								<title> Desafios do IPv6 para Profissionais de Segurança </title> 
+								<resume> Esta palestra abordará os desafios que profissionais de segurança e de grupos de resposta a incidentes poderão enfretar frente às mudanças que ocorrerão tanto com a migração para o Protocolo IPv6, quanto durante a fase em que forem utilizadas técnicas de transição entre os protocolos.</resume>	
+						</talk>		
+						<biography> Antônio M. Moreiras é Gerente de Projetos do CEPTRO (Centro de Estudos e Projetos em Tecnologias de Redes e Operações) no NIC.br, onde coordena o IPv6.br, uma iniciativa para a disseminação do IPv6 no país. É responsável ainda pela disponibilização gratuita da Hora Legal Brasileira na rede, via NTP, pela realização de estudos sobre a Web, pelo Zappiens.br, um portal para a divulgação de conteúdos de vídeo de qualidade em língua portuguesa, e por treinamentos direcionados a provedores Internet. Moreiras é membro fundador da ISOC Brasil e membro consultor das comissões de Ciência e Tecnologia e de Crimes de Alta Tecnologia da OAB/SP. Por formação é engenheiro eletricista (1999) e mestre em engenharia (2004), pela POLI/USP, com MBA em pela UFRJ (2008) e especializações em Governança da Internet pela Diplo Foundation (2009) e South School of Internet Governance (2010). De 1999 a 2007 trabalhou na Agência Estado, onde, dentre outras atividades, coordenou a equipe de qualidade de software. De 2002 a 2007 foi também professor em cursos de Computação e Redes na Unicid, Faculdades Tancredo Neves e Faculdades Radial.</biography>
+					</speaker>
+				</speakers>
+			</session>
+
+			<session id="1">
+				<start> 16:30 </start>
+				<end> 18:30 </end>
+				<speakers>
+					<speaker id = "0">
+					    <photo>matt</photo>
+						<name> Matt Bishop </name>
+						<filiation> University of California </filiation>
+						<talk> 
+								<title> An Analysis of the Buffer Overflow Problem </title> 
+								<resume> Significant work on vulnerabilities focuses on buffer overflows, in which data exceeding the size of a variable or an array is loaded into memory. This causes variables and state information located adjacent to the intended destination in memory to change. Unless the process checks for these additional changes, the process acts incorrectly, often placing the system in a non-secure state. We present a taxonomy based upon preconditions that must hold for an exploitable buffer overflow to exist. We validate the approach by examining several software and hardware countermeasures. We then discuss generalizing this approach to other vulnerability types such as input errors.</resume>	
+						</talk>		
+						<biography> Matt Bishop received his Ph.D. in computer science from Purdue University, where he specialized in computer security, in 1984. He is on the faculty at the Department of Computer Science at the University of California at Davis. His main research area is the analysis of vulnerabilities in computer systems, including modeling them, building tools to detect vulnerabilities, and ameliorating or eliminating them. This includes detecting and handling all types of malicious logic. Currently, he has research projects involving data sanitization, modeling election processes, and attribution in large-scale testbeds such as GENI; he is also looking at the "insider" problem. He was one of the two principle investigators of the California Top-to-Bottom Review, which performed a technical review of all electronic voting systems certified in the State of California. He has been active in the area of UNIX security since 1979, and has presented tutorials at SANS, USENIX, and other conferences. His textbook, Computer Security: Art and Science, was published in December 2002 by Addison-Wesley Professional. He also teaches software engineering, machine architecture, operating systems, programming, and (of course) computer security.</biography>
+					</speaker>
+				</speakers>
+			</session>
+		</sessions>
+    </keynote>
+
+</keynotes>
