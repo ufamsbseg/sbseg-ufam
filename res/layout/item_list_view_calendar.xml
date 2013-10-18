@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:orientation="vertical"
-    android:layout_gravity="center_horizontal">
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="left"
+        android:orientation="vertical"
+        android:id="@+id/item_list_view_caledar">
+        
+    	<!-- Esse xml é do item da lista da primeira activity -->
+     	<TextView 
+    	    android:id="@+id/infoDate"
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="wrap_content"
+    	    android:layout_gravity="center_horizontal"
+        	android:gravity="center"
+        	android:textStyle="bold"
+            android:textSize="16sp"
+    	    android:text="@string/infoDate"/>
     
-	<TextView 
-	    android:id="@+id/text_infor"
-	    android:layout_width="fill_parent"
-	    android:layout_height="wrap_content"
-	    android:textSize="15dp"
-	    android:textStyle="bold"
-	    android:gravity="center_horizontal"
-	    android:layout_margin="5dp"
-	    android:padding="5dp"
-	    android:text="Item do ListView"
-	    android:background="#5F9EA0"/> 
-	    
-	<View
-	    android:id="@+id/divider"
-	    android:layout_width="fill_parent"
-	    android:layout_height="1dp"
-	    android:background="#1578736E"
-	    android:visibility="invisible"
-	    android:layout_marginLeft="20dp"
-	    android:layout_marginRight="20dp"
-	/>
-
+    	<TextView
+    	    android:id="@+id/infoSession"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/infoSession"
+            android:textStyle="normal"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"/>
+        
 </LinearLayout>

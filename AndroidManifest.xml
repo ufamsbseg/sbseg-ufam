@@ -28,16 +28,25 @@
             </intent-filter>
         </activity>
         
-        <!-- Activities do Xavier =============================== -->
-        <activity
-            android:name="br.com.sbseg.activities.Tutorials">
-        </activity>
-        <activity
-            android:name="br.com.sbseg.activities.DetailTutorials">
-        </activity>
-        <!--  =================================================== -->
         
-        <!-- Activities do Caio ================================= -->
+        <activity
+            android:name=".activities.DetailTutorialActivity">
+        </activity>
+        <activity
+            android:name=".activities.KeynotesMainActivity">
+        </activity>
+        <activity
+            android:name="br.com.sbseg.activities.SessoesTecnicasActivity">
+        </activity>
+        <activity
+            android:name="br.com.sbseg.activities.TechSessionActivity">
+        </activity>
+        <activity
+            android:name="br.com.sbseg.activities.TelaKeynoteMainActivity">
+        </activity>
+        <activity
+            android:name="br.com.sbseg.activities.TutorialsActivity">
+        </activity>
         
         
     </application>

@@ -18,9 +18,9 @@ public class ViewPagerAdapter extends PagerAdapter{
 	private View view;
 	public int countView = 0;
 	private ArrayList<ArrayList<String>> days = new ArrayList<ArrayList<String>>();
-	private ListViewAdapter lvaProgramming;
+	private ListViewAdapterProgramming lvaProgramming;
 	private ListView lvCalendar; 
-	private static final String[] titles ={"Segunda-Feira", "Terça-Feira", "Quarta-Feira", "Quinta-Feira"};
+	private static final String[] titles ={"Segunda-Feira", "Terï¿½a-Feira", "Quarta-Feira", "Quinta-Feira"};
 	
 	public ViewPagerAdapter(Context context) {
 		this.context = context;
@@ -50,7 +50,7 @@ public class ViewPagerAdapter extends PagerAdapter{
 			
 			view = inflater.inflate(R.layout.layout_screen1_view_pager, null);
 			lvCalendar = (ListView) view.findViewById(R.id.list_view1);
-			lvaProgramming = new ListViewAdapter(context);
+			lvaProgramming = new ListViewAdapterProgramming(context);
 			lvaProgramming.setData(days.get(position));
 			
 //			break;
