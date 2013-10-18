@@ -46,10 +46,13 @@
 		        </authors>		        	
   	 		</paper>
   	 		<paper>
-
+<<<<<<< HEAD
   	 			<beginning>Não informado</beginning>
 				<end>Não informado</end>
-
+=======
+  	 			<beginning>09:30</beginning>
+				<end>10:00</end>
+>>>>>>> 073d9eb88acbf9976dbc81c92d3e5a40a35ce95e
 				<name>Influência de Ataques Jamming sobre Protocolos de Roteamento em Redes Veiculares</name>
 				<authors>
 		    		<author>
