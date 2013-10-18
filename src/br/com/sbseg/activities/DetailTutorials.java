@@ -50,9 +50,10 @@ public class DetailTutorials extends Activity {
 		arrayStrings.add("Descrição: " + tutorial.getDescription());
 		
 		for (Speaker speaker : tutorial.getSpeakers()) {
-			arrayStrings.add(" ");
-			arrayStrings.add("Speaker: " + speaker.getName() + ", " + speaker.getAffiliation());
-			arrayStrings.add("Biography: " + speaker.getBiography());
+			arrayStrings.add(speaker.getName() + ", " + speaker.getAffiliation());
+		
+		// ESSA PARTE DEVE SER DESCOMENTADA SE FOR UTILIZAR BIOGRAFIA DO SPEAKER
+		//	arrayStrings.add("Biography: " + speaker.getBiography());
 		}
 		
 		return arrayStrings;

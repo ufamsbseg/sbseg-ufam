@@ -1,15 +1,14 @@
 package br.com.sbseg.activities;
 
-
 import java.util.HashMap;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.view.Menu;
 import android.widget.ImageView;
 import android.widget.TextView;
 import br.com.sbseg.R;
-import br.com.sbseg.beans.Speaker;
+import br.com.sbseg.beans.Palestrante;
+//import android.widget.ImageView;
 
 public class TelaKeynoteMainActivity extends Activity {
 	
@@ -21,7 +20,7 @@ public class TelaKeynoteMainActivity extends Activity {
 		setContentView(R.layout.activity_tela_keynote_main);
 		
 		Bundle bundle = getIntent().getExtras();
-		Speaker speaker = (Speaker)bundle.getSerializable("Speaker");
+		Palestrante speaker = (Palestrante)bundle.getSerializable("Speaker");
 		String photo = speaker.getPhoto();
 		
 		TextView nomeSpeaker = (TextView)findViewById(R.id.IDNome);
@@ -63,11 +62,5 @@ public class TelaKeynoteMainActivity extends Activity {
 		
 	}
 
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.tela_keynote_main, menu);
-		return true;
-	}
-
+	
 }

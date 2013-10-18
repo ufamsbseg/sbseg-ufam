@@ -1,6 +1,5 @@
 package br.com.sbseg.parsers;
 
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
@@ -36,7 +35,7 @@ public class TutorialsParse {
 	        final RootElement root = new RootElement("tutorials");
 	        
 	        arrayTutorials = new ArrayList<Tutorial>();
-	        is = context.getResources().getAssets().open("Tutorials.xml");
+	        is = context.getResources().getAssets().open("MiniCursos.xml");
 	        
 	        // use setStartElementListener para ter acesso aos atributos do item atual 
 	        root.setStartElementListener(new StartElementListener() {				
@@ -152,12 +151,15 @@ public class TutorialsParse {
 	            }
 	        });
 	        
+	        /*
+	         * ESSA PARTE DEVE SER DESCOMENTADA SE FOR UTILIZAR BIOGRAFIA DO SPEAKER
+	         * 
 	        itemSpeaker.getChild("biography").setEndTextElementListener(new EndTextElementListener(){
 	            public void end(String biography) {
 	            	speaker.setBiography(biography);
 	            }
 	        });
-	        
+	        */
 	        itemSpeaker.setEndElementListener(new EndElementListener() {	
 				public void end() {
 					arraySpeakers.add(speaker);
