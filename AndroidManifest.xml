@@ -15,7 +15,6 @@
             android:name="br.com.sbseg.activities.SbsegMainActivity"
             android:label="@string/title_activity_sbseg" >
             <intent-filter>
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -28,6 +27,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        
+        <!-- Activities do Xavier =============================== -->
+        <activity
+            android:name="br.com.sbseg.activities.Tutorials">
+        </activity>
+        <activity
+            android:name="br.com.sbseg.activities.DetailTutorials">
+        </activity>
+        <!--  =================================================== -->
+        
+        <!-- Activities do Caio ================================= -->
+        
+        
     </application>
 
 </manifest>
