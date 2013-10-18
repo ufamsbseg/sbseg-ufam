@@ -1,4 +1,5 @@
-package com.keynoteActivity;
+package br.com.sbseg.activities;
+
 
 import java.util.HashMap;
 
@@ -7,10 +8,8 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.widget.ImageView;
 import android.widget.TextView;
-import br.com.beans.Speaker;
-
-import com.example.keynotes.R;
-//import android.widget.ImageView;
+import br.com.sbseg.R;
+import br.com.sbseg.beans.Speaker;
 
 public class TelaKeynoteMainActivity extends Activity {
 	
