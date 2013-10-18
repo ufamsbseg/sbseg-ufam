@@ -23,6 +23,7 @@ import br.com.sbseg.parsers.ParseProgramming;
 
 public class ProgrammingActivity extends Activity {
 	
+	public String newValue;
 	
 	public Context context;
 	private ViewPager vpDays;
