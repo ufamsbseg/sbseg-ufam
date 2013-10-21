@@ -3,13 +3,20 @@ package br.com.sbseg.adapters;
 import java.util.ArrayList;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 import br.com.sbseg.R;
+import br.com.sbseg.activities.KeynotesMainActivity;
+import br.com.sbseg.activities.SessoesTecnicasActivity;
+import br.com.sbseg.activities.Tutorials;
+import br.com.sbseg.activities.WorkshopActivity;
 
 public class ViewPagerAdapter extends PagerAdapter{
 	
@@ -20,7 +27,9 @@ public class ViewPagerAdapter extends PagerAdapter{
 	private ArrayList<ArrayList<String>> days = new ArrayList<ArrayList<String>>();
 	private ListViewAdapterProgramming lvaProgramming;
 	private ListView lvCalendar; 
-	private static final String[] titles ={"Segunda-Feira", "Ter�a-Feira", "Quarta-Feira", "Quinta-Feira"};
+	private static final String[] titles ={"Segunda-Feira", "Terça-Feira", "Quarta-Feira", "Quinta-Feira"};
+//	private Intent intent = new Intent(context, WorkshopActivity.class);
+	
 	
 	public ViewPagerAdapter(Context context) {
 		this.context = context;
@@ -40,48 +49,61 @@ public class ViewPagerAdapter extends PagerAdapter{
 		return view == ((View) object);
 	}
 
-
+	public Object getItem(int position){
+		return lvCalendar.getItemAtPosition(position);
+	}
 
 	@Override
-	public Object instantiateItem(ViewGroup container, int position) {
-		
-//		switch (position) {
-//		case 0:
+	public Object instantiateItem(ViewGroup container, final int position) {
 			
 			view = inflater.inflate(R.layout.layout_screen1_view_pager, null);
 			lvCalendar = (ListView) view.findViewById(R.id.list_view1);
 			lvaProgramming = new ListViewAdapterProgramming(context);
 			lvaProgramming.setData(days.get(position));
 			
-//			break;
-//		case 1:
-//			
-//			view = inflater.inflate(R.layout.layout_screen1_view_pager, null);
-//			lvCalendar = (ListView) view.findViewById(R.id.list_view1);
-//			lvaProgramming = new ListViewAdapter(context);
-//			lvaProgramming.setData(days.get(position));
-//			
-//			break;
-//			 
-//		case 2:
-//			
-//			view = inflater.inflate(R.layout.layout_screen1_view_pager, null);
-//			lvCalendar = (ListView) view.findViewById(R.id.list_view1);
-//			lvaProgramming = new ListViewAdapter(context);
-//			lvaProgramming.setData(days.get(position));
-//			
-//			break;
-//		case 3:
-//			
-////			view = inflater.inflate(R.layout.layout_screen3_view_pager, null);
-////			lvCalendar = (ListView) view.findViewById(R.id.list_view3);
-////			lvaProgramming = new ListViewAdapter(context);
-////			lvaProgramming.setData(days.get(position));
-//			
-//			break;
-//		default:
-//			break;
-//		}
+			lvCalendar.setOnItemClickListener(new OnItemClickListener(){ //Esse método é usado para pegar um item da lista que foi escolhido pelo usuário.
+				
+				public void onItemClick(AdapterView<?>parent, View view, int position2, long id){
+					
+					ArrayList<String> listaStrings = days.get(position);
+					char c = (listaStrings.get(position2)).charAt(1);
+						//Log.e("teste",""+listaStrings.get(position2));
+//					
+					//TechnicalSession objectSession = (TechnicalSession)lvCalendar.getItemAtPosition(itemPosition);
+					
+					/*else if()
+					Keynote objectKeynote = (Keynote)lvCalendar.getItemAtPosition(itemPosition);
+					
+					else if()
+					
+					Bundle bundle = new Bundle();
+					bundle.putSerializable("objectSession", objectSession); //Adiciona o item no bundle
+					
+					
+					intent = new Intent(ViewPagerAdapter.this,TechSessionActivity.class);
+					intent.putExtras(bundle); //Adiciona o bundle na intent
+			        startActivity(intent);*/ 
+					switch (c){
+						case  'W':
+							Intent intent0 = new Intent(context, WorkshopActivity.class);
+							context.startActivity(intent0);
+							break;
+						case  'P':
+							Intent intent1 = new Intent(context, KeynotesMainActivity.class);
+							context.startActivity(intent1);
+							break;
+						case  'S':
+							Intent intent2 = new Intent(context, SessoesTecnicasActivity.class);
+							context.startActivity(intent2);
+							break;
+						case  'M':
+							Intent intent3 = new Intent(context, Tutorials.class);
+							context.startActivity(intent3);
+							break;
+					}
+				}
+			});
+		
 		
 		lvCalendar.setAdapter(lvaProgramming);
 		

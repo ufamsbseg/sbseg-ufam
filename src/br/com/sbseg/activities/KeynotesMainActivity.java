@@ -36,7 +36,7 @@ public class KeynotesMainActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_keynotes);
+        setContentView(R.layout.activity_main);
         
        context = this;
        
