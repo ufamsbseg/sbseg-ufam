@@ -20,7 +20,7 @@ public class WorkshopSecondActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_tech_session);
+		setContentView(R.layout.activity_workshop);
 		
 		Bundle bundle = getIntent().getExtras();
 		TechnicalSession techSession = (TechnicalSession) bundle.get("objectSession");
