@@ -1,6 +1,5 @@
 package br.com.sbseg.beans;
 
-
 import java.io.Serializable;
 
 public class Palestrante implements Serializable{
