@@ -1,4 +1,4 @@
-package br.com.calendarevents.adapters;
+package br.com.sbseg.adapters;
 
 import java.util.ArrayList;
 
@@ -9,9 +9,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
-import br.com.calendarevents.beans.TechnicalSession;
-
-import com.example.calendarevents.R;
+import br.com.sbseg.R;
+import br.com.sbseg.beans.TechnicalSession;
 
 public class ListViewWorkShopAdapter extends BaseAdapter{
 	
@@ -20,7 +19,6 @@ public class ListViewWorkShopAdapter extends BaseAdapter{
 	private LayoutInflater inflater;
 	private View rowView = null;
 	
-	@Override
 	public int getCount() { //Pega o tamanho da lista
 		return techSessionList.size();
 	}
@@ -29,18 +27,15 @@ public class ListViewWorkShopAdapter extends BaseAdapter{
 		this.context = context;
 	}
 
-	@Override
 	public Object getItem(int position) { //Pega um item da lista que foi jogada nesse Adapter
 		return techSessionList.get(position);
 	}
 
-	@Override
 	public long getItemId(int position) {
 		// TODO Auto-generated method stub
 		return position;
 	}
 
-	@Override
 	public View getView(int position, View view, ViewGroup viewGroup) { //Trata a exibição dos itens no ListView
 			
 		inflater = (LayoutInflater) context

@@ -1,13 +1,13 @@
-package com.example.calendarevents;
+package br.com.sbseg.activities;
 
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
-import android.view.Menu;
 import android.widget.ListView;
 import android.widget.TextView;
-import br.com.calendarevents.adapters.ListViewWorkshopAdapterSecondScreen;
-import br.com.calendarevents.beans.TechnicalSession;
+import br.com.sbseg.R;
+import br.com.sbseg.adapters.ListViewWorkshopAdapterSecondScreen;
+import br.com.sbseg.beans.TechnicalSession;
 
 public class WorkshopSecondActivity extends Activity {
 	
@@ -38,13 +38,6 @@ public class WorkshopSecondActivity extends Activity {
         listPaper = (ListView) findViewById(R.id.list_view);
         listPaper.setAdapter(adapter);
         adapter.setData(techSession.getPapers()); //Seta no adapter o tipo de dado que o mesmo irá trabalhar.	
-	}
-
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.tech_session, menu);
-		return true;
 	}
 
 }
