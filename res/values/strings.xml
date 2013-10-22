@@ -17,5 +17,9 @@
     <string name="idSession">idNull</string>
     <string name="infoDate"/>
     <!-- ===================================== -->
+    <string name="divider">___________________________________________________________</string>
+    <string name="documento_desc">descrição</string>
+    <string name="apresentacao_desc">apresentação</string>
+    <string name="right_arrow_desc">descrição</string>
 
 </resources>

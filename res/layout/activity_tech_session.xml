@@ -2,7 +2,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    android:background="#f4f4f4" >
 
     <!-- Esse xml é o layout da segunda activity -->
    <TextView
@@ -14,7 +15,7 @@
         android:gravity="center"
         android:textStyle="bold"
         android:textSize="16sp"
-        android:background="#df9f3e"
+        android:background="#e09e3f"
         android:textColor="@android:color/white"/>
    
    <TextView 
@@ -25,13 +26,15 @@
        android:textStyle="bold"
        android:textSize="14sp"
        android:gravity="center"
-       android:textColor="@android:color/black" />
+       android:background="#f4f4f4"
+       android:textColor="#3a3a3a" />
        
    <ListView 
       android:id="@+id/list_view"
       android:layout_width="fill_parent"
       android:layout_height="fill_parent"
       android:cacheColorHint="@android:color/transparent"
+      android:background="#f4f4f4"
       android:divider="@null"/> 
 
 </LinearLayout>

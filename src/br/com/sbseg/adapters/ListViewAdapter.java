@@ -11,9 +11,6 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 import br.com.sbseg.R;
 
-
-
-
 public class ListViewAdapter extends BaseAdapter {
 	
 	private ArrayList<String> programming = new ArrayList<String>();
@@ -30,8 +27,6 @@ public class ListViewAdapter extends BaseAdapter {
 		this.context = context;
 	}
 	
-	
-
 	public Object getItem(int position) {
 		return programming.get(position);
 	}

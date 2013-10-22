@@ -11,11 +11,11 @@
    		<chair>
       		<name>Não informado</name>
    		  	<affiliation>Não informado</affiliation>
-  	 	</chair> 
+  	 	</chair>
   	 	<papers>
   	 		<paper>
-  	 			<beginning>Ñão informado</beginning>
-				<end>Não informado</end>
+  	 			<beginning>09:00</beginning>
+				<end>09:30</end>
 				<name>Avaliação Energética de Ferramentas de Segurança de Software em Sistemas Embarcados</name>
 				<authors>
 		    		<author>
@@ -46,10 +46,8 @@
 		        </authors>		        	
   	 		</paper>
   	 		<paper>
-
-  	 			<beginning>Não informado</beginning>
-				<end>Não informado</end>
-
+  	 			<beginning>09:30</beginning>
+				<end>10:00</end>
 				<name>Influência de Ataques Jamming sobre Protocolos de Roteamento em Redes Veiculares</name>
 				<authors>
 		    		<author>
@@ -90,8 +88,8 @@
   	 	</chair>
   	 	<papers>
   	 		<paper>
-  	 			<beginning>Não informado</beginning>
-				<end>Não informado</end>
+  	 			<beginning>10:30</beginning>
+				<end>11:00</end>
 				<name>ABSecurity: Uma ferramenta para controle de acesso baseado em papéis por meio de Web Services</name>
 				<authors>
 		    		<author>
@@ -112,8 +110,8 @@
 		        </authors>		        	
   	 		</paper>
   	 		<paper>
-  	 			<beginning>Não informado</beginning>
-				<end>Não informado</end>
+  	 			<beginning>11:00</beginning>
+				<end>11:30</end>
 				<name>Identificando SPAM no Twitter através da Análise Empírica dos Trending Topics Brasil</name>
 				<authors>
 		    		<author>
@@ -134,8 +132,8 @@
 		        </authors>		        	
   	 		</paper>
   	 		<paper>
-  	 			<beginning>Não informado</beginning>
-				<end>Não informado</end>
+  	 			<beginning>11:30</beginning>
+				<end>12:00</end>
 				<name>Aplicação Web para Criação de Atas Notariais Eletrônicas para Cartórios Digitais</name>
 				<authors>
 		    		<author>
@@ -151,8 +149,8 @@
 		        </authors>		        	
   	 		</paper>
   	 		<paper>
-  	 			<beginning>Não informado</beginning>
-				<end>Não informado</end>
+  	 			<beginning>12:00</beginning>
+				<end>12:30</end>
 				<name>Uso do OpenID e do OAuth para prover a Gestão de Identidades em um Portal Participativo de Governo Eletrônico</name>
 				<authors>
 		    		<author>
@@ -183,8 +181,8 @@
   	 	</chair>
   	 	<papers>
   	 		<paper>
-  	 			<beginning>Ñão informado</beginning>
-				<end>Não informado</end>
+  	 			<beginning>14:30</beginning>
+				<end>15:00</end>
 				<name>Análise da Aplicação da Esteganografia Combinada com o Método Criptográfico AES</name>
 				<authors>
 		    		<author>
@@ -205,8 +203,8 @@
 		        </authors>		        	
   	 		</paper>
   	 		<paper>
-  	 			<beginning>Não informado</beginning>
-				<end>Não informado</end>
+  	 			<beginning>15:00</beginning>
+				<end>15:30</end>
 				<name>Implementação eficiente de emparelhamentos bilineares sobre curvas elípticas na plataforma ARM</name>
 				<authors>
 		    		<author>
@@ -222,8 +220,8 @@
 		        </authors>		        	
   	 		</paper>
   	 		<paper>
-  	 			<beginning>Não informado</beginning>
-				<end>Não informado</end>
+  	 			<beginning>15:30</beginning>
+				<end>16:00</end>
 				<name>Aritmética eficiente em curvas de Huff</name>
 				<authors>
 		    		<author>

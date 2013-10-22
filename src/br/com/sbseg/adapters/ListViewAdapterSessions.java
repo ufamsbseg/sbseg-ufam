@@ -4,6 +4,7 @@ package br.com.sbseg.adapters;
 import java.util.ArrayList;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -41,7 +42,7 @@ public class ListViewAdapterSessions extends BaseAdapter{
 		inflater = (LayoutInflater) context
 		        .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 		
-		rowView = inflater.inflate(R.layout.item_list_view_calendar, viewGroup, false);
+		rowView = inflater.inflate(R.layout.item_list_view_session, viewGroup, false);
 
 		String dateVerifierAnterior = (position != 0 ? techSessionList.get(position-1).getDate() : null);
 		String dateVerifierAtual = techSessionList.get(position).getDate();
@@ -49,6 +50,8 @@ public class ListViewAdapterSessions extends BaseAdapter{
 		if(position == 0 || !dateVerifierAtual.equalsIgnoreCase(dateVerifierAnterior)){
 			
 			TextView text = (TextView)rowView.findViewById(R.id.infoDate);
+			text.setBackgroundColor(Color.parseColor("#e09e3f"));
+			text.setTextColor(Color.parseColor("#FFFFFF"));
 			text.setText(techSessionList.get(position).getDayWeek() + "  " + techSessionList.get(position).getDate() + " " + techSessionList.get(position).getBeginning() + " - " + techSessionList.get(position).getEnd());
 		}
 		

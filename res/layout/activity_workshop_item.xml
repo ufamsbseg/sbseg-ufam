@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:id="@+id/activity_tech_session_item"  > 
+    android:id="@+id/activity_tech_session_item"
+    android:background="#f4f4f4"  > 
     
     <!-- Esse xml contem o item para o list view da segunda activity -->
     <!-- Esse TextView é apenas para exibir o horário e o nome do paper. Os autores do paper são alocados dinamicamente . -->
@@ -12,6 +13,8 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:textStyle="bold"
+        android:background="#f4f4f4"
+        android:textColor="#3a3a3a"
         android:text="@string/infoText" />
         
     

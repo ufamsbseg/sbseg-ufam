@@ -27,11 +27,11 @@
         	android:id="@+id/item_list_view_caledar2">
         	
     	    <ImageView 
-    	        android:id="@+id/right_arrow_on_left"
-    	        android:layout_width="wrap_content"
-    	        android:layout_height="wrap_content"
-    	        android:src="@drawable/documento"
-    	        android:contentDescription="@string/documento_desc"/>
+    	        android:id="@+id/apresentacao"
+    	        android:layout_width="50dp"
+    	        android:layout_height="50dp"
+    	        android:src="@drawable/apresentacao"
+    	        android:contentDescription="@string/apresentacao_desc"/>
      	
     		<TextView
     	    	android:id="@+id/infoSession"
@@ -40,7 +40,18 @@
             	android:text="@string/infoSession"
             	android:textStyle="normal"
             	android:textSize="14sp"
+            	android:layout_marginLeft="50dp"
+            	android:layout_centerVertical="true"
             	android:textColor="@android:color/black"/>
+    		
+    		<ImageView 
+    	        android:id="@+id/right_arrow"
+    	        android:layout_width="25dp"
+    	        android:layout_height="25dp"
+    	        android:src="@drawable/petita_right_arrow"
+    	        android:layout_alignParentRight="true"
+    	        android:layout_centerVertical="true"
+    	        android:contentDescription="@string/right_arrow_desc"/>
     	
     	</RelativeLayout>
     	

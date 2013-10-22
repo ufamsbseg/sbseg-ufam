@@ -58,6 +58,12 @@ public class ListViewAdapterSecondScreen extends BaseAdapter{
 			        ViewGroup.LayoutParams.WRAP_CONTENT));
 			text.setText(author.getName() + "  " + "(" + author.getAffiliation() + "," + author.getCountry() + ")"); //preenche o text view
 			layoutTechSession.addView(text); //insere o text view
+			TextView divider = new TextView(context); //cria um texto view
+			divider.setLayoutParams(new ViewGroup.LayoutParams( //daqui até as próximas duas linhas, é feito o layout do text view
+			        ViewGroup.LayoutParams.MATCH_PARENT,
+			        ViewGroup.LayoutParams.WRAP_CONTENT));
+			divider.setHint("-----------------------------------------------------------"); //preenche o text view
+			layoutTechSession.addView(divider);
 		}
 		
 		return rowView;
