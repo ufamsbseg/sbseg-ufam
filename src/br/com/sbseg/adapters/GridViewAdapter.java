@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import android.app.Activity;
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -38,6 +39,7 @@ public class GridViewAdapter extends BaseAdapter{
 	  } 
 	
 	  text.setText(data.get(position));
+	 // Log.e("teste",""+ data);
 	  image.setImageBitmap(null);
 	  return row;
 	

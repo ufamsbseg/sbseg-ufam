@@ -3,7 +3,9 @@ package br.com.sbseg.adapters;
 
 import java.util.ArrayList;
 
+import android.R.color;
 import android.content.Context;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -52,10 +54,12 @@ public class ListViewAdapterKeynotes extends BaseAdapter{
 			rowView.setClickable(true);
 			String newString = teste.replace("*","");
 			textView.setText(newString);
+			
 		}
 		else{
 			String[] dados = teste.split("%");
 			textView.setText(dados[3]);
+			textView.setBackgroundColor(Color.TRANSPARENT);
 		}
 			
 		

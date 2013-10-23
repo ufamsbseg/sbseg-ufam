@@ -46,9 +46,10 @@ public class KeynotesMainActivity extends Activity {
        
       
       listviewKeynotes = (ListView) findViewById(R.id.list_view);
-      listviewKeynotes.setAdapter(adapter);
       
-      //  XmlParseTask();
+      listviewKeynotes.setAdapter(adapter);
+     // listviewKeynotes.setOnFocusChangeListener(l);
+     //  XmlParseTask();
        keyNotesParseTask();  
        
     }

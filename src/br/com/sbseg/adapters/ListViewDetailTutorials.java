@@ -2,6 +2,7 @@ package br.com.sbseg.adapters;
 
 import java.util.ArrayList;
 
+import android.R.color;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -44,6 +45,7 @@ public class ListViewDetailTutorials extends BaseAdapter {
 		TextView text = (TextView) rowView.findViewById(R.id.textView1);
 		
 		text.setText(strings.get(position));
+		text.setBackgroundColor(color.transparent);
 		
 		rowView.setClickable(true);
 		

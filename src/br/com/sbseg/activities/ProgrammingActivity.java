@@ -35,7 +35,7 @@ public class ProgrammingActivity extends Activity {
         
         ActionBar ab = getActionBar();
         ab.setTitle("SBSeg");
-        ab.setSubtitle("Calend�rio");
+        ab.setSubtitle("Calendário");
         
         context = this;
         
@@ -43,13 +43,13 @@ public class ProgrammingActivity extends Activity {
         
         final PagerTabStrip strip = PagerTabStrip.class.cast(vpDays.findViewById(R.id.pagerTabStrip));
 		strip.setDrawFullUnderline(false);
-		strip.setTabIndicatorColor(Color.parseColor("#5F9EA0"));
+		strip.setTabIndicatorColor(Color.parseColor("#e09e3f"));
 		strip.setBackgroundColor(Color.parseColor("#F8F8FF"));
-		strip.setTextColor(Color.parseColor("#2F4F4F"));
+		strip.setTextColor(Color.parseColor("#e09e3f"));
 		strip.setNonPrimaryAlpha(0.3f);
-		strip.setTextSpacing(25);
-		strip.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 15);
-		strip.setPadding(0, 20, 0, 20);
+		strip.setTextSpacing(10);
+		strip.setTextSize(TypedValue.COMPLEX_UNIT_SP, 15);
+		strip.setPadding(0, 2, 0, 2);
 		
         
         XmlParseTask();

@@ -89,8 +89,8 @@
            	    
        		    <evento duracao="8:30-10:00">
        		        <nomes>
-       		            <nome tag="ST1">Sessão Técnica 1</nome>
-       		            <nome tag="ST2">Sessão Técnica 2</nome>
+       		            <nome tag="ST1">Sessões Técnicas</nome>
+       		            <!--  <nome tag="ST2">Sessão Técnica</nome>-->
        		        </nomes>
        		    </evento>
        		    
@@ -102,13 +102,13 @@
             	
        		    <evento duracao="10:30-11:30">
             	    <nomes>
-            	        <nome tag="PI1">Palestra Internacional 1</nome>
+            	        <nome tag="PI1">Palestra Internacional</nome>
             	    </nomes>
             	</evento>
             	
        		    <evento duracao="11:30-12:30">
             	    <nomes>
-            	        <nome tag="PI2">Palestra Internacional 2</nome>
+            	        <nome tag="PI2">Palestra Internacional</nome>
             	    </nomes>
             	</evento>
             	
@@ -120,8 +120,8 @@
             	
        		    <evento duracao="14:30-16:00">
             	    <nomes>
-            	        <nome tag="ST3">Sessaão Técnica 3</nome>
-            	         <nome tag="ST4">Sessão Técnica 4</nome>
+            	        <nome tag="ST2">Sessões Técnicas</nome>
+            	        <!--   <nome tag="ST4">Sessão Técnica 4</nome>-->
             	    </nomes>
             	</evento>
             	
@@ -133,7 +133,7 @@
             	
        		    <evento duracao="16:30-18:30">
             	    <nomes>
-            	        <nome tag="PI3">Palestra Internacional 3</nome>
+            	        <nome tag="PI3">Palestra Internacional</nome>
             	    </nomes>
             	</evento>
             	
@@ -158,8 +158,8 @@
            	    
        		    <evento duracao="8:30-10:00">
             	    <nomes>
-            	    	<nome tag="ST5">Sessão Técnica 5</nome>
-            	    	<nome tag="ST6">Sessão Técnica 6</nome>
+            	    	<nome tag="ST3">Sessões Técnicas</nome>
+            	    	<!--  <nome tag="ST6">Sessão Técnica 6</nome>-->
             	    </nomes>
            	    </evento>
            	    
@@ -171,7 +171,7 @@
            	    
        		    <evento duracao="10:30-11:30">
             	    <nomes>
-            	    	<nome tag="PN1">Palestra Nacional 1</nome>
+            	    	<nome tag="PN1">Palestra Nacional</nome>
             	    </nomes>
            	    </evento>
            	    
@@ -183,8 +183,8 @@
        		
        		    <evento duracao="14:30-16:00">
             	    <nomes>
-            	    	<nome tag="ST7">Sessão Técnica 7</nome>
-            	    	<nome tag="ST8">Sessão Técnica 8</nome>
+            	    	<nome tag="ST4">Sessões Técnicas</nome>
+            	    	<!--  <nome tag="ST8">Sessão Técnica 8</nome>-->
             	    </nomes>
            	    </evento>
            	    
@@ -196,7 +196,7 @@
            	    
        		    <evento duracao="16:30-18:30">
             	    <nomes>
-            	    	<nome tag="PI4">Palestra Internacional 4</nome>
+            	    	<nome tag="PI4">Palestra Internacional</nome>
             	    </nomes>
            	    </evento>
            	    

@@ -67,7 +67,7 @@ public class ViewPagerAdapter extends PagerAdapter{
 					
 					ArrayList<String> listaStrings = days.get(position);
 					char c = (listaStrings.get(position2)).charAt(1);
-						//Log.e("teste",""+listaStrings.get(position2));
+//						Log.e("teste",""+listaStrings.get(position2));
 //					
 					//TechnicalSession objectSession = (TechnicalSession)lvCalendar.getItemAtPosition(itemPosition);
 					
