@@ -28,7 +28,6 @@
             android:gravity="center_horizontal|center_vertical"
             android:padding="5dp"
             android:text="Item do ListView"
-            android:textAlignment="center"
             android:textSize="10dp"
             android:textStyle="bold" />
 

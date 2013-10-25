@@ -2,7 +2,7 @@
 <technical_sessions identifier="day_1">
 	<technical_session>
 		<date>11/11/2013</date>
-		<id>WTICG1</id>
+		<id>WTICG-1</id>
 		<weekday>Segunda-feira</weekday>
 		<beginning>09:00</beginning>
 		<end>10:00</end>
@@ -76,7 +76,7 @@
 	</technical_session>
 	<technical_session>
 		<date>11/11/2013</date>
-		<id>WTICG2</id>
+		<id>WTICG-2</id>
 		<weekday>Segunda-feira</weekday>
 		<beginning>10:30</beginning>
 		<end>12:30</end>
@@ -169,7 +169,7 @@
 	</technical_session>
 	<technical_session>
 		<date>11/11/2013</date>
-		<id>WTICG3</id>
+		<id>WTICG-3</id>
 		<weekday>Segunda-feira</weekday>
 		<beginning>14:30</beginning>
 		<end>16:00</end>
@@ -241,7 +241,7 @@
 	<!-- WGID -->
 	<technical_session>
 		<date>11/11/2013</date>
-		<id>WGID1</id>
+		<id>WGID-1</id>
 		<weekday>Segunda-feira</weekday>
 		<beginning>08:30</beginning>
 		<end>10:00</end>
@@ -332,7 +332,7 @@
 	</technical_session>
 	<technical_session>
 		<date>11/11/2013</date>
-		<id>WGID2</id>
+		<id>WGID-2</id>
 		<weekday>Segunda-feira</weekday>
 		<beginning>10:30</beginning>
 		<end>12:30</end>
@@ -386,7 +386,7 @@
 	</technical_session>
 	<technical_session>
 		<date>11/11/2013</date>
-		<id>WGID3</id>
+		<id>WGID-3</id>
 		<weekday>Segunda-feira</weekday>
 		<beginning>14:30</beginning>
 		<end>16:00</end>
@@ -463,7 +463,7 @@
 	<!-- /WGID -->
 	<technical_session>
 		<date>14/11/2013</date>
-		<id>WFC1</id>
+		<id>WFC-1</id>
 		<weekday>Quinta-feira</weekday>
 		<beginning>08:30</beginning>
 		<end>10:00</end>
@@ -535,7 +535,7 @@
 	<!-- *** -->
 	<technical_session>
 		<date>14/11/2013</date>
-		<id>WFC2</id>
+		<id>WFC-2</id>
 		<weekday>Quinta-feira</weekday>
 		<beginning>10:30</beginning>
 		<end>12:30</end>
@@ -586,7 +586,7 @@
 	</technical_session>
 	<technical_session>
 		<date>14/11/2013</date>
-		<id>WFC3</id>
+		<id>WFC-3</id>
 		<weekday>Quinta-feira</weekday>
 		<beginning>14:30</beginning>
 		<end>16:00</end>
@@ -652,7 +652,7 @@
 	</technical_session>
 	<technical_session>
 		<date>14/11/2013</date>
-		<id>WFC4</id>
+		<id>WFC-4</id>
 		<weekday>Quinta-feira</weekday>
 		<beginning>16:30</beginning>
 		<end>17:30</end>

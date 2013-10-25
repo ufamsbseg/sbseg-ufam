@@ -11,6 +11,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
@@ -27,21 +28,30 @@ public class SessoesTecnicasActivity extends Activity {
 	private ListView techSessions;
 	private ListViewAdapterSessions adapter;
 	public Context context;
-	private ArrayList<TechnicalSession> techSessionList;
+	private ArrayList<TechnicalSession> techSessionList; 
+	public static String tag;
 	
 	@Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_sessions);
+        //Recuperando a tag queu foi passada pela tela principal
+        //Essa tag é usada para ajustar o foco
+        Intent intentViewPager = getIntent();
+        String tagAuxString = intentViewPager.getStringExtra("tag");
+        String[] tagAuxSplit = tagAuxString.split("#");
+        tag = tagAuxSplit[0].replace("*","");
         
+        Log.e("INTEEEENT", ""+tag);
         context = this;
     
-        adapter = new ListViewAdapterSessions(this);
+        adapter = new ListViewAdapterSessions(this,tag);
         
         techSessions = (ListView) findViewById(R.id.list_view);
-        techSessions.setAdapter(adapter);
+        techSessions.setAdapter(adapter); //adjustar o foco aqui.
         
         parseTechnicalSession();
+        
         
         techSessions.setOnItemClickListener(new OnItemClickListener(){ //Esse método é usado para pegar um item da lista que foi escolhido pelo usuário.
 			
@@ -87,8 +97,30 @@ public class SessoesTecnicasActivity extends Activity {
 				super.onPostExecute(result);				
 				
 				adapter.setData(techSessionList); //Seta no adapter o tipo de dado que o mesmo irá trabalhar.
+				//added para testar o foco
+				int counter = 0; //usado para encontrar a posição da view na listView
+				short flag = 0; //Usado para indicar se o grupo foi encontrado
+				for(TechnicalSession techS : techSessionList){
+					Log.e("Loop Status", "Entrando no foreach");
+					counter++;
+					Log.e("counter", ""+counter);
+					String tagAuxString = techS.getId();
+					String[] tagAux = tagAuxString.split("-");
+					String tagClass = tagAux[0];
+					Log.e("tag no foreach",""+tag);
+					Log.e("tagClass no foreach",""+tagClass);
+					if(tag.equals(tagClass)){
+						techSessions.setSelection(counter);
+						flag = 1;
+					}
+					if(flag != 0) break;
+					
+				}  //TRABALHAR NESSA PARTE AQUI!!!!!!! XD
+				//			echSessions.setSelection(2);
+				
 			}
 			
 		}.execute();
+	
 	}
 }

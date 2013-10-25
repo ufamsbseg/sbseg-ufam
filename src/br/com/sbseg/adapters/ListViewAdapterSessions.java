@@ -18,14 +18,16 @@ public class ListViewAdapterSessions extends BaseAdapter{
 	private ArrayList<TechnicalSession> techSessionList = new ArrayList<TechnicalSession>();
 	private Context context;
 	private LayoutInflater inflater;
+	private String tag;
 	private View rowView = null;
 	
 	public int getCount() { //Pega o tamanho da lista
 		return techSessionList.size();
 	}
 	
-	public ListViewAdapterSessions(Context context) { //Salva o context da activity que chamou esse adapter
+	public ListViewAdapterSessions(Context context, String tag) { //Salva o context da activity que chamou esse adapter
 		this.context = context;
+		this.tag = tag;
 	}
 
 	public Object getItem(int position) { //Pega um item da lista que foi jogada nesse Adapter
@@ -47,7 +49,10 @@ public class ListViewAdapterSessions extends BaseAdapter{
 		String dateVerifierAnterior = (position != 0 ? techSessionList.get(position-1).getDate() : null);
 		String dateVerifierAtual = techSessionList.get(position).getDate();
 		
-		if(position == 0 || !dateVerifierAtual.equalsIgnoreCase(dateVerifierAnterior)){
+		String TimeVerifierAnterior = (position != 0 ? techSessionList.get(position-1).getBeginning() : null); //added
+		String TimeVerifierAtual = techSessionList.get(position).getBeginning(); //added
+																								//added
+		if(position == 0 || !dateVerifierAtual.equalsIgnoreCase(dateVerifierAnterior) || !TimeVerifierAtual.equalsIgnoreCase(TimeVerifierAnterior)){
 			
 			TextView text = (TextView)rowView.findViewById(R.id.infoDate);
 			text.setBackgroundColor(Color.parseColor("#e09e3f"));
@@ -58,6 +63,8 @@ public class ListViewAdapterSessions extends BaseAdapter{
 		TextView infoSession = (TextView) rowView.findViewById(R.id.infoSession);
 		
 		infoSession.setText(techSessionList.get(position).getId() + ": " + techSessionList.get(position).getName());
+		
+		
 		
 		return rowView;
 	}

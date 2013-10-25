@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -28,7 +29,7 @@ public class ViewPagerAdapter extends PagerAdapter{
 	private ListViewAdapterProgramming lvaProgramming;
 	private ListView lvCalendar; 
 	private static final String[] titles ={"Segunda-Feira", "Terça-Feira", "Quarta-Feira", "Quinta-Feira"};
-//	private Intent intent = new Intent(context, WorkshopActivity.class);
+	
 	
 	
 	public ViewPagerAdapter(Context context) {
@@ -65,8 +66,10 @@ public class ViewPagerAdapter extends PagerAdapter{
 				
 				public void onItemClick(AdapterView<?>parent, View view, int position2, long id){
 					
+					
 					ArrayList<String> listaStrings = days.get(position);
 					char c = (listaStrings.get(position2)).charAt(1);
+					String tag = listaStrings.get(position2); //usada para ajudar no foco das listas de eventos.
 //						Log.e("teste",""+listaStrings.get(position2));
 //					
 					//TechnicalSession objectSession = (TechnicalSession)lvCalendar.getItemAtPosition(itemPosition);
@@ -86,6 +89,7 @@ public class ViewPagerAdapter extends PagerAdapter{
 					switch (c){
 						case  'W':
 							Intent intent0 = new Intent(context, WorkshopActivity.class);
+							intent0.putExtra("tag", tag); //added para teste
 							context.startActivity(intent0);
 							break;
 						case  'P':
@@ -94,6 +98,9 @@ public class ViewPagerAdapter extends PagerAdapter{
 							break;
 						case  'S':
 							Intent intent2 = new Intent(context, SessoesTecnicasActivity.class);
+							intent2.putExtra("tag", tag);
+						//	Log.e("STRIIIIIING", ""+listaStrings.get(position2));
+						//	Log.e("TAAAAAAAG", ""+tag);
 							context.startActivity(intent2);
 							break;
 						case  'M':

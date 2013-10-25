@@ -2,7 +2,7 @@
 <technical_sessions identifier="day_1">
 	<technical_session>
 		<date>12/11/2013</date> 
-		<id>ST1.1</id>
+		<id>ST1-1</id>
 		<weekday>Terça-feira</weekday>
 		<beginning>08:30</beginning>
 		<end>10:00</end>
@@ -125,7 +125,7 @@
 	</technical_session>
 	<technical_session>
 		<date>12/11/2013</date>
-		<id>ST1.2</id>
+		<id>ST1-2</id>
 		<weekday>Terça-feira</weekday>
 		<beginning>08:30</beginning>
 		<end>10:00</end>
@@ -244,7 +244,7 @@
 	<!-- ****** -->
 	<technical_session>
 		<date> 12/11/2013</date>
-		<id>ST3</id>
+		<id>ST2-1</id>
 		<weekday>Terça-feira</weekday>
 		<beginning>16:30</beginning>
 		<end>17:30</end>
@@ -315,7 +315,7 @@
 	</technical_session>
 	<technical_session>
 		<date>12/11/2013</date>
-		<id>ST4</id>
+		<id>ST3-1</id>
 		<weekday>Terça-feira</weekday>
 		<beginning>17:30</beginning>
 		<end>18:30</end>
@@ -449,7 +449,7 @@
 	<!-- ****** -->
 	<technical_session>
 		<date>13/11/2013</date>
-		<id>ST3</id>
+		<id>ST4-1</id>
 		<weekday>Quarta-feira</weekday>
 		<beginning>08:30</beginning>
 		<end>10:00</end>
@@ -557,7 +557,7 @@
 	</technical_session>
 	<technical_session>
 		<date>13/11/2013</date>
-		<id>ST6</id>
+		<id>ST4-2</id>
 		<weekday>Quarta-feira</weekday>
 		<beginning>08:30</beginning>
 		<end>10:00</end>
@@ -671,7 +671,7 @@
 	<!-- ****** -->
 	<technical_session>
 		<date>13/11/2013</date>
-		<id>ST7</id>
+		<id>ST5-1</id>
 		<weekday>Quarta-feira</weekday>
 		<beginning>14:30</beginning>
 		<end>16:00</end>
@@ -805,7 +805,7 @@
 	<!-- ***** -->
 	<technical_session>
 		<date>13/11/2013</date>
-		<id>ST8</id>
+		<id>ST4-2</id>
 		<weekday>Quarta-feira</weekday>
 		<beginning>14:30</beginning>
 		<end>16:00</end>
