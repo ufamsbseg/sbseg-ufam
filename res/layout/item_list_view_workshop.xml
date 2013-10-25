@@ -30,8 +30,8 @@
     	        android:id="@+id/apresentacao"
     	        android:layout_width="50dp"
     	        android:layout_height="50dp"
-    	        android:src="@drawable/apresentacao"
-    	        android:contentDescription="@string/apresentacao_desc"/>
+    	        android:src="@drawable/documento"
+    	        android:contentDescription="@string/documento_desc"/>
      	
     		<TextView
     	    	android:id="@+id/infoSession"

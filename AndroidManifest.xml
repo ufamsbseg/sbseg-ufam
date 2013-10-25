@@ -29,7 +29,9 @@
         </activity>
         
         <activity
-            android:name=".activities.Tutorials">
+            android:name=".activities.Tutorials"
+            android:label="@string/stringMinicursos"
+            android:icon="@drawable/caderno">
         </activity>
         
         <activity
@@ -37,23 +39,33 @@
         </activity>
         
         <activity
-            android:name=".activities.DetailTutorials">
+            android:name=".activities.DetailTutorials"
+            android:label="@string/stringMinicurso"
+            android:icon="@drawable/caderno">
         </activity>
         
         <activity
-            android:name=".activities.KeynotesMainActivity">
+            android:name=".activities.KeynotesMainActivity"
+            android:label="@string/palestrasString"
+            android:icon="@drawable/apresentacao">
         </activity>
         
         <activity
-            android:name="br.com.sbseg.activities.SessoesTecnicasActivity">
+            android:name="br.com.sbseg.activities.SessoesTecnicasActivity"
+            android:label="@string/sessoesString"
+            android:icon="@drawable/documento">
         </activity>
         
         <activity
-            android:name="br.com.sbseg.activities.TechSessionActivity">
+            android:name="br.com.sbseg.activities.TechSessionActivity"
+            android:label="@string/papersString"
+            android:icon="@drawable/documento">
         </activity>
         
         <activity
-            android:name="br.com.sbseg.activities.TelaKeynoteMainActivity">
+            android:name="br.com.sbseg.activities.TelaKeynoteMainActivity"
+            android:label="@string/palestranteString"
+            android:icon="@drawable/apresentacao">
         </activity>
         
         <activity
@@ -61,11 +73,15 @@
         </activity>
         
         <activity
-            android:name="br.com.sbseg.activities.WorkshopActivity">
+            android:name="br.com.sbseg.activities.WorkshopActivity"
+            android:label="@string/stringWorkshops"
+            android:icon="@drawable/documento">
         </activity>
         
         <activity
-            android:name="br.com.sbseg.activities.WorkshopSecondActivity">
+            android:name="br.com.sbseg.activities.WorkshopSecondActivity"
+            android:label="@string/stringWorkshopSegundaTela"
+            android:icon="@drawable/documento">
         </activity>
         
         

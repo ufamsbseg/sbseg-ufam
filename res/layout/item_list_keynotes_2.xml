@@ -22,7 +22,6 @@
             android:layout_weight="0.92"
             android:background="#e09e3f"
             android:gravity="center_vertical|center_horizontal"
-            android:textAlignment="center"
             android:textSize="10dp"
             android:textStyle="bold" />
 
