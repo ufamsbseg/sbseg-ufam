@@ -74,7 +74,7 @@
         
         <activity
             android:name="br.com.sbseg.activities.WorkshopActivity"
-            android:label="@string/stringWorkshops"
+            android:label="@string/stringWorkshop"
             android:icon="@drawable/documento">
         </activity>
         
