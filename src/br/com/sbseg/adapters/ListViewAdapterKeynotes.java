@@ -3,13 +3,13 @@ package br.com.sbseg.adapters;
 
 import java.util.ArrayList;
 
-import android.R.color;
 import android.content.Context;
 import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 import br.com.sbseg.R;
 
@@ -20,9 +20,12 @@ public class ListViewAdapterKeynotes extends BaseAdapter{
 	private Context context;
 	private LayoutInflater inflater;
 	private TextView textView;
+	private TextView textView2;
 //	private ViewGroup viewGroup= null;
 	private View rowView = null;
-
+	private View rowView2 = null;
+	private int idImage;
+	
 	public int getCount() {
 		return StringParaColocarNoTexView.size();
 	}
@@ -45,8 +48,12 @@ public class ListViewAdapterKeynotes extends BaseAdapter{
 		inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 		
 		rowView = inflater.inflate(R.layout.item_list_keynotes, viewGroup, false);
+		rowView2 = inflater.inflate(R.layout.item_list_keynotes_2, viewGroup, false);
 		
 		textView = (TextView)rowView.findViewById(R.id.IdTextView);
+		textView2 = (TextView)rowView2.findViewById(R.id.textview_keynoteitem2);
+		ImageView imgPalestrante = (ImageView)rowView2.findViewById(R.id.iconePalestrante);
+		
 		String teste = StringParaColocarNoTexView.get(position);
 		char c = teste.charAt(0);
 		
@@ -54,17 +61,20 @@ public class ListViewAdapterKeynotes extends BaseAdapter{
 			rowView.setClickable(true);
 			String newString = teste.replace("*","");
 			textView.setText(newString);
+			return rowView;
 			
 		}
 		else{
 			String[] dados = teste.split("%");
-			textView.setText(dados[3]);
-			textView.setBackgroundColor(Color.TRANSPARENT);
-		}
+			textView2.setText(dados[3]);
+			imgPalestrante.setImageResource(Integer.parseInt(dados[4]));
 			
-		
-		
-		return rowView;
+			textView2.setBackgroundColor(Color.TRANSPARENT);
+			
+			View divider = (View) rowView2.findViewById(R.id.dividerKeynote);
+			divider.setVisibility(View.VISIBLE);
+			return rowView2;
+		}
 	}
 	
 	@Override

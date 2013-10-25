@@ -122,6 +122,7 @@ public class KeynotesMainActivity extends Activity {
     
     public ArrayList<String> addKeynote(ArrayList<Keynote> listXML){
     	ArrayList<String> listaStringTextView = new ArrayList<String>();
+    	int idImage;
     	String DiaData;
     	String Horario;
     	String dadosSepeaker;
@@ -132,7 +133,8 @@ public class KeynotesMainActivity extends Activity {
     			Horario =  "*" + session.getStart() + "-" + session.getEnd();
     			listaStringTextView.add(Horario);
     			for(Palestrante palestrante: session.getListSpeaker()){
-    				dadosSepeaker = keynote.getId()+ "%" + session.getId() + "%" + palestrante.getId()+ "%" + palestrante.getName() + "," + palestrante.getFiliation() + "," + palestrante.getTalk().getTitle();
+    				idImage = getResources().getIdentifier(palestrante.getPhoto() , "drawable", getPackageName());
+    				dadosSepeaker = keynote.getId()+ "%" + session.getId() + "%" + palestrante.getId()+ "%" + palestrante.getName() + "," + palestrante.getFiliation() + "," + palestrante.getTalk().getTitle() + "%"+ idImage;
     				listaStringTextView.add(dadosSepeaker);
     				
     				dadosSepeaker ="";

@@ -30,21 +30,15 @@ public class TelaKeynoteMainActivity extends Activity {
 		TextView biografiaSpeaker = (TextView)findViewById(R.id.IDBiografia);
 		ImageView foto = (ImageView)findViewById(R.id.imagem);
 		
-		HashMap<String,Integer> hashMap = new HashMap<String, Integer>();
-		hashMap.put("antonio",R.drawable.antonio);
-    	hashMap.put("davidott",R.drawable.davidott);
-    	hashMap.put("georgecox",R.drawable.georgecox);
-    	hashMap.put("matt",R.drawable.matt);
-    	hashMap.put("fabianmonrose",R.drawable.fabianmonrose);
-    	
+    	int idImagem = getResources().getIdentifier(photo , "drawable", getPackageName());
 		
 		
 		if(photo==null){
 			foto.setImageResource(R.drawable.ic_launcher);
 		}
 		else{
-			
-			foto.setImageResource(hashMap.get(photo));
+		
+			foto.setImageResource(idImagem);
 		}
 		
 		nomeSpeaker.setText(speaker.getName());
