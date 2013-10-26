@@ -63,7 +63,8 @@ public class ListViewAdapterSessions extends BaseAdapter{
 		TextView infoSession = (TextView) rowView.findViewById(R.id.infoSession);
 		
 		infoSession.setText(techSessionList.get(position).getId() + ": " + techSessionList.get(position).getName());
-		
+		View divider = (View)rowView.findViewById(R.id.dividerSessions);
+		divider.setVisibility(View.VISIBLE);
 		
 		
 		return rowView;

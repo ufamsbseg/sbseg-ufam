@@ -30,8 +30,8 @@
     	        android:id="@+id/apresentacao"
     	        android:layout_width="50dp"
     	        android:layout_height="50dp"
-    	        android:src="@drawable/documento"
-    	        android:contentDescription="@string/documento_desc"/>
+    	        android:src="@drawable/apresentacao"
+    	        android:contentDescription="@string/apresentacao_desc"/>
      	
     		<TextView
     	    	android:id="@+id/infoSession"
@@ -55,11 +55,13 @@
     	
     	</RelativeLayout>
     	
-     	<TextView 
-        	android:id="@+id/divider4"
-        	android:layout_width="fill_parent"
-        	android:layout_height="wrap_content"
-        	android:textStyle="bold"
-        	android:hint="@string/divider"/>  
+     	<View
+        android:id="@+id/dividerWorkshop"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#e09e3f"
+        android:visibility="invisible" />
         
 </LinearLayout>

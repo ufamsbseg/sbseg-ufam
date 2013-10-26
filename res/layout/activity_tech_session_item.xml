@@ -8,12 +8,7 @@
     
     <!-- Esse xml contem o item para o list view da segunda activity -->
     <!-- Esse TextView é apenas para exibir o horário e o nome do paper. Os autores do paper são alocados dinamicamente . -->
-   <TextView 
-        android:id="@+id/divider2"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:textStyle="bold"
-        android:hint="@string/divider"/>
+   
    
     <TextView 
         android:id="@+id/view_text"
@@ -23,13 +18,15 @@
         android:background="#f4f4f4"
         android:textColor="#3a3a3a"
         android:text="@string/infoText" />
-
-     <TextView 
-        android:id="@+id/divider"
+    
+    <View
+        android:id="@+id/dividerSessionsItem"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:textStyle="bold"
-        android:hint="@string/divider"/>
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#e09e3f"
+        android:visibility="visible" />
     
 
 </LinearLayout>

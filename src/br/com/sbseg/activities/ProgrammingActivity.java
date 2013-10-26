@@ -33,9 +33,9 @@ public class ProgrammingActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.programming_layout);
           //O action bar serve para setar o nome da aplicação na barra superior do app
-        ActionBar ab = getActionBar();
-        ab.setTitle("SBSeg");
-        ab.setSubtitle("Calendário");
+//        ActionBar ab = getActionBar();
+//        ab.setTitle("SBSeg");
+//        ab.setSubtitle("Calendário");
         
         context = this;
         
