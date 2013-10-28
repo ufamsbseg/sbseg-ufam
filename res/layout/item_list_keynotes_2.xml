@@ -17,8 +17,8 @@
 
         <TextView
             android:id="@+id/textview_keynoteitem2"
-            android:layout_width="120dp"
-            android:layout_height="30dp"
+            android:layout_width="match_parent"
+       		android:layout_height="wrap_content"
             android:layout_weight="0.92"
             android:background="#f4f4f4"
             android:gravity="center"

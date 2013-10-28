@@ -6,8 +6,8 @@
     
     <TextView
             android:id="@+id/text_infor1"
-            android:layout_width="fill_parent"
-            android:layout_height="0dp"
+            android:layout_width="match_parent"
+       		android:layout_height="wrap_content"
             android:layout_weight="0.92"
             android:background="#e09e3f"
             android:gravity="center_horizontal|center_vertical"
@@ -22,8 +22,7 @@
 		    android:background="#e09e3f"
 		    android:visibility="invisible"
 		    android:layout_marginLeft="10dp"
-		    android:layout_marginRight="10dp"
-		/>
+		    android:layout_marginRight="10dp"/>
     
     
 
