@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 import br.com.sbseg.R;
 
@@ -17,7 +18,11 @@ public class ListViewTutorials extends BaseAdapter{
 	private Context context;
 	private LayoutInflater inflater;
 	//private ViewGroup viewGroup= null;
+	TextView text1;
+	TextView text2;
 	private View rowView = null;
+	private View rowView2 = null;
+	private int idImage;
 
 	public int getCount() {
 		return strings.size();
@@ -43,21 +48,31 @@ public class ListViewTutorials extends BaseAdapter{
 		inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 		
 		rowView = inflater.inflate(R.layout.list_view_tutorials, viewGroup, false);
+		rowView2 = inflater.inflate(R.layout.list_view_tutorials_2, viewGroup, false);
 		
-		TextView text = (TextView) rowView.findViewById(R.id.textView1);
+		text1 = (TextView) rowView.findViewById(R.id.IdTextView);
+		text2 = (TextView) rowView2.findViewById(R.id.IdTextView2);
+		ImageView imgPalestrante = (ImageView)rowView2.findViewById(R.id.iconeMinicurso);
 	
 		String stringTeste = strings.get(position);
 		char firstChar = stringTeste.charAt(0);
 		
-		if(firstChar == ' ')
+		if(firstChar == '*'){
 			rowView.setClickable(true);
-		
-		else{
-			text.setBackgroundColor(Color.TRANSPARENT);
+			String newString = stringTeste.replace("*","");
+			text1.setText(newString);
+			return rowView;
 		}
-		text.setText(stringTeste);
-		
-		return rowView;
+		else{
+			text2.setText(stringTeste);
+			imgPalestrante.setImageResource(R.drawable.caderno);
+			
+			text2.setBackgroundColor(Color.TRANSPARENT);
+			
+			View divider = (View) rowView2.findViewById(R.id.divider);
+			divider.setVisibility(View.VISIBLE);
+			return rowView2;
+		}
 	}
 	
 	@Override

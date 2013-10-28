@@ -47,7 +47,9 @@ public class DetailTutorials extends Activity {
 	private ArrayList<String> filterDetails(Tutorial tutorial){
 		ArrayList<String> arrayStrings = new ArrayList<String>();
 		
-		arrayStrings.add("Descrição: " + tutorial.getDescription());
+		arrayStrings.add(tutorial.getDescription());
+		arrayStrings.add("");
+		arrayStrings.add("Autores:");
 		
 		for (Speaker speaker : tutorial.getSpeakers()) {
 			arrayStrings.add(speaker.getName() + ", " + speaker.getAffiliation());

@@ -111,7 +111,8 @@ public class Tutorials extends Activity {
 		String auxDate = arrayTutorials.get(0).getDay().getDate();
 		String auxHorary = arrayTutorials.get(0).getPeriod().getBeginning();
 		
-		strings.add(" " + arrayTutorials.get(0).getDay().getDayWeek() + ", " + auxDate + ", " + auxHorary + " - " + arrayTutorials.get(0).getPeriod().getEnd());
+		strings.add("*" + arrayTutorials.get(0).getDay().getDayWeek() + ", " + auxDate);
+		strings.add("*" + auxHorary + " - " + arrayTutorials.get(0).getPeriod().getEnd());
 		
 		for (Tutorial tutorial : arrayTutorials) {
 			if(!auxDate.equalsIgnoreCase(tutorial.getDay().getDate())){
@@ -119,8 +120,8 @@ public class Tutorials extends Activity {
 				auxDate = tutorial.getDay().getDate();
 				auxHorary = tutorial.getPeriod().getBeginning();
 				
-				strings.add(" ");
-				strings.add(" " + tutorial.getDay().getDayWeek() + ", " + auxDate + ", " + auxHorary + ", " + tutorial.getPeriod().getEnd());
+				strings.add("*" + tutorial.getDay().getDayWeek() + ", " + auxDate);
+				strings.add("*" + auxHorary + ", " + tutorial.getPeriod().getEnd());
 				
 			}
 			
@@ -128,12 +129,10 @@ public class Tutorials extends Activity {
 				
 				auxHorary = tutorial.getPeriod().getBeginning();
 				
-				strings.add(" ");
-				strings.add(" " + tutorial.getDay().getDayWeek() + ", " + auxDate + ", " + auxHorary + ", " + tutorial.getPeriod().getEnd());
+				strings.add("*" + auxHorary + ", " + tutorial.getPeriod().getEnd());
 			}
 			
 			strings.add(tutorial.getId() + ": " + tutorial.getTheme());
-			
 		}
 		
 		return strings;
