@@ -9,9 +9,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#e09e3f"
-        android:textSize="10dp"
+        android:textSize="12sp"
         android:textStyle="bold"
-        android:gravity="center_vertical|center_horizontal"/>
+        android:fontFamily="PetitaMedium"
+		android:textColor="#ffffff"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_gravity="center"/>
+    
 
    
 

@@ -11,25 +11,28 @@
 
         <ImageView
             android:id="@+id/iconePalestrante"
-            android:layout_width="49dp"
+            android:layout_width="40dp"
             android:layout_height="40dp"
             android:src="@drawable/apresentacao" />
 
         <TextView
             android:id="@+id/textview_keynoteitem2"
             android:layout_width="120dp"
-            android:layout_height="26dp"
+            android:layout_height="30dp"
             android:layout_weight="0.92"
-            android:background="#e09e3f"
-            android:gravity="center_vertical|center_horizontal"
-            android:textSize="10dp"
-            android:textStyle="bold" />
-
+            android:background="#f4f4f4"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:fontFamily="PetitaMedium"
+		    android:textColor="#3a3a3a"
+            android:textSize="12sp"/>
+           
         <ImageView
             android:id="@+id/imageView2"
-            android:layout_width="27dp"
-            android:layout_height="25dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             android:layout_weight="0.00"
+            android:layout_gravity="center"
             android:gravity="center_vertical|center_horizontal"
             android:src="@drawable/petita_right_arrow" />
 
@@ -37,11 +40,9 @@
     
     <View
         android:id="@+id/dividerKeynote"
-        android:layout_width="295dp"
+        android:layout_width="fill_parent"
         android:layout_height="1dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:background="#1578736E"
+        android:background="#e09e3f"
         android:visibility="invisible" />
 
 </LinearLayout>

@@ -7,6 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#f4f4f4"
     tools:context=".TelaKeynoteMainActivity" >
 
    <ScrollView
@@ -14,7 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
    
-palestrasStringpalestrasString
+
    <LinearLayout
        android:layout_width="match_parent"
        android:layout_height="436dp"
@@ -39,54 +40,78 @@ palestrasStringpalestrasString
 	               android:id="@+id/IDNome"
 	               android:layout_width="match_parent"
 	               android:layout_height="wrap_content"
+           		   android:layout_marginLeft="10dp"
+		           android:layout_marginRight="10dp"
+		           android:layout_gravity="center"
            		   android:textStyle="bold"
-	               android:textSize="12sp" />
+           		   android:fontFamily="PetitaMedium"
+		           android:textColor="#3a3a3a"
+	               android:textSize="14sp" />
 	           
 	            <TextView
 		           android:id="@+id/IDFiliacao"
 		           android:layout_width="match_parent"
 		           android:layout_height="wrap_content" 
+		           android:layout_marginLeft="10dp"
+		           android:layout_marginRight="10dp"
            		   android:textStyle="bold"
-		           android:textSize="11sp" />
+           		   android:fontFamily="PetitaMedium"
+		           android:textColor="#3a3a3a"
+		           android:textSize="13sp" />
+	            
+	             <TextView
+		           android:id="@+id/IDTitulo"
+		           android:layout_width="match_parent"
+		           android:layout_height="wrap_content"
+		           android:layout_marginLeft="10dp"
+		           android:layout_marginRight="10dp"
+		           android:fontFamily="PetitaMedium"
+		           android:textColor="#3a3a3a"
+		           android:textSize="12sp"
+		           android:textStyle="bold"/>
+	            
       
 	       	</LinearLayout>
 	       	
        </LinearLayout>
 
-       <TextView
-           android:id="@+id/IDTitulo"
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           
-           android:textSize="10dp"
-           android:textStyle="bold"/>
-
-       <TextView
-           android:layout_width="fill_parent"
-           android:layout_height="1dip"
-		   android:background="#e09e3f"/>
-       		
+        <View
+        android:id="@+id/dividerKeynote1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#e09e3f"
+        android:visibility="invisible" />       		
 
        <TextView
            android:id="@+id/IDResumo"
            android:layout_width="match_parent"
            android:layout_height="wrap_content"
-           
-           android:textSize="10dp"
-           android:textStyle="bold" />
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+           android:fontFamily="PetitaMedium"
+           android:textColor="#3a3a3a"
+           android:textSize="12sp" />
        
-       <TextView
-           android:layout_width="fill_parent"
-           android:layout_height="1dip"
-		   android:background="#e09e3f" />
+       <View
+        android:id="@+id/dividerKeynote2"
+        android:layout_width="295dp"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#e09e3f"
+        android:visibility="invisible" />    
 
        <TextView
            android:id="@+id/IDBiografia"
            android:layout_width="match_parent"
            android:layout_height="wrap_content"
-           
-           android:textSize="10dp"
-           android:textStyle="bold" />
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+           android:fontFamily="PetitaMedium"
+           android:textColor="#3a3a3a"
+           android:textSize="12sp" />
 
    	</LinearLayout>
  	</ScrollView>
