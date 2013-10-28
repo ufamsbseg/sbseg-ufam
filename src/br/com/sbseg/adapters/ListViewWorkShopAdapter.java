@@ -46,7 +46,10 @@ public class ListViewWorkShopAdapter extends BaseAdapter{
 		String dateVerifierAnterior = (position != 0 ? techSessionList.get(position-1).getDate() : null);
 		String dateVerifierAtual = techSessionList.get(position).getDate();
 		
-		if(position == 0 || !dateVerifierAtual.equalsIgnoreCase(dateVerifierAnterior)){
+		String TimeVerifierAnterior = (position != 0 ? techSessionList.get(position-1).getBeginning() : null); //added
+		String TimeVerifierAtual = techSessionList.get(position).getBeginning(); //added
+																								//added
+		if(position == 0 || !dateVerifierAtual.equalsIgnoreCase(dateVerifierAnterior) || !TimeVerifierAtual.equalsIgnoreCase(TimeVerifierAnterior)){
 			
 			TextView text = (TextView)rowView.findViewById(R.id.infoDate);
 			text.setBackgroundColor(Color.parseColor("#e09e3f"));
