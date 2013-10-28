@@ -12,32 +12,33 @@
 
         <ImageView
             android:id="@+id/imagemIcone"
-            android:layout_width="26dp"
-            android:layout_height="match_parent"
-            android:layout_weight="0.12" />
-
-           <!--   android:src="@drawable/ic_launcher" /> -->
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.00"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|center_horizontal"/>
 
         <TextView
             android:id="@+id/text_infor"
-            android:layout_width="216dp"
-            android:layout_height="40dp"
-            android:layout_margin="5dp"
-            android:layout_weight="0.49"
-            android:background="#e09e3f"
+            android:layout_width="match_parent"
+       		android:layout_height="wrap_content"
+            android:layout_weight="0.92"
+            android:background="#f4f4f4"
             android:gravity="center_horizontal|center_vertical"
-            android:padding="5dp"
-            android:text="Item do ListView"
-            
-            android:textSize="10dp"
-            android:textStyle="bold" />
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:fontFamily="PetitaMedium"
+		    android:textColor="#3a3a3a"
+            android:textSize="12sp" />
 
         <ImageView
             android:id="@+id/imagemIcone2"
-            android:layout_width="15dp"
-            android:layout_height="match_parent" />
-
-        <!--     android:src="@drawable/ic_launcher" /> _-->
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_weight="0.00"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|center_horizontal"/>
+        	
     </LinearLayout>
 	
     <View

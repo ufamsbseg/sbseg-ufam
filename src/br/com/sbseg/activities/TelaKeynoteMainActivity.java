@@ -1,9 +1,8 @@
 package br.com.sbseg.activities;
 
-import java.util.HashMap;
-
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import br.com.sbseg.R;
@@ -47,8 +46,14 @@ public class TelaKeynoteMainActivity extends Activity {
 		tituloSpeaker.setTextSize(12);
 		tituloSpeaker.setText("Titulo: " + speaker.getTalk().getTitle());
 		
+		View divider = (View)findViewById(R.id.dividerKeynote1);
+		divider.setVisibility(View.VISIBLE);
+		
 		resumoSpeaker.setTextSize(12);
 		resumoSpeaker.setText("Resumo: " + speaker.getTalk().getResume());
+		
+		View divider1 = (View)findViewById(R.id.dividerKeynote2);
+		divider1.setVisibility(View.VISIBLE);
 		
 		biografiaSpeaker.setTextSize(12);
 		biografiaSpeaker.setText("Biografia: " +speaker.getBiography());

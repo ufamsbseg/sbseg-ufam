@@ -74,8 +74,7 @@ public class ListViewAdapterProgramming extends BaseAdapter {
 			
 			View divider = (View) rowView.findViewById(R.id.divider);
 			divider.setVisibility(View.VISIBLE);
-			
-			textInfor.setBackgroundColor(Color.TRANSPARENT);
+		
 			
 			switch(tag.charAt(0)){
 			case  'W':

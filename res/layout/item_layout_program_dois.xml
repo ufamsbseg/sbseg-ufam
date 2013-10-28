@@ -6,25 +6,23 @@
     
     <TextView
             android:id="@+id/text_infor1"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+       		android:layout_height="wrap_content"
             android:layout_weight="0.92"
             android:background="#e09e3f"
-            android:gravity="center_horizontal"
-            android:padding="5dp"
-            android:text="Item do ListView"
-            android:textSize="10dp"
-            android:textStyle="bold" />
+            android:gravity="center_horizontal|center_vertical"
+            android:fontFamily="PetitaMedium"
+		    android:textColor="#ffffff"
+            android:textSize="12sp" 
+            android:textStyle="bold"/>
     <View
 		    android:id="@+id/divider1"
 		    android:layout_width="fill_parent"
 		    android:layout_height="1dp"
-		    android:background="#1578736E"
+		    android:background="#e09e3f"
 		    android:visibility="invisible"
-		    android:layout_marginLeft="20dp"
-		    android:layout_marginRight="20dp"
-		/>
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginRight="10dp"/>
     
     
 
