@@ -42,7 +42,7 @@ public class KeynotesMainActivity extends Activity {
         Intent intentViewPager = getIntent();
         String tagAuxString = intentViewPager.getStringExtra("tag");
         String[] tagAuxSplit = tagAuxString.split("#");
-        tag = tagAuxSplit[0].replace("*","");
+        tag = tagAuxSplit[0].replace("*","").trim();
         
        context = this;
        
@@ -169,24 +169,20 @@ public class KeynotesMainActivity extends Activity {
     
     
     public int findPosition(ArrayList<String> listString){
-    	int flag=-1;
-    	
-    	ArrayList<String> stringAux = new ArrayList<String>();
     	String aux;
-    	Log.e("Teste",""+tag);
-    	Log.e("Teste","cara, entrei na função findPosition. Legal, né?!");
+    	String []stringTag;
     	for(int i=0;i<listString.size();i++){
-    		Log.e("Teste","cara, entrei no 'for' da função findPosition. Legal, né?!");
     		aux = listString.get(i);
-    		Log.e("ex-tring",""+"Um dia eu fui uma string!!:"+ aux);
-//    		stringAux = aux.split("%");
-//    		Log.e("Teste",""+stringAux[5]);
-//    		stringAux.
-//    		if(this.tag.equalsIgnoreCase(tagAux[5])){
-//    			flag = i;
-//    		}
+    		stringTag = aux.split("%");
+    		if(stringTag.length > 1){
+    			Log.e("Tag1Tela",""+tag);
+    			Log.e("TagString",""+stringTag[5]);
+    			if(tag.equalsIgnoreCase(stringTag[5].trim()) == true){
+    				return i;
+    			}
+    		}
     	}
-    	return flag;
+    	return -1;
     }
     
     
