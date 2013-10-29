@@ -11,6 +11,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
@@ -32,11 +33,16 @@ public class KeynotesMainActivity extends Activity {
 	private ArrayList<String> listStringTextView;
 	private ArrayList<Keynote> ArrayKeynotes;
 	public Context context;
+	private String tag;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Intent intentViewPager = getIntent();
+        String tagAuxString = intentViewPager.getStringExtra("tag");
+        String[] tagAuxSplit = tagAuxString.split("#");
+        tag = tagAuxSplit[0].replace("*","");
         
        context = this;
        
@@ -51,6 +57,8 @@ public class KeynotesMainActivity extends Activity {
      // listviewKeynotes.setOnFocusChangeListener(l);
      //  XmlParseTask();
        keyNotesParseTask();  
+       
+       
        
     }
    
@@ -113,6 +121,18 @@ public class KeynotesMainActivity extends Activity {
 						startActivity(intent);
 					}
 				});
+		       
+		       try{
+					int positionItem = findPosition(listStringTextView);
+					listviewKeynotes.setSelection(positionItem);
+					Log.e("teste",""+positionItem);
+					}
+					catch(IndexOutOfBoundsException e){
+						e.printStackTrace();
+					}
+				
+				
+				
 			}
 			
 			
@@ -134,7 +154,8 @@ public class KeynotesMainActivity extends Activity {
     			listaStringTextView.add(Horario);
     			for(Palestrante palestrante: session.getListSpeaker()){
     				idImage = getResources().getIdentifier(palestrante.getPhoto() , "drawable", getPackageName());
-    				dadosSepeaker = keynote.getId()+ "%" + session.getId() + "%" + palestrante.getId()+ "%" + palestrante.getName() + "," + palestrante.getFiliation() + "," + palestrante.getTalk().getTitle() + "%"+ idImage;
+    				dadosSepeaker = keynote.getId()+ "%" + session.getId() + "%" + palestrante.getId()+ "%" + palestrante.getName() + "," + 
+    				           palestrante.getFiliation()+ "," + palestrante.getTalk().getTitle() + "%"+ idImage + "%"+palestrante.getTag();
     				listaStringTextView.add(dadosSepeaker);
     				
     				dadosSepeaker ="";
@@ -147,6 +168,31 @@ public class KeynotesMainActivity extends Activity {
     }
     
     
+    public int findPosition(ArrayList<String> listString){
+    	int flag=-1;
+    	
+    	ArrayList<String> stringAux = new ArrayList<String>();
+    	String aux;
+    	Log.e("Teste",""+tag);
+    	Log.e("Teste","cara, entrei na função findPosition. Legal, né?!");
+    	for(int i=0;i<listString.size();i++){
+    		Log.e("Teste","cara, entrei no 'for' da função findPosition. Legal, né?!");
+    		aux = listString.get(i);
+    		Log.e("ex-tring",""+"Um dia eu fui uma string!!:"+ aux);
+//    		stringAux = aux.split("%");
+//    		Log.e("Teste",""+stringAux[5]);
+//    		stringAux.
+//    		if(this.tag.equalsIgnoreCase(tagAux[5])){
+//    			flag = i;
+//    		}
+    	}
+    	return flag;
+    }
+    
+    
+    
+    
+      
     public int getStatusBarHeight() {
     	   int result = 0;
     	   int resourceId = getResources().getIdentifier("status_bar_height", "dimen", "android");

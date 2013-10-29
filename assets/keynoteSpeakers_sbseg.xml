@@ -9,6 +9,7 @@
 				<end> 11:30 </end>
 				<speakers>
 					<speaker id = "0">
+					    <tag> PI1</tag>
 					    <photo>georgecox</photo>
 						<name> George W. Cox </name>
 						<filiation> INTEL </filiation>
@@ -26,6 +27,7 @@
 				<end> 12:30 </end>
 				<speakers>
 					<speaker id = "0">
+					    <tag> PI2</tag>
 					    <photo>davidott</photo>
 						<name> David Ott </name>
 						<filiation> INTEL </filiation>
@@ -43,6 +45,7 @@
 				<end> 18:30 </end>
 				<speakers>
 					<speaker id = "0">
+					    <tag> PI3</tag>
 					    <photo>fabianmonrose</photo>
 						<name> Fabian Monrose </name>
 						<filiation>  University of North Carolina </filiation>
@@ -66,6 +69,7 @@
 				<end> 11:30 </end>
 				<speakers>
 					<speaker id = "0">
+					    <tag> PN1</tag>
 					    <photo>antonio</photo>
 						<name> Antônio M. Moreiras </name>
 						<filiation>  CEPTRO/NIC.br </filiation>
@@ -83,6 +87,7 @@
 				<end> 18:30 </end>
 				<speakers>
 					<speaker id = "0">
+					    <tag> PI4</tag>
 					    <photo>matt</photo>
 						<name> Matt Bishop </name>
 						<filiation> University of California </filiation>
