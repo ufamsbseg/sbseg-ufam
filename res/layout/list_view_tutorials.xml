@@ -2,14 +2,17 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    android:background="#f4f4f4" >
 
     <TextView
         android:id="@+id/IdTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#e09e3f"
-        android:textSize="10dp"
+        android:fontFamily="PetitaBold"
+        android:textColor="#f4f4f4"
+        android:textSize="12sp"
         android:textStyle="bold"
         android:gravity="center_vertical|center_horizontal"/>
       
