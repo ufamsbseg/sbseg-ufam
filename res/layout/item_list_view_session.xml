@@ -8,6 +8,7 @@
         android:id="@+id/item_list_view_caledar">
         
     	<!-- Esse xml é do item da lista da primeira activity -->
+     	<!-- Nesse xml contem a data, o horário e o item da lista -->
      	<TextView 
     	    android:id="@+id/infoDate"
     	    android:layout_width="fill_parent"
@@ -20,6 +21,18 @@
             android:textSize="14sp"
     	    android:text="@string/infoDate"/>
      	
+      	<TextView 
+    	    android:id="@+id/infoTime"
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="wrap_content"
+    	    android:layout_gravity="center"
+        	android:gravity="center"
+        	android:layout_marginLeft="10dp"
+        	android:layout_marginRight="10dp"
+        	android:textStyle="bold"
+            android:textSize="14sp"
+    	    android:text="@string/infoTime"/>  
+     	    	
      	<RelativeLayout 
     		android:layout_width="fill_parent"
        		android:layout_height="wrap_content"

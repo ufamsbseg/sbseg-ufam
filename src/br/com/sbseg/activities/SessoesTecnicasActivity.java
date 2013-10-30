@@ -98,7 +98,7 @@ public class SessoesTecnicasActivity extends Activity {
 				
 				adapter.setData(techSessionList); //Seta no adapter o tipo de dado que o mesmo irá trabalhar.
 				//added para testar o foco
-				int counter = 0; //usado para encontrar a posição da view na listView
+				int counter = -1; //usado para encontrar a posição da view na listView
 				short flag = 0; //Usado para indicar se o grupo foi encontrado
 				for(TechnicalSession techS : techSessionList){
 					Log.e("Loop Status", "Entrando no foreach");
@@ -115,8 +115,7 @@ public class SessoesTecnicasActivity extends Activity {
 					}
 					if(flag != 0) break;
 					
-				}  //TRABALHAR NESSA PARTE AQUI!!!!!!! XD
-				//			echSessions.setSelection(2);
+				}  
 				
 			}
 			

@@ -9,7 +9,7 @@
         
     	<!-- Esse xml é do item da lista da primeira activity -->
      	<TextView 
-    	    android:id="@+id/infoDate"
+    	    android:id="@+id/infoDate4"
     	    android:layout_width="fill_parent"
     	    android:layout_height="wrap_content"
     	    android:layout_gravity="center_horizontal"
@@ -21,6 +21,18 @@
             android:textColor="#3a3a3a"
     	    android:text="@string/infoDate"/>
      	
+     	<TextView 
+    	    android:id="@+id/infoTime4"
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="wrap_content"
+    	    android:layout_gravity="center"
+        	android:gravity="center"
+        	android:layout_marginLeft="10dp"
+        	android:layout_marginRight="10dp"
+        	android:textStyle="bold"
+            android:textSize="14sp"
+    	    android:text="@string/infoTime"/> 
+     	
      	<RelativeLayout 
     		android:layout_width="fill_parent"
        		android:layout_height="wrap_content"
@@ -30,14 +42,14 @@
         	android:id="@+id/item_list_view_caledar2">
         	
     	    <ImageView 
-    	        android:id="@+id/apresentacao"
+    	        android:id="@+id/apresentacao4"
     	        android:layout_width="40dp"
     	        android:layout_height="40dp"
     	        android:src="@drawable/apresentacao"
     	        android:contentDescription="@string/apresentacao_desc"/>
      	
     		<TextView
-    	    	android:id="@+id/infoSession"
+    	    	android:id="@+id/infoSession4"
             	android:layout_width="wrap_content"
             	android:layout_height="wrap_content"
             	android:text="@string/infoSession"

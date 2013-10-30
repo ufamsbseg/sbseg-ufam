@@ -29,5 +29,6 @@
     <string name="papersString">Papers</string>
     <string name="stringWorkshop">Workshops</string>
     <string name="stringWorkshopSegundaTela">Workshop</string>
+    <string name="infoTime">infoTime null</string>
 
 </resources>
