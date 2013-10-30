@@ -62,7 +62,6 @@ public class ListViewAdapterProgramming extends BaseAdapter {
 		
 		char c = programming.get(position).charAt(0);
 		String event = programming.get(position);
-		Log.e("teste",""+ event);
 		rowView.setClickable(true);
 		rowView2.setClickable(true);
 		if (c == '*'){
