@@ -13,11 +13,9 @@
         android:text="@string/day_data_time" 
         android:layout_gravity="center_horizontal"
         android:gravity="center"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
         android:textStyle="bold"
         android:textSize="14sp"
-        android:background="#e09e3f"
+        android:background="#b2c85c"
         android:textColor="@android:color/white"/>
    
    <TextView 
