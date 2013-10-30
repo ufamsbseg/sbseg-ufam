@@ -60,12 +60,12 @@ public class ListViewAdapterSessions extends BaseAdapter{
 		if(position == 0 || !dateVerifierAtual.equalsIgnoreCase(dateVerifierAnterior)){
 			
 			TextView textDate = (TextView)rowView.findViewById(R.id.infoDate);
-			textDate.setBackgroundColor(Color.parseColor("#e09e3f"));
+			textDate.setBackgroundColor(Color.parseColor("#b2c85c"));
 			textDate.setTextColor(Color.parseColor("#FFFFFF"));
 			textDate.setText(techSessionList.get(position).getDayWeek() + "  " + techSessionList.get(position).getDate());
 			
 			TextView textTime = (TextView)rowView.findViewById(R.id.infoTime);
-			textTime.setBackgroundColor(Color.parseColor("#e09e3f"));
+			textTime.setBackgroundColor(Color.parseColor("#b2c85c"));
 			textTime.setTextColor(Color.parseColor("#FFFFFF"));
 			textTime.setText(techSessionList.get(position).getBeginning() + " - " + techSessionList.get(position).getEnd());
 			
@@ -83,7 +83,7 @@ public class ListViewAdapterSessions extends BaseAdapter{
 		}
 		 if(dateVerifierAtual.equalsIgnoreCase(dateVerifierAnterior) && !TimeVerifierAtual.equalsIgnoreCase(TimeVerifierAnterior)){
 			TextView textTime2 = (TextView)rowView2.findViewById(R.id.infoTime2);
-			textTime2.setBackgroundColor(Color.parseColor("#e09e3f"));
+			textTime2.setBackgroundColor(Color.parseColor("#b2c85c"));
 			textTime2.setTextColor(Color.parseColor("#FFFFFF"));
 			textTime2.setText(techSessionList.get(position).getBeginning() + " - " + techSessionList.get(position).getEnd());
 			
