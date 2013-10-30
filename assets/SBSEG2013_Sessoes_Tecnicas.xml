@@ -1,0 +1,889 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<technical_sessions identifier="day_1">
+	<technical_session>
+		<date>12/11/2013</date> 
+		<id>ST1-1</id>
+		<weekday>Terça-feira</weekday>
+		<beginning>08:30</beginning>
+		<end>10:00</end>
+   		<name>Métdos de Autenticação, Identificação e Autorização</name>
+   		<local>Não informado</local>
+   		<chair>
+      		<name>Não informado</name>
+   		  	<affiliation>Não informado</affiliation>
+  	 	</chair>
+  	 	<papers>
+  	 		<paper>
+  	 			<beginning>Ñão informado</beginning>
+				<end>Não informado</end>
+				<name>Infraestrutura de Autenticação e Autorização Baseada em SmartCards com Controle de Atributos Centrados no Usuário</name>
+				<authors>
+		    		<author>
+		        		<name>Davi da Silva Böger</name>
+		        		<affiliation>UFSC</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Luciano Barreto</name>
+		        		<affiliation>UFSC</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Joni da Silva Fraga</name>
+		        		<affiliation>UFSC</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>André Santos</name>
+		        		<affiliation>UECE</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>David Teles França</name>
+		        		<affiliation>UECE</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        </authors>		        	
+  	 		</paper>
+  	 		<paper>
+  	 			<beginning>Não informado</beginning>
+				<end>Não informado</end>
+				<name>Avaliação Resiliente de Autorização UNONABC para Computação em Nuvem</name>
+				<authors>
+		    		<author>
+		        		<name>Arlindo L. Marcon Jr.</name>
+		        		<affiliation>PUCPR</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Altair Santin</name>
+		        		<affiliation>PUCPR</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Maicon Stihler</name>
+		        		<affiliation>PUCPR</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        </authors>		        	
+  	 		</paper>
+  	 		<paper>
+  	 			<beginning>Não informado</beginning>
+				<end>Não informado</end>
+				<name>Um Modelo Funcional para Serviços de Identificação e Autenticação Tolerantes a Faltas e Intrusões</name>
+				<authors>
+		    		<author>
+		        		<name>Diego Kreutz</name>
+		        		<affiliation>University of Lisbon</affiliation>
+		        		<country>Portugal</country>
+		        	</author>
+		        	<author>
+		        		<name>Eduardo Feitosa</name>
+		        		<affiliation>UFAM</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Oleksandr Malichevskyy</name>
+		        		<affiliation>University of Lisbon</affiliation>
+		        		<country>Portugal</country>
+		        	</author>
+		        	<author>
+		        		<name>Kaio R. S. Barbosa</name>
+		        		<affiliation>UFAM</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Hugo Cunha</name>
+		        		<affiliation>UFAM</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        </authors>		        	
+  	 		</paper>
+  	 		<paper>
+  	 			<beginning>Não informado</beginning>
+				<end>Não informado</end>
+				<name>Anatomia de Ataques a Servidores SIP</name>
+				<authors>
+		    		<author>
+		        		<name>João M. Ceron</name>
+		        		<affiliation>NIC.br</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Klauss Steding-Jessen</name>
+		        		<affiliation>NIC.br</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Cristine Hoepers</name>
+		        		<affiliation>NIC.br</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        </authors>		        	
+  	 		</paper>
+  	 	</papers>
+	</technical_session>
+	<technical_session>
+		<date>12/11/2013</date>
+		<id>ST1-2</id>
+		<weekday>Terça-feira</weekday>
+		<beginning>08:30</beginning>
+		<end>10:00</end>
+   		<name>Prevenção e Detecção de Ataques</name>
+   		<local>Não informado</local>
+   		<chair>
+      		<name>Não informado</name>
+   		  	<affiliation>Não informado</affiliation>
+  	 	</chair>
+  	 	<papers>
+  	 		<paper>
+  	 			<beginning>Não informado</beginning>
+				<end>Não informado</end>
+				<name>ETSSDetector: Uma ferramenta para Detecção Automática de Vulnerabilidades de Cross-Site Scripting em Aplicações Web</name>
+				<authors>
+		    		<author>
+		        		<name>Thiago de Souza Rocha</name>
+		        		<affiliation>UFAM</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Eduardo Souto</name>
+		        		<affiliation>UFAM</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Gilbert Breves Martins</name>
+		        		<affiliation>UFAM</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        </authors>		        	
+  	 		</paper>
+  	 		<paper>
+  	 			<beginning>Não informado</beginning>
+				<end>Não informado</end>
+				<name>A Semi Automated Approach to Assess Web Vulnerability Scanner Tools Effectivenss</name>
+				<authors>
+		    		<author>
+		        		<name>Tania Basso</name>
+		        		<affiliation>UNICAMP</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Regina L. O. Moraes</name>
+		        		<affiliation>UNICAMP</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Mario Jino</name>
+		        		<affiliation>UNICAMP</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        </authors>		        	
+  	 		</paper>
+  	 		<paper>
+  	 			<beginning>Não informado</beginning>
+				<end>Não informado</end>
+				<name>O Uso da Transformada de Haar na Detecção de Anomalias no Tráfego Web</name>
+				<authors>
+		    		<author>
+		        		<name>Cristian Cappo</name>
+		        		<affiliation>UNA</affiliation>
+		        		<country>Paraguai</country>
+		        	</author>
+		        	<author>
+		        		<name>Raul Ceretta Nunes</name>
+		        		<affiliation>UFSM</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Bruno Augusti Mozzaquatro</name>
+		        		<affiliation>UFSM</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Alice de Jesus Kozakevicius</name>
+		        		<affiliation>UFSM</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Christian Schaerer</name>
+		        		<affiliation>UNA</affiliation>
+		        		<country>Paraguai</country>
+		        	</author>
+		        </authors>		        	
+  	 		</paper>
+  	 		<paper>
+  	 			<beginning>Não informado</beginning>
+				<end>Não informado</end>
+				<name>Detecção de Intrusão utilizando Análise de Séries Temporais com Modelos ARMAX/GARCH</name>
+				<authors>
+		    		<author>
+		        		<name>Igor Forain</name>
+		        		<affiliation>IPT-SP</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Adilson E. Guelfi</name>
+		        		<affiliation>USP</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Elvis Pontes</name>
+		        		<affiliation>IPT-SP</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Anderson Silva</name>
+		        		<affiliation>IPT-SP</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        </authors>		        	
+  	 		</paper>
+  	 	</papers>
+	</technical_session>
+	<!-- ****** -->
+	<technical_session>
+		<date>12/11/2013</date>
+		<id>ST2-1</id>
+		<weekday>Terça-feira</weekday>
+		<beginning>16:30</beginning>
+		<end>17:30</end>
+   		<name>Resumos Estendidos - Mecanismos de Autenticação e de Gestão de Identidades</name>
+   		<local>Não informado</local>
+   		<chair>
+      		<name>Não informado</name>
+   		  	<affiliation>Não informado</affiliation>
+  	 	</chair>
+  	 	<papers>
+  	 		<paper>
+  	 			<beginning>Ñão informado</beginning>
+				<end>Não informado</end>
+				<name>Um Mecanismo Agregador de Atributos Mediado pelo Cliente para um Sistema de Gestão de Identidades Federadas Alinhado ao Programa Gov.br</name>
+				<authors>
+		    		<author>
+		        		<name>Marcondes Maçaneiro</name>
+		        		<affiliation>UNIDAVI</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Michelle Wangham</name>
+		        		<affiliation>UNIVALI</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        </authors>		        	
+  	 		</paper>
+  	 		<paper>
+  	 			<beginning>Não informado</beginning>
+				<end>Não informado</end>
+				<name>Uma Infraestrutura de Autenticação e de Autorização para Internet das Coisas baseada no SAML e XACML</name>
+				<authors>
+		    		<author>
+		        		<name>Marlon C. Domenech</name>
+		        		<affiliation>UNIVALI</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Michelle Wangham</name>
+		        		<affiliation>UNIVALI</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        </authors>		        	
+  	 		</paper>
+  	 		<paper>
+  	 			<beginning>Não informado</beginning>
+				<end>Não informado</end>
+				<name>Gestão de Identidades na Web das Coisas: Um Estudo de Caso em Saúde Eletrônica</name>
+				<authors>
+		    		<author>
+		        		<name>Marciel de Liz Santos</name>
+		        		<affiliation>UNIDAVI</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Marlon C. Domenech</name>
+		        		<affiliation>UNIVALI</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Michelle Wangham</name>
+		        		<affiliation>UNIVALI</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        </authors>		        	
+  	 		</paper>
+  	 	</papers>
+	</technical_session>
+	<technical_session>
+		<date>12/11/2013</date>
+		<id>ST3-1</id>
+		<weekday>Terça-feira</weekday>
+		<beginning>17:30</beginning>
+		<end>18:30</end>
+   		<name>Resumos Estendidos - Distribuição de Chaves e Detecção de Anomalias e Malwares</name>
+   		<local>Não informado</local>
+   		<chair>
+      		<name>Não informado</name>
+   		  	<affiliation>Não informado</affiliation>
+  	 	</chair>
+  	 	<papers>
+  	 		<paper>
+  	 			<beginning>Não informado</beginning>
+				<end>Não informado</end>
+				<name>Uma Nova Abordagem de Distribuição de Chaves Criptográficas para o Framewoek de Segurança TinySec</name>
+				<authors>
+		    		<author>
+		        		<name>Mario T. Lemes</name>
+		        		<affiliation>UFG</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Renato de Freitas Bulcão Neto</name>
+		        		<affiliation>UFAM</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Leandro Liis Galdino Oliveira</name>
+		        		<affiliation>UFAM</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Roberto Vito Rodrigues Filho</name>
+		        		<affiliation>UFAM</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Iwens G. Sene Jr.</name>
+		        		<affiliation>UFAM</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        </authors>		        	
+  	 		</paper>
+  	 		<paper>
+  	 			<beginning>Não informado</beginning>
+				<end>Não informado</end>
+				<name>Uma Arquitetura para Monitoramento e Detecção de Anomalias de Segurança para Nuvens Computacionais</name>
+				<authors>
+		    		<author>
+		        		<name>Anderson Soares Ferreira</name>
+		        		<affiliation>UNICAMP</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Paulo Lício de Gesu</name>
+		        		<affiliation>UNICAMP</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        </authors>		        	
+  	 		</paper>
+  	 		<paper>
+  	 			<beginning>Não informado</beginning>
+				<end>Não informado</end>
+				<name>Tendências do mercado nacional: procurando malware em aplicações Android</name>
+				<authors>
+		    		<author>
+		        		<name>Vitor M. Afonso</name>
+		        		<affiliation>UNICAMP</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>André R. A. Grégio</name>
+		        		<affiliation>UNICAMP</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Eduardo Ellery</name>
+		        		<affiliation>UNICAMP</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Glauco B. Junqueira</name>
+		        		<affiliation>SAMSUNG</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Guilherme A. K. Schick</name>
+		        		<affiliation>SAMSUNG</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Ricardo Dahab</name>
+		        		<affiliation>UNICAMP</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Paulo Lício de Geus</name>
+		        		<affiliation>UNICAMP</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        </authors>		        	
+  	 		</paper>
+  	 		<paper>
+  	 			<beginning>Não informado</beginning>
+				<end>Não informado</end>
+				<name>Detecção de Intrusão utilizando Análise de Séries Temporais com Modelos ARMAX/GARCH</name>
+				<authors>
+		    		<author>
+		        		<name>Igor Forain</name>
+		        		<affiliation>IPT-SP</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Adilson E. Guelfi</name>
+		        		<affiliation>USP</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Elvis Pontes</name>
+		        		<affiliation>IPT-SP</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Anderson Silva</name>
+		        		<affiliation>IPT-SP</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        </authors>		        	
+  	 		</paper>
+  	 	</papers>
+	</technical_session>
+	<!-- ****** -->
+	<technical_session>
+		<date>13/11/2013</date>
+		<id>ST4-1</id>
+		<weekday>Quarta-feira</weekday>
+		<beginning>08:30</beginning>
+		<end>10:00</end>
+   		<name>Segurança em Redes</name>
+   		<local>Não informado</local>
+   		<chair>
+      		<name>Não informado</name>
+   		  	<affiliation>Não informado</affiliation>
+  	 	</chair>
+  	 	<papers>
+  	 		<paper>
+  	 			<beginning>Ñão informado</beginning>
+				<end>Não informado</end>
+				<name>CCNcheck: um mecanismo de mitigação para poluição de conteúdos em Redes Centradas em Conteúdo</name>
+				<authors>
+		    		<author>
+		        		<name>Igor C. G. Ribeiro</name>
+		        		<affiliation>UFF</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Flávio de Q. Guimarães</name>
+		        		<affiliation>UFF</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Célio Vinicius Neves de Albuquerque</name>
+		        		<affiliation>UFF</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Antônio A. de A. Rocha</name>
+		        		<affiliation>UFF</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        </authors>		        	
+  	 		</paper>
+  	 		<paper>
+  	 			<beginning>Não informado</beginning>
+				<end>Não informado</end>
+				<name>Um Mecanismo para Isolamento Seguro de Redes Virtuais Usando a Abordagem Híbrida Xen e OpenFlow</name>
+				<authors>
+		    		<author>
+		        		<name>Diogo Menezes Ferrazani Mattos</name>
+		        		<affiliation>UFRJ</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Lyno Henrique Gonçalves Ferraz</name>
+		        		<affiliation>UFRJ</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Otto Carlos Muniz Bandeira Duarte</name>
+		        		<affiliation>UFRJ</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        </authors>		        	
+  	 		</paper>
+  	 		<paper>
+  	 			<beginning>Não informado</beginning>
+				<end>Não informado</end>
+				<name>Mitigação de Ataques de Inundação para Redes em Malha sem Fio usando Reputação e Filtering </name>
+				<authors>
+		    		<author>
+		        		<name>Flavio Arieta</name>
+		        		<affiliation>UFPR</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Larissa Barabasz</name>
+		        		<affiliation>UFPR</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Michele Nogueira</name>
+		        		<affiliation>UFPR</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        </authors>		        	
+  	 		</paper>
+  	 		<paper>
+  	 			<beginning>Não informado</beginning>
+				<end>Não informado</end>
+				<name>Um Sistema de Reputação Descentralizado para Avaliar a Confiança dos Nós nas Redes Veiculares</name>
+				<authors>
+		    		<author>
+		        		<name>Claudio P. Fernandes</name>
+		        		<affiliation>UNIVALI</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Israel de Simas</name>
+		        		<affiliation>UNIVALI</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Michelle Wangham</name>
+		        		<affiliation>UNIVALI</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        </authors>		        	
+  	 		</paper>
+  	 	</papers>
+	</technical_session>
+	<technical_session>
+		<date>13/11/2013</date>
+		<id>ST4-2</id>
+		<weekday>Quarta-feira</weekday>
+		<beginning>08:30</beginning>
+		<end>10:00</end>
+   		<name>Técnicas de Desenvolvimento de Software Seguro</name>
+   		<local>Não informado</local>
+   		<chair>
+      		<name>Não informado</name>
+   		  	<affiliation>Não informado</affiliation>
+  	 	</chair>
+  	 	<papers>
+  	 		<paper>
+  	 			<beginning>Não informado</beginning>
+				<end>Não informado</end>
+				<name>Cheating detection in P2P online trading card games</name>
+				<authors>
+		    		<author>
+		        		<name>Rodrigo R. Leal</name>
+		        		<affiliation>USP</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Marcos A. Simplicio Jr</name>
+		        		<affiliation>USP</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Mateus A. S. Santos</name>
+		        		<affiliation>USP</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Marco A. L. Gomes</name>
+		        		<affiliation>USP</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Walter A. Goya</name>
+		        		<affiliation>USP</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        </authors>		        	
+  	 		</paper>
+  	 		<paper>
+  	 			<beginning>Não informado</beginning>
+				<end>Não informado</end>
+				<name>Detecção Automática de Vulnerabilidades em Código Protegido por Canários</name>
+				<authors>
+		    		<author>
+		        		<name>Izabela Karennina Travizano Maffra</name>
+		        		<affiliation>UFMG</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Fernando Magno Quintão Pereira</name>
+		        		<affiliation>UFMG</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Leonardo Barbosa Oliveira</name>
+		        		<affiliation>UFMG</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        </authors>		        	
+  	 		</paper>
+  	 		<paper>
+  	 			<beginning>Não informado</beginning>
+				<end>Não informado</end>
+				<name>Verificação Estática de Acessos a Arranjos em C</name>
+				<authors>
+		    		<author>
+		        		<name>Henrique Nazaré Santos</name>
+		        		<affiliation>UFMG</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Fernando Magno Quintão Pereira</name>
+		        		<affiliation>UFMG</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Leonardo Barbosa Oliveira</name>
+		        		<affiliation>UFMG</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        </authors>		        	
+  	 		</paper>
+  	 		<paper>
+  	 			<beginning>Não informado</beginning>
+				<end>Não informado</end>
+				<name>Uma Representação Intermediária para a Detecção de Vazamentos Implícitos de Informação</name>
+				<authors>
+		    		<author>
+		        		<name>Bruno Rodrigues Silva</name>
+		        		<affiliation>UFMG</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Fernando Magno Quintão Pereira</name>
+		        		<affiliation>UFMG</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Leonardo Barbosa Oliveira</name>
+		        		<affiliation>UFMG</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        </authors>		        	
+  	 		</paper>
+  	 	</papers>
+	</technical_session>
+	<!-- ****** -->
+	<technical_session>
+		<date>13/11/2013</date>
+		<id>ST5-1</id>
+		<weekday>Quarta-feira</weekday>
+		<beginning>14:30</beginning>
+		<end>16:00</end>
+   		<name>Prevenção e Detecção de Ataques</name>
+   		<local>Não informado</local>
+   		<chair>
+      		<name>Não informado</name>
+   		  	<affiliation>Não informado</affiliation>
+  	 	</chair>
+  	 	<papers>
+  	 		<paper>
+  	 			<beginning>Não informado</beginning>
+				<end>Não informado</end>
+				<name>Modelo de Dados de uma Base de Conhecimento para Monitorar Ataques em Redes de Computadores</name>
+				<authors>
+		    		<author>
+		        		<name>Giani Petri</name>
+		        		<affiliation>ULBRA</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Raul Ceretta Nunes</name>
+		        		<affiliation>UFSM</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Tarcisio Ceolin Junior</name>
+		        		<affiliation>UFSM</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Osmar Marchi dos Santos</name>
+		        		<affiliation>UFSM</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        </authors>		        	
+  	 		</paper>
+  	 		<paper>
+  	 			<beginning>Não informado</beginning>
+				<end>Não informado</end>
+				<name>Um sistema para análise e detecção de aplicações maliciosas de Android</name>
+				<authors>
+		    		<author>
+		        		<name>Vitor M. Afonso</name>
+		        		<affiliation>UNICAMP</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>André R. A. Grégio</name>
+		        		<affiliation>UNICAMP</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Matheus F. de Amorim</name>
+		        		<affiliation>UNICAMP</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Eduardo Ellery</name>
+		        		<affiliation>UNICAMP</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Glauco B. Junqueira</name>
+		        		<affiliation>SAMSUNG</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Guilherme A. K. Schick</name>
+		        		<affiliation>SAMSUNG</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Ricardo Dahab</name>
+		        		<affiliation>UNICAMP</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Paulo Lício de Geus</name>
+		        		<affiliation>UNICAMP</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        </authors>		        	
+  	 		</paper>
+  	 		<paper>
+  	 			<beginning>Não informado</beginning>
+				<end>Não informado</end>
+				<name>Nem Tanto, Nem Tão Pouco: Existe um Timeout Ótimo para PIT CCN na Mitigação de Ataques DoS</name>
+				<authors>
+		    		<author>
+		        		<name>Flávio de Q. Guimarães</name>
+		        		<affiliation>UFF</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Igor C. G. Ribeiro</name>
+		        		<affiliation>UFF</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Antônio A. de A. Rocha</name>
+		        		<affiliation>UFF</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Célio Vinicius Neves de Albuquerque</name>
+		        		<affiliation>UFF</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        </authors>		        	
+  	 		</paper>
+  	 		<paper>
+  	 			<beginning>Não informado</beginning>
+				<end>Não informado</end>
+				<name>O estado da arte da legislação brasileira sobre a criminalidade cibernética </name>
+				<authors>
+		    		<author>
+		        		<name>Danielle Novaes de Siqueira Valverde</name>
+		        		<affiliation>UFPE</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>José de Siqueira Silva</name>
+		        		<affiliation>FOCCA</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        </authors>		        	
+  	 		</paper>
+  	 	</papers>
+	</technical_session>
+	<!-- ***** -->
+	<technical_session>
+		<date>13/11/2013</date>
+		<id>ST4-2</id>
+		<weekday>Quarta-feira</weekday>
+		<beginning>14:30</beginning>
+		<end>16:00</end>
+   		<name>Protocolos Criptográficos</name>
+   		<local>Não informado</local>
+   		<chair>
+      		<name>Não informado</name>
+   		  	<affiliation>Não informado</affiliation>
+  	 	</chair>
+  	 	<papers>
+  	 		<paper>
+  	 			<beginning>Não informado</beginning>
+				<end>Não informado</end>
+				<name>Cifração autenticada utilizando PUFs</name>
+				<authors>
+		    		<author>
+		        		<name>Amanda Cristina Davi Resende</name>
+		        		<affiliation>UnB</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Diego F. Aranha</name>
+		        		<affiliation>UnB</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        </authors>		        	
+  	 		</paper>
+  	 		<paper>
+  	 			<beginning>Não informado</beginning>
+				<end>Não informado</end>
+				<name>Implementação em software do Esquema de Assinatura Digital de Merkle e suas variantes</name>
+				<authors>
+		    		<author>
+		        		<name>Ana Karina D. Salina de Oliveira</name>
+		        		<affiliation>UFSM</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Julio López</name>
+		        		<affiliation>UNICAMP</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        </authors>		        	
+  	 		</paper>
+  	 		<paper>
+  	 			<beginning>Não informado</beginning>
+				<end>Não informado</end>
+				<name>Modern fair exchange protocol design: Dealing with complex digital items</name>
+				<authors>
+		    		<author>
+		        		<name>Fabio Piva</name>
+		        		<affiliation>UNICAMP</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Ricardo Dahab</name>
+		        		<affiliation>UNICAMP</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        </authors>		        	
+  	 		</paper>
+  	 		<paper>
+  	 			<beginning>Não informado</beginning>
+				<end>Não informado</end>
+				<name>Implementação Eficiente de Protocolos de Acordo de Chave em Dispositivos de Poder Computacional Restrito</name>
+				<authors>
+		    		<author>
+		        		<name>Rafael Will Macedo de Araujo</name>
+		        		<affiliation>USP</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Routo Terada</name>
+		        		<affiliation>USP</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        </authors>		        	
+  	 		</paper>
+  	 	</papers>
+	</technical_session>
+</technical_sessions>
