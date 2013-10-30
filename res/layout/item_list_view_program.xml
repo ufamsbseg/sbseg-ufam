@@ -3,6 +3,7 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical"
+    android:background="#f4f4f4"
     android:layout_gravity="center_horizontal">
 	
     <LinearLayout
@@ -43,11 +44,11 @@
 	
     <View
         android:id="@+id/divider"
-        android:layout_width="295dp"
+        android:layout_width="fill_parent"
         android:layout_height="1dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:background="#1578736E"
+        android:background="#e09e3f"
         android:visibility="invisible" />
 
 </LinearLayout>

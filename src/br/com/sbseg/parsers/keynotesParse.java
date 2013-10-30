@@ -140,6 +140,12 @@ public class keynotesParse {
 							}
 						});
 			        
+				        speaker.getChild("tag").setEndTextElementListener(new EndTextElementListener(){
+				            public void end(String tag) {
+				            	ObejectSpeaker.setTag(tag);
+				            }
+				        });
+				        
 				        speaker.getChild("photo").setEndTextElementListener(new EndTextElementListener(){
 				            public void end(String photo) {
 				            	ObejectSpeaker.setPhoto(photo);

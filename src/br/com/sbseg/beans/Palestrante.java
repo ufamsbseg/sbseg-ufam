@@ -5,6 +5,7 @@ import java.io.Serializable;
 public class Palestrante implements Serializable{
 	
 	private static final long serialVersionUID = 1L;
+	private String tag;
 	private int id;
 	private String name;
 	private String filiation;
@@ -15,6 +16,14 @@ public class Palestrante implements Serializable{
 	public Palestrante(){}
 	
 
+	public String getTag() {
+		return tag;
+	}
+	public void setTag(String tag) {
+		this.tag = tag;
+	}
+	
+	
 	public int getId() {
 		return id;
 	}
