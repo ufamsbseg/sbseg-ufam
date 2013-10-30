@@ -43,9 +43,9 @@ public class ProgrammingActivity extends Activity {
         
         final PagerTabStrip strip = PagerTabStrip.class.cast(vpDays.findViewById(R.id.pagerTabStrip));
 		strip.setDrawFullUnderline(false);
-		strip.setTabIndicatorColor(Color.parseColor("#e09e3f"));
-		strip.setBackgroundColor(Color.parseColor("#F8F8FF"));
-		strip.setTextColor(Color.parseColor("#e09e3f"));
+		strip.setTabIndicatorColor(Color.parseColor("#42a4cb"));
+		strip.setBackgroundColor(Color.parseColor("#e09e3f"));
+		strip.setTextColor(Color.parseColor("#f4f4f4"));
 		strip.setNonPrimaryAlpha(0.3f);
 		strip.setTextSpacing(10);
 		strip.setTextSize(TypedValue.COMPLEX_UNIT_SP, 15);

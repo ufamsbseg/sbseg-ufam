@@ -4,7 +4,7 @@
 	<tutorial id="MC1">
 		<day>
 			<date>11/11/13</date>
-			<dayWeek>segunda-feira</dayWeek>
+			<dayWeek>Segunda-Feira</dayWeek>
 		</day>
 		
 		<period>
@@ -39,7 +39,7 @@
 	<tutorial id="MC2">
 		<day>
 			<date>11/11/13</date>
-			<dayWeek>segunda-feira</dayWeek>
+			<dayWeek>Segunda-Feira</dayWeek>
 		</day>
 		
 		<period>
@@ -104,7 +104,7 @@
 	<tutorial id="MC3">
 		<day>
 			<date>14/11/13</date>
-			<dayWeek>quinta-feira</dayWeek>
+			<dayWeek>Quinta-Feira</dayWeek>
 		</day>
 		
 		<period>
@@ -178,7 +178,7 @@
 	<tutorial id="MC4">
 		<day>
 			<date>14/11/13</date>
-			<dayWeek>quinta-feira</dayWeek>
+			<dayWeek>Quinta-Feira</dayWeek>
 		</day>
 		
 		<period>
