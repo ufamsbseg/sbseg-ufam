@@ -28,8 +28,8 @@
 
            <ImageView
                android:id="@+id/imagem"
-               android:layout_width="108dp"
-               android:layout_height="88dp"
+               android:layout_width="100dp"
+               android:layout_height="80dp"
                android:src="@drawable/ic_launcher" />
 			<LinearLayout
 	           android:layout_width="match_parent"
@@ -81,7 +81,7 @@
         android:layout_height="1dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:background="#e09e3f"
+        android:background="#42a4cb"
         android:visibility="invisible" />       		
 
        <TextView
@@ -100,7 +100,7 @@
         android:layout_height="1dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:background="#e09e3f"
+        android:background="#42a4cb"
         android:visibility="invisible" />    
 
        <TextView

@@ -125,7 +125,6 @@ public class KeynotesMainActivity extends Activity {
 		       try{
 					int positionItem = findPosition(listStringTextView);
 					listviewKeynotes.setSelection(positionItem);
-					Log.e("teste",""+positionItem);
 					}
 					catch(IndexOutOfBoundsException e){
 						e.printStackTrace();
@@ -175,8 +174,6 @@ public class KeynotesMainActivity extends Activity {
     		aux = listString.get(i);
     		stringTag = aux.split("%");
     		if(stringTag.length > 1){
-    			Log.e("Tag1Tela",""+tag);
-    			Log.e("TagString",""+stringTag[5]);
     			if(tag.equalsIgnoreCase(stringTag[5].trim()) == true){
     				return i;
     			}

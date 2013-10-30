@@ -42,7 +42,7 @@
         android:id="@+id/dividerKeynote"
         android:layout_width="fill_parent"
         android:layout_height="1dp"
-        android:background="#e09e3f"
+        android:background="#42a4cb"
         android:visibility="invisible" />
 
 </LinearLayout>
