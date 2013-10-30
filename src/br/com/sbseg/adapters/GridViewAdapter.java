@@ -30,17 +30,16 @@ public class GridViewAdapter extends BaseAdapter{
 	  TextView text = null;
 	  ImageView image = null;
 	
-	  if (row == null) {
+	  
 	   LayoutInflater inflater = ((Activity) context).getLayoutInflater();
 	   row = inflater.inflate(layoutResourceId, parent, false);
 	
 	   text = (TextView) row.findViewById(R.id.text);
-	   image = (ImageView) row.findViewById(R.id.image);
-	  } 
-	
-	  text.setText(data.get(position));
+	  image = (ImageView) row.findViewById(R.id.image); 
+	  
+//	  text.setText(data.get(position)); //Null pointer exception
 	 // Log.e("teste",""+ data);
-	  image.setImageBitmap(null);
+//	  image.setImageBitmap(null);
 	  return row;
 	
 	 }

@@ -74,7 +74,6 @@ public class ListViewAdapterProgramming extends BaseAdapter {
 			View divider = (View) rowView.findViewById(R.id.divider);
 			divider.setVisibility(View.VISIBLE);
 		
-			
 			switch(tag.charAt(0)){
 			case  'W':
 				icone1.setImageResource(R.drawable.documento);
@@ -85,12 +84,18 @@ public class ListViewAdapterProgramming extends BaseAdapter {
 				icone2.setImageResource(R.drawable.petita_right_arrow);
 				break;
 			case  'S':
-				icone1.setImageResource(R.drawable.documento);
+				icone1.setImageResource(R.drawable.sessao_tecnica);
 				icone2.setImageResource(R.drawable.petita_right_arrow);
 				break;
 			case  'M':
 				icone1.setImageResource(R.drawable.caderno);
 				icone2.setImageResource(R.drawable.petita_right_arrow);
+				break;
+			case  'I':
+				icone1.setImageResource(R.drawable.inscricao);
+				break;
+			case  'J':
+				icone1.setImageResource(R.drawable.almoco);
 				break;
 			}
 			
@@ -101,6 +106,7 @@ public class ListViewAdapterProgramming extends BaseAdapter {
 		
 		textInfor2.setText(event);
 		return rowView2;
+		
 	}
 	
 	@Override
