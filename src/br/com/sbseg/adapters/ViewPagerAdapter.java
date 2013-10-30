@@ -70,22 +70,6 @@ public class ViewPagerAdapter extends PagerAdapter{
 					ArrayList<String> listaStrings = days.get(position);
 					char c = (listaStrings.get(position2)).charAt(1);
 					String tag = listaStrings.get(position2); //usada para ajudar no foco das listas de eventos.
-//						Log.e("teste",""+listaStrings.get(position2));
-//					
-					//TechnicalSession objectSession = (TechnicalSession)lvCalendar.getItemAtPosition(itemPosition);
-					
-					/*else if()
-					Keynote objectKeynote = (Keynote)lvCalendar.getItemAtPosition(itemPosition);
-					
-					else if()
-					
-					Bundle bundle = new Bundle();
-					bundle.putSerializable("objectSession", objectSession); //Adiciona o item no bundle
-					
-					
-					intent = new Intent(ViewPagerAdapter.this,TechSessionActivity.class);
-					intent.putExtras(bundle); //Adiciona o bundle na intent
-			        startActivity(intent);*/ 
 					switch (c){
 						case  'W':
 							Intent intent0 = new Intent(context, WorkshopActivity.class);
@@ -94,13 +78,12 @@ public class ViewPagerAdapter extends PagerAdapter{
 							break;
 						case  'P':
 							Intent intent1 = new Intent(context, KeynotesMainActivity.class);
+							intent1.putExtra("tag", tag);
 							context.startActivity(intent1);
 							break;
 						case  'S':
 							Intent intent2 = new Intent(context, SessoesTecnicasActivity.class);
 							intent2.putExtra("tag", tag);
-						//	Log.e("STRIIIIIING", ""+listaStrings.get(position2));
-						//	Log.e("TAAAAAAAG", ""+tag);
 							context.startActivity(intent2);
 							break;
 						case  'M':
