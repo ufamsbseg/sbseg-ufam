@@ -34,6 +34,7 @@
         android:layout_marginLeft="190dp"
         android:clickable="false"
         android:src="@drawable/face"
+        android:onClick="facebook"
         android:contentDescription="@string/hello_world" />
 
 </RelativeLayout>
