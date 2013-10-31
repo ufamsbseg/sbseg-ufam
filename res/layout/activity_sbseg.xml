@@ -8,27 +8,32 @@
         android:id="@+id/imageView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
+        android:layout_marginTop="0dip"
         android:layout_alignParentTop="true"
-        android:src="@drawable/sbseg" />
+        android:contentDescription="@string/hello_world"
+        android:src="@drawable/sbseg_inicial" />
 
-    <ImageButton
-        android:id="@+id/FaceButton"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_marginBottom="51dp"
-        android:clickable="false"
-        android:src="@drawable/face" />
-
-    <ImageButton
+  
+    <ImageView
         android:id="@+id/CalendarButton"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_alignParentRight="true"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="100dp"
         android:layout_alignTop="@+id/FaceButton"
         android:onClick="Calendar"
-        android:src="@drawable/calendario" />
+        android:clickable="true"
+        android:src="@drawable/calendario"
+        android:contentDescription="@string/hello_world" />
+    
+    <ImageView
+        android:id="@+id/FaceButton"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="51dp"
+        android:layout_marginLeft="190dp"
+        android:clickable="false"
+        android:src="@drawable/face"
+        android:contentDescription="@string/hello_world" />
 
 </RelativeLayout>
