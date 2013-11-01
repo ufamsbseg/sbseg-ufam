@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
       	android:layout_gravity="top"
-        android:src="@drawable/sbseg_inicial2"
+        android:src="@drawable/sbseg_inicio"
         android:contentDescription="@string/hello_world" />
   
     <ImageView
