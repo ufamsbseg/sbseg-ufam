@@ -35,7 +35,7 @@
     <string name="title_activity_activity_splash_screen">SBSeg2013</string>
     <string name="title_activity_splash">SBSeg 2013</string>
     <string name="title_activity_facebook_sbseg_main">FacebookSbsegMainActivity</string>
-    
+
     <!-- Strings Facebook -->
     <string name="cancelled">Cancelled</string>
     <string name="permission_not_granted">Unable to perform selected action because permissions were not granted.</string>
@@ -52,5 +52,11 @@
     <string name="pick_seattle_place">Pick a Seattle Place</string>
     <string name="app_id">572931116113225</string>
     <string name="exception">Exception: %1$s</string>
+    <string name="instagram_id">f3e4cdda174b41818383428421544797</string>
+    <string name="instagram_secret">fcda26ea11d24bdbbdfc6cf48fd49f29</string>
+    <string name="title_activity_instagram">InstagramActivity</string>
+    <string name="title_activity_insta">InstaActivity</string>
+    <string name="login">Login</string>
+    <string name="callbackurl">http://sbseg2013.icomp.ufam.edu.br/index.php/pt-br/</string>
 
 </resources>

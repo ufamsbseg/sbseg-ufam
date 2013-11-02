@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import br.com.sbseg.FacebookSbsegMainActivity;
+import br.com.sbseg.InstaActivity;
 import br.com.sbseg.R;
 
 public class SbsegMainActivity extends Activity{
@@ -23,6 +24,11 @@ public class SbsegMainActivity extends Activity{
 	
 	public void facebook(View view){
 		Intent intent = new Intent(this,FacebookSbsegMainActivity.class);
+		startActivity(intent);
+	}
+	
+	public void instagram(View view){
+		Intent intent = new Intent(this,InstaActivity.class);
 		startActivity(intent);
 	}
 
