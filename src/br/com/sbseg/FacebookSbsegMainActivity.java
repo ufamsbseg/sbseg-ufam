@@ -1,11 +1,23 @@
 package br.com.sbseg;
 
+
+import java.io.File;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
+import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.content.Intent;
+import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.location.Location;
+import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
+import android.provider.MediaStore;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
@@ -14,32 +26,45 @@ import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-import com.facebook.*;
+
+import com.facebook.AppEventsLogger;
+import com.facebook.FacebookAuthorizationException;
+import com.facebook.FacebookOperationCanceledException;
+import com.facebook.FacebookRequestError;
+import com.facebook.Request;
+import com.facebook.Response;
+import com.facebook.Session;
+import com.facebook.SessionState;
+import com.facebook.UiLifecycleHelper;
 import com.facebook.model.GraphObject;
 import com.facebook.model.GraphPlace;
 import com.facebook.model.GraphUser;
-import com.facebook.widget.*;
-
-import java.util.*;
+import com.facebook.widget.FacebookDialog;
+import com.facebook.widget.FriendPickerFragment;
+import com.facebook.widget.LoginButton;
+import com.facebook.widget.PickerFragment;
+import com.facebook.widget.PlacePickerFragment;
+import com.facebook.widget.ProfilePictureView;
 
 public class FacebookSbsegMainActivity extends FragmentActivity {
 
     private static final String PERMISSION = "publish_actions";
-    private static final Location SEATTLE_LOCATION = new Location("") {
-        {
-            setLatitude(47.6097);
-            setLongitude(-122.3331);
-        }
-    };
+//    private static final Location SEATTLE_LOCATION = new Location("") {
+//        {
+//            setLatitude(47.6097);
+//            setLongitude(-122.3331);
+//        }
+//    };
 
     private final String PENDING_ACTION_BUNDLE_KEY = "com.facebook.samples.hellofacebook:PendingAction";
 
     private Button postStatusUpdateButton;
     private Button postPhotoButton;
-    private Button pickFriendsButton;
-    private Button pickPlaceButton;
+    private Button galeryButton;
+    private Button cameraButton;
     private LoginButton loginButton;
     private ProfilePictureView profilePictureView;
     private TextView greeting;
@@ -49,7 +74,14 @@ public class FacebookSbsegMainActivity extends FragmentActivity {
     private GraphPlace place;
     private List<GraphUser> tags;
     private boolean canPresentShareDialog;
+    private ImageView imageView1; 
+    private File caminhoFoto; 
+    private Bitmap image = null; 
+    private String mCurrentPathFile;
+    
 
+    
+    
     private enum PendingAction {
         NONE,
         POST_PHOTO,
@@ -67,12 +99,12 @@ public class FacebookSbsegMainActivity extends FragmentActivity {
     private FacebookDialog.Callback dialogCallback = new FacebookDialog.Callback() {
         @Override
         public void onError(FacebookDialog.PendingCall pendingCall, Exception error, Bundle data) {
-            Log.d("HelloFacebook", String.format("Error: %s", error.toString()));
+            Log.d("SBSegapp", String.format("Error: %s", error.toString()));
         }
 
         @Override
         public void onComplete(FacebookDialog.PendingCall pendingCall, Bundle data) {
-            Log.d("HelloFacebook", "Success!");
+            Log.d("SBSegApp", "Success!");
         }
     };
 
@@ -117,20 +149,23 @@ public class FacebookSbsegMainActivity extends FragmentActivity {
                 onClickPostPhoto();
             }
         });
+        
+        imageView1 = (ImageView)findViewById(R.id.imageView1);
+        galeryButton = (Button)findViewById(R.id.idBuscarImagem);
+        cameraButton = (Button)findViewById(R.id.idImagemCamera);
+//        pickFriendsButton = (Button) findViewById(R.id.idBuscarImagem);
+//        pickFriendsButton.setOnClickListener(new View.OnClickListener() {
+//            public void onClick(View view) {
+//                onClickPickFriends();
+//            }
+//        });
 
-        pickFriendsButton = (Button) findViewById(R.id.pickFriendsButton);
-        pickFriendsButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                onClickPickFriends();
-            }
-        });
-
-        pickPlaceButton = (Button) findViewById(R.id.pickPlaceButton);
-        pickPlaceButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                onClickPickPlace();
-            }
-        });
+//        pickPlaceButton = (Button) findViewById(R.id.pickPlaceButton);
+//        pickPlaceButton.setOnClickListener(new View.OnClickListener() {
+//            public void onClick(View view) {
+//                onClickPickPlace();
+//            }
+//        });
 
         controlsContainer = (ViewGroup) findViewById(R.id.main_ui_container);
 
@@ -186,8 +221,72 @@ public class FacebookSbsegMainActivity extends FragmentActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        uiHelper.onActivityResult(requestCode, resultCode, data, dialogCallback);
+//        if (cont == 0) { 
+//        	// A API do Facebook exige essa chamada para 
+//        	// concluir o processo de login. 
+//        uiHelper.onActivityResult(requestCode, resultCode, data, dialogCallback);
+//        } else { 
+        
+       
+            if (requestCode == 1) {
+                if (resultCode == RESULT_OK) {
+                    // Image captured and saved to fileUri specified in the Intent
+                	handleSmallCameraPhoto(data);
+//                	galleryAddPic();
+//                    Toast.makeText(this, "Image saved to:\n" + data.getData(), Toast.LENGTH_LONG).show();
+                } else if (resultCode == RESULT_CANCELED) {
+                    // User cancelled the image capture
+                } else {
+                    // Image capture failed, advise user
+                }
+            }
+           else if(requestCode == 0){
+	        		if(resultCode == RESULT_OK) {  
+	        				Uri selectedImage = data.getData(); 
+	        				String[] filePathColumn = { MediaStore.Images.Media.DATA }; 
+	        				Cursor cursor = getContentResolver().query(selectedImage, filePathColumn, null, null, null); 
+	        				cursor.moveToFirst(); 
+	        				int columnIndex = cursor.getColumnIndex(filePathColumn[0]); 
+	        				String filePath = cursor.getString(columnIndex); // file // path // of // selected // image 
+	        				cursor.close(); 
+	        				Bitmap yourSelectedImage = BitmapFactory .decodeFile(filePath); 
+	        				imageView1.setImageBitmap(yourSelectedImage); 
+	        				image = yourSelectedImage;
+	        		}else if (resultCode == RESULT_CANCELED) {
+	                    // User cancelled the image capture
+	                } else {
+	                    // Image capture failed, advise user
+	                }
+        		 
+//        				Uri selectedFoto = data.getData(); 
+//        				String[] filePathColumnPhoto = { MediaStore.Images.Media.DATA };
+//						galleryAddPic(caminhoFoto);
+//        				Cursor cursorPhoto = getContentResolver().query(selectedFoto, filePathColumnPhoto, null, null, null); 
+//        				cursorPhoto.moveToFirst(); 
+//        				int columnIndexPhoto = cursorPhoto.getColumnIndex(filePathColumnPhoto[0]); 
+//        				String filePathPhoto = cursorPhoto.getString(columnIndexPhoto); // file // path // of // selected // image 
+//        				cursorPhoto.close(); 
+//        				Bitmap yourPhotoCaptured = BitmapFactory .decodeFile(filePathPhoto); 
+//        				imageView1.setImageBitmap(yourPhotoCaptured); 
+//        				image = yourPhotoCaptured;
+//        			        if (resultCode == RESULT_OK) {
+//        			            // Image captured and saved to fileUri specified in the Intent
+//        			            Toast.makeText(this, "Image saved to:\n" +
+//        			                     data.getData(), Toast.LENGTH_LONG).show();
+//        			        } else if (resultCode == RESULT_CANCELED) {
+//        			            // User cancelled the image capture
+//        			        } else {
+//        			            // Image capture failed, advise user
+//        			        }
+//        			    }
+//        				handleSmallCameraPhoto(takePictureIntent);
+        		}  
+        	else{
+        		uiHelper.onActivityResult(requestCode, resultCode, data, dialogCallback);
+        	}
     }
+
+    
 
     @Override
     public void onPause() {
@@ -221,10 +320,10 @@ public class FacebookSbsegMainActivity extends FragmentActivity {
         Session session = Session.getActiveSession();
         boolean enableButtons = (session != null && session.isOpened());
 
-        postStatusUpdateButton.setEnabled(enableButtons || canPresentShareDialog);
+        postStatusUpdateButton.setEnabled(enableButtons/* || canPresentShareDialog*/);
         postPhotoButton.setEnabled(enableButtons);
-        pickFriendsButton.setEnabled(enableButtons);
-        pickPlaceButton.setEnabled(enableButtons);
+        galeryButton.setEnabled(enableButtons);
+        cameraButton.setEnabled(enableButtons);
 
         if (enableButtons && user != null) {
             profilePictureView.setProfileId(user.getId());
@@ -281,9 +380,9 @@ public class FacebookSbsegMainActivity extends FragmentActivity {
 
     private FacebookDialog.ShareDialogBuilder createShareDialogBuilder() {
         return new FacebookDialog.ShareDialogBuilder(this)
-                .setName("Hello Facebook")
-                .setDescription("The 'Hello Facebook' sample application showcases simple Facebook integration")
-                .setLink("http://developers.facebook.com/android");
+                .setName("SBseg ")
+                .setDescription("Simpósio Brasileiro de Segurança")
+                .setLink("sbseg2013.icomp.ufam.edu.br");
     }
 
     private void postStatusUpdate() {
@@ -292,8 +391,7 @@ public class FacebookSbsegMainActivity extends FragmentActivity {
             uiHelper.trackPendingDialogCall(shareDialog.present());
         } else if (user != null && hasPublishPermission()) {
             final String message = getString(R.string.status_update, user.getFirstName(), (new Date().toString()));
-            Request request = Request
-                    .newStatusUpdateRequest(Session.getActiveSession(), message, place, tags, new Request.Callback() {
+            Request request = Request.newStatusUpdateRequest(Session.getActiveSession(), message, place, tags, new Request.Callback() {
                         @Override
                         public void onCompleted(Response response) {
                             showPublishResult(message, response.getGraphObject(), response.getError());
@@ -311,8 +409,12 @@ public class FacebookSbsegMainActivity extends FragmentActivity {
 
     private void postPhoto() {
         if (hasPublishPermission()) {
-            Bitmap image = BitmapFactory.decodeResource(this.getResources(), R.drawable.icon);
-            Request request = Request.newUploadPhotoRequest(Session.getActiveSession(), image, new Request.Callback() {
+            Bitmap imagePost = this.image;//BitmapFactory.decodeResource(this.getResources(), R.drawable.icon);
+//            ByteArrayOutputStream baos = new ByteArrayOutputStream(); 
+//            imagePost.compress(Bitmap.CompressFormat.PNG, 100, baos); 
+//            @SuppressWarnings("unused")
+//			byte[] bytes = baos.toByteArray();
+            Request request = Request.newUploadPhotoRequest(Session.getActiveSession(), imagePost, new Request.Callback() {
                 @Override
                 public void onCompleted(Response response) {
                     showPublishResult(getString(R.string.photo_post), response.getGraphObject(), response.getError());
@@ -322,39 +424,116 @@ public class FacebookSbsegMainActivity extends FragmentActivity {
         } else {
             pendingAction = PendingAction.POST_PHOTO;
         }
+        
+        imageView1.setImageResource(R.drawable.face_batman);
+    }
+    
+    public void galleryButtonClick(View v) { 
+    	// apagaTemp(); 
+    	int actionCode = 0;
+    	Intent intent = new Intent(Intent.ACTION_GET_CONTENT); 
+    	intent.setType("image/*"); 
+    	startActivityForResult(intent, actionCode); 
+    //	this.cont++; 
+    }
+    
+    public void cameraButtonClick(View v) throws IOException{
+//    	File picsDir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES);
+//    	caminhoFoto = new File(picsDir, "foto.jpg");		
+//    	Intent i = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+//    	i.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(caminhoFoto));	
+//    	startActivityForResult(i, 1);
+    	
+//    	takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);   
+//      startActivityForResult(takePictureIntent, 1);
+    	int actionCode = 1;
+    	dispatchTakePictureIntent(actionCode);
+
+    }
+    
+    private void handleSmallCameraPhoto(Intent intent) {
+        Bundle extras = intent.getExtras();
+        this.image = (Bitmap) extras.get("data");
+        imageView1.setImageBitmap(image);
+    }
+    
+    public void dispatchTakePictureIntent(int actionCode) throws IOException {
+//    	File picsDir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES);
+//    	caminhoFoto = new File(picsDir, "foto.jpg");
+        Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+//        takePictureIntent.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(caminhoFoto));	
+        startActivityForResult(takePictureIntent, actionCode);
+    }
+    
+    @SuppressLint("SimpleDateFormat")
+	private File createImageFile() throws IOException {
+        // Create an image file name
+        String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+        String imageFileName = "foto" + timeStamp + "_";
+        File image = File.createTempFile(
+            imageFileName, 
+            ".jpg", 
+            getAlbumDir()
+        );
+        mCurrentPathFile = image.getAbsolutePath();
+        return image;
     }
 
-    private void showPickerFragment(PickerFragment<?> fragment) {
-        fragment.setOnErrorListener(new PickerFragment.OnErrorListener() {
-            @Override
-            public void onError(PickerFragment<?> pickerFragment, FacebookException error) {
-                String text = getString(R.string.exception, error.getMessage());
-                Toast toast = Toast.makeText(FacebookSbsegMainActivity.this, text, Toast.LENGTH_SHORT);
-                toast.show();
-            }
-        });
-
-        FragmentManager fm = getSupportFragmentManager();
-        fm.beginTransaction()
-                .replace(R.id.fragment_container, fragment)
-                .addToBackStack(null)
-                .commit();
-
-        controlsContainer.setVisibility(View.GONE);
-
-        // We want the fragment fully created so we can use it immediately.
-        fm.executePendingTransactions();
-
-        fragment.loadData(false);
+    
+    private void galleryAddPic() {
+        Intent mediaScanIntent = new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE);
+        File f = getAlbumDir();// new File(mCurrentPathFile);
+        Uri contentUri = Uri.fromFile(f);
+        mediaScanIntent.setData(contentUri);
+        this.sendBroadcast(mediaScanIntent);
     }
-
-    private void onClickPickFriends() {
-        final FriendPickerFragment fragment = new FriendPickerFragment();
-
-        setFriendPickerListeners(fragment);
-
-        showPickerFragment(fragment);
+    private File getAlbumDir(){
+    	File storageDir = new File(
+    		    Environment.getExternalStoragePublicDirectory(
+    		        Environment.DIRECTORY_PICTURES
+    		    ), 
+    		    getAlbumName()
+    		);    
+    	return storageDir;
+    	
     }
+    
+    private String getAlbumName() {
+        return getString(R.string.album_name);
+    }
+    	   
+
+//    private void showPickerFragment(PickerFragment<?> fragment) {
+//        fragment.setOnErrorListener(new PickerFragment.OnErrorListener() {
+//            @Override
+//            public void onError(PickerFragment<?> pickerFragment, FacebookException error) {
+//                String text = getString(R.string.exception, error.getMessage());
+//                Toast toast = Toast.makeText(FacebookSbsegMainActivity.this, text, Toast.LENGTH_SHORT);
+//                toast.show();
+//            }
+//        });
+//
+//        FragmentManager fm = getSupportFragmentManager();
+//        fm.beginTransaction()
+//                .replace(R.id.fragment_container, fragment)
+//                .addToBackStack(null)
+//                .commit();
+//
+//        controlsContainer.setVisibility(View.GONE);
+//
+//        // We want the fragment fully created so we can use it immediately.
+//        fm.executePendingTransactions();
+//
+//        fragment.loadData(false);
+//    }
+
+//    private void onClickPickFriends() {
+//        final FriendPickerFragment fragment = new FriendPickerFragment();
+//
+//        setFriendPickerListeners(fragment);
+//
+//        showPickerFragment(fragment);
+//    }
 
     private void setFriendPickerListeners(final FriendPickerFragment fragment) {
         fragment.setOnDoneButtonClickedListener(new FriendPickerFragment.OnDoneButtonClickedListener() {
@@ -404,15 +583,15 @@ public class FacebookSbsegMainActivity extends FragmentActivity {
         showAlert(getString(R.string.you_picked), result);
     }
 
-    private void onClickPickPlace() {
-        final PlacePickerFragment fragment = new PlacePickerFragment();
-        fragment.setLocation(SEATTLE_LOCATION);
-        fragment.setTitleText(getString(R.string.pick_seattle_place));
-
-        setPlacePickerListeners(fragment);
-
-        showPickerFragment(fragment);
-    }
+//    private void onClickPickPlace() {
+//        final PlacePickerFragment fragment = new PlacePickerFragment();
+//        fragment.setLocation(SEATTLE_LOCATION);
+//        fragment.setTitleText(getString(R.string.pick_seattle_place));
+//
+//        setPlacePickerListeners(fragment);
+//
+//        showPickerFragment(fragment);
+//    }
 
     private void setPlacePickerListeners(final PlacePickerFragment fragment) {
         fragment.setOnDoneButtonClickedListener(new PlacePickerFragment.OnDoneButtonClickedListener() {

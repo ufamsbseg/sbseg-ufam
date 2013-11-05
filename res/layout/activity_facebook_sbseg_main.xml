@@ -1,12 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright 2010-present Facebook.
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:facebook="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".FacebookSbsegMainActivity" 
-	android:orientation="vertical"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:background="#FFF">
+              xmlns:facebook="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="#FFF"
         >
     <LinearLayout android:orientation="vertical"
                   android:layout_width="fill_parent"
@@ -21,6 +35,13 @@
                 facebook:confirm_logout="false"
                 facebook:fetch_user_info="true"
                 />
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        
+
         <LinearLayout
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
@@ -46,32 +67,47 @@
                     android:id="@+id/postStatusUpdateButton"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:text="Post Status Update"
+                    android:text="Postar Algo"
                     />
+            
+            <ImageView 
+                android:id="@+id/imageView1" 
+                android:layout_width="100dp" 
+                android:layout_height="100dp" 
+                android:layout_gravity="center" 
+                android:scaleType="fitXY" 
+                android:src="@drawable/com_facebook_profile_default_icon"/>
+			
+            <Button
+                    android:id="@+id/idBuscarImagem"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="galleryButtonClick"
+                    android:text="Carregar Foto"/>
+            <Button
+                    android:id="@+id/idImagemCamera"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="cameraButtonClick"
+                    android:text="Tirar Foto"/>
+
             <Button
                     android:id="@+id/postPhotoButton"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:text="Post Photo"
+                    android:text="Postar Foto"
                     />
-            <Button
-                    android:id="@+id/pickFriendsButton"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Pick Some Friends"
-                    />
-            <Button
-                    android:id="@+id/pickPlaceButton"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Pick Place"
-                    />
+            
+            
+                    
         </LinearLayout>
+       </ScrollView>
     </LinearLayout>
     <FrameLayout
             android:id="@+id/fragment_container"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"/>
 
+    
 </LinearLayout>
 
