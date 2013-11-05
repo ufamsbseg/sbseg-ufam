@@ -85,6 +85,10 @@
             android:name="br.com.sbseg.FacebookSbsegMainActivity"
             android:label="@string/app_name" >
         </activity>
+        <activity
+            android:name="br.com.sbseg.InstaActivity"
+            android:label="@string/app_name" >
+        </activity>
         
         <meta-data 
        			android:value="@string/app_id" 
