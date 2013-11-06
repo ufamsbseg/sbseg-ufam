@@ -54,8 +54,21 @@
             	        <nome tag="COFFB">Coffee break</nome>
             	    </nomes>
             	</evento>
-            	
+            	<!-- added -->
             	<evento duracao="16:30-18:30">
+            	    <nomes>
+            	        <nome tag="WTICG">Workshop de Trabalhos de Iniciação Científica e de Graduação</nome>
+            	        <nome tag="MC1">Minicurso 2</nome>
+            	    </nomes>
+            	</evento>
+            	
+            	<evento duracao="16:30-19:00">
+            	    <nomes>            	        
+            	        <nome tag="WGID">Workshop de Gestão de Identidades Digitais</nome>
+            	    </nomes>
+            	</evento>
+            	<!-- /added -->
+             	<evento duracao="16:30-18:30">
             	    <nomes>
             	        <nome tag="WTICG">Workshop de Trabalhos de Iniciação Científica e de Graduação</nome>
             	        <nome tag="WGID">Workshop de Gestão de Identidades Digitais</nome>

@@ -3,12 +3,10 @@ package br.com.sbseg;
 
 import java.io.File;
 import java.io.IOException;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.database.Cursor;
@@ -64,7 +62,7 @@ public class FacebookSbsegMainActivity extends FragmentActivity {
     private Button postStatusUpdateButton;
     private Button postPhotoButton;
     private Button galeryButton;
-    private Button cameraButton;
+  //  private Button cameraButton;
     private LoginButton loginButton;
     private ProfilePictureView profilePictureView;
     private TextView greeting;
@@ -75,9 +73,9 @@ public class FacebookSbsegMainActivity extends FragmentActivity {
     private List<GraphUser> tags;
     private boolean canPresentShareDialog;
     private ImageView imageView1; 
-    private File caminhoFoto; 
+ //   private File caminhoFoto; 
     private Bitmap image = null; 
-    private String mCurrentPathFile;
+ //   private String mCurrentPathFile;
     
 
     
@@ -152,7 +150,7 @@ public class FacebookSbsegMainActivity extends FragmentActivity {
         
         imageView1 = (ImageView)findViewById(R.id.imageView1);
         galeryButton = (Button)findViewById(R.id.idBuscarImagem);
-        cameraButton = (Button)findViewById(R.id.idImagemCamera);
+      //s  cameraButton = (Button)findViewById(R.id.idImagemCamera);
 //        pickFriendsButton = (Button) findViewById(R.id.idBuscarImagem);
 //        pickFriendsButton.setOnClickListener(new View.OnClickListener() {
 //            public void onClick(View view) {
@@ -323,7 +321,7 @@ public class FacebookSbsegMainActivity extends FragmentActivity {
         postStatusUpdateButton.setEnabled(enableButtons/* || canPresentShareDialog*/);
         postPhotoButton.setEnabled(enableButtons);
         galeryButton.setEnabled(enableButtons);
-        cameraButton.setEnabled(enableButtons);
+        //cameraButton.setEnabled(enableButtons);
 
         if (enableButtons && user != null) {
             profilePictureView.setProfileId(user.getId());
@@ -410,6 +408,9 @@ public class FacebookSbsegMainActivity extends FragmentActivity {
     private void postPhoto() {
         if (hasPublishPermission()) {
             Bitmap imagePost = this.image;//BitmapFactory.decodeResource(this.getResources(), R.drawable.icon);
+            if(imagePost==null){
+            	Toast.makeText(this, "Insira uma imagem", Toast.LENGTH_LONG).show();
+            }
 //            ByteArrayOutputStream baos = new ByteArrayOutputStream(); 
 //            imagePost.compress(Bitmap.CompressFormat.PNG, 100, baos); 
 //            @SuppressWarnings("unused")
@@ -426,6 +427,7 @@ public class FacebookSbsegMainActivity extends FragmentActivity {
         }
         
         imageView1.setImageResource(R.drawable.face_batman);
+        this.image = null;
     }
     
     public void galleryButtonClick(View v) { 
@@ -465,22 +467,23 @@ public class FacebookSbsegMainActivity extends FragmentActivity {
         startActivityForResult(takePictureIntent, actionCode);
     }
     
-    @SuppressLint("SimpleDateFormat")
-	private File createImageFile() throws IOException {
-        // Create an image file name
-        String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
-        String imageFileName = "foto" + timeStamp + "_";
-        File image = File.createTempFile(
-            imageFileName, 
-            ".jpg", 
-            getAlbumDir()
-        );
-        mCurrentPathFile = image.getAbsolutePath();
-        return image;
-    }
+//    @SuppressLint("SimpleDateFormat")
+//	private File createImageFile() throws IOException {
+//        // Create an image file name
+//        String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+//        String imageFileName = "foto" + timeStamp + "_";
+//        File image = File.createTempFile(
+//            imageFileName, 
+//            ".jpg", 
+//            getAlbumDir()
+//        );
+//        mCurrentPathFile = image.getAbsolutePath();
+//        return image;
+//    }
 
     
-    private void galleryAddPic() {
+    @SuppressWarnings("unused")
+	private void galleryAddPic() {
         Intent mediaScanIntent = new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE);
         File f = getAlbumDir();// new File(mCurrentPathFile);
         Uri contentUri = Uri.fromFile(f);

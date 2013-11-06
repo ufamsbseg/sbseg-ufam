@@ -6,7 +6,7 @@
 		<weekday>Terça-feira</weekday>
 		<beginning>08:30</beginning>
 		<end>10:00</end>
-   		<name>Métdos de Autenticação, Identificação e Autorização</name>
+   		<name>Métodos de Autenticação, Identificação e Autorização</name>
    		<local>Não informado</local>
    		<chair>
       		<name>Não informado</name>
@@ -14,7 +14,7 @@
   	 	</chair>
   	 	<papers>
   	 		<paper>
-  	 			<beginning>Ñão informado</beginning>
+  	 			<beginning>Não informado</beginning>
 				<end>Não informado</end>
 				<name>Infraestrutura de Autenticação e Autorização Baseada em SmartCards com Controle de Atributos Centrados no Usuário</name>
 				<authors>
@@ -256,7 +256,7 @@
   	 	</chair>
   	 	<papers>
   	 		<paper>
-  	 			<beginning>Ñão informado</beginning>
+  	 			<beginning>Não informado</beginning>
 				<end>Não informado</end>
 				<name>Um Mecanismo Agregador de Atributos Mediado pelo Cliente para um Sistema de Gestão de Identidades Federadas Alinhado ao Programa Gov.br</name>
 				<authors>
@@ -805,7 +805,7 @@
 	<!-- ***** -->
 	<technical_session>
 		<date>13/11/2013</date>
-		<id>ST4-2</id>
+		<id>ST5-2</id>
 		<weekday>Quarta-feira</weekday>
 		<beginning>14:30</beginning>
 		<end>16:00</end>

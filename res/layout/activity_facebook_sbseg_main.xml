@@ -84,13 +84,13 @@
                     android:layout_height="wrap_content"
                     android:onClick="galleryButtonClick"
                     android:text="Carregar Foto"/>
-            <Button
+       <!--       <Button
                     android:id="@+id/idImagemCamera"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:onClick="cameraButtonClick"
                     android:text="Tirar Foto"/>
-
+		-->
             <Button
                     android:id="@+id/postPhotoButton"
                     android:layout_width="fill_parent"

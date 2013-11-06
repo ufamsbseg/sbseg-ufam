@@ -460,6 +460,66 @@
   	 		</paper>
   	 	</papers>
 	</technical_session>
+	<!-- 888 -->
+	<technical_session>
+		<date>11/11/2013</date>
+		<id>WGID-4</id>
+		<weekday>Segunda-feira</weekday>
+		<beginning>16:30</beginning>
+		<end>19:00</end>
+   		<name>Programa de Gestão de Identidades (PGID)  II e Painel</name>
+   		<local>Não informado</local>
+   		<chair>
+      		<name>Não informado</name>
+   		  	<affiliation>Não informado</affiliation>
+  	 	</chair>
+  	 	<papers>
+  	 		<paper>
+  	 			<beginning>16:30</beginning>
+				<end>17:00</end>
+				<name>Uma Avaliação do Uso de Documentos Aderentes ao Padrão ICAO 9303 no Âmbito Acadêmico</name>
+				<authors>
+		    		<author>
+		        		<name>Jean Everson Martina</name>
+		        		<affiliation>UFSC</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Thaís Bardino Idalino</name>
+		        		<affiliation>UFSC</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        </authors>		        	
+  	 		</paper>
+  	 		<paper>
+  	 			<beginning>17:00</beginning>
+				<end>19:00</end>
+				<name>Painel sobre Privacidade no uso de Identidades Digitais</name>
+				<authors>
+		    		<author>
+		        		<name>Marco Aurelio Amaral Henriques</name>
+		        		<affiliation>UNICAMP</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Thiago Digo</name>
+		        		<affiliation>UFF</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Emerson Ribeiro de Mello</name>
+		        		<affiliation>IFSC</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        	<author>
+		        		<name>Carlos Eduardo da Silva</name>
+		        		<affiliation>UFRN</affiliation>
+		        		<country>Brasil</country>
+		        	</author>
+		        </authors>		        	
+  	 		</paper>
+  	 	</papers>
+	</technical_session>
 	<!-- /WGID -->
 	<technical_session>
 		<date>14/11/2013</date>
@@ -576,9 +636,9 @@
 				<name>Palestra: A importância de Ferramentas de Analise Forense para Dispositivos Móveis</name>
 				<authors>
 		    		<author>
-		        		<name>Magnus Anseklev??</name> <!-- VERIFICAR ESSA INFORMAÇÃO -->
-		        		<affiliation>Micro Systemation??</affiliation>
-		        		<country>Brasil??</country>
+		        		<name>Magnus Anseklev</name> <!-- VERIFICAR ESSA INFORMAÇÃO -->
+		        		<affiliation>Micro Systemation</affiliation>
+		        		<country>Brasil</country>
 		        	</author>
 		        </authors>		        	
   	 		</paper>
@@ -603,9 +663,9 @@
 				<name>Palestra: Demonstração de Equipamento para Coleta de Evidências em Dispositivos Móveis</name>
 				<authors>
 		    		<author>
-		        		<name>Magnus Anseklev??</name> <!-- VERIFICAR ESSA INFORMAÇÃO -->
-		        		<affiliation>Micro Systemation??</affiliation>
-		        		<country>Brasil??</country>
+		        		<name>Magnus Anseklev</name> <!-- VERIFICAR ESSA INFORMAÇÃO -->
+		        		<affiliation>Micro Systemation</affiliation>
+		        		<country>Brasil</country>
 		        	</author>
 		        </authors>		        	
   	 		</paper>
@@ -681,9 +741,9 @@
 				<name>Mesa Redonda e Encerramento</name>
 				<authors>
 		    		<author>
-		        		<name>Não informado</name>
-		        		<affiliation>Não informado</affiliation>
-		        		<country>Não informado</country>
+		        		<name> </name>
+		        		<affiliation> </affiliation>
+		        		<country> </country>
 		        	</author>
 		        </authors>		        	
   	 		</paper>
