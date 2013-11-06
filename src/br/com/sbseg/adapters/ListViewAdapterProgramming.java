@@ -103,7 +103,7 @@ public class ListViewAdapterProgramming extends BaseAdapter {
 				break;
 			case  'C':
 				if(tag.charAt(2) == 'F'){
-					icone1.setImageResource(R.drawable.coffe);
+					icone1.setImageResource(R.drawable.coffe_break);
 				}
 				else if(tag.charAt(2) == 'Q'){
 					icone1.setImageResource(R.drawable.almoco);
