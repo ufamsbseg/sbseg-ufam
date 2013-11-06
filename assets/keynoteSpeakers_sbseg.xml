@@ -81,8 +81,39 @@
 					</speaker>
 				</speakers>
 			</session>
-
+			
+			
 			<session id="1">
+				<start> 11:30 </start>
+				<end> 12:30 </end>
+				<speakers>
+					<speaker id = "0">
+					    <tag> PN2</tag>
+					    <photo>edna_dias</photo>
+						<name> Edna Canedo Dias </name>
+						<filiation>  UnB </filiation>
+						<talk> 
+								<title> Aplicação de Tencologias de Confiança ao Controle de Serviços em Nuvens Computacionais </title> 
+								<resume> Os recentes avanços na tecnologia de computação em nuvem demonstram um aumento nos problemas relacionados à segurança, privacidade e confiança em diferentes aspectos, os quais não haviam sido previstos na concepção dos ambientes de computação em nuvem. Entre estes, o problema da confiança entre os consumidores e os provedores de serviços, e a garantia do acesso seguro aos recursos destes ambientes tem merecido uma atenção especial, principalmente na realização de transações entre diversos ambientes de nuvem. O objetivo desta palestra é apresentar uma revisão dos conceitos da computação em nuvem, no que se refere aos aspectos de confiança e reputação, e em outras questões em aberto relacionadas à segurança e privacidade em ambientes de computação em nuvem. O foco será tratar a intermediação de serviços por Arbitragem pelo uso de modelos de confiança computacional. Neste sentido, será apresentado um modelo de confiança de alto nível para garantir a operação interoperável – confiável e padrão – na composição de serviços em uma nuvem privada, apresentado o cálculo da confiança entre os diversos atores de nuvem, de acordo com as métricas estabelecidas.</resume>	
+						</talk>		
+						<biography> Doutora em Engenharia Elétrica pela Universidade de Brasília (UNB). Área de concentração: Telecomunicações. título concedido em 15.08.2012. Mestre pela Universidade Federal da Paraíba UFPB. Área de concentração: Sistemas de Software. Área Especifica: Engenharia de Software, título concedido em 29.08.2002. Graduada em Análise de Sistemas pela Universidade Salgado de Oliveira; Goiás (1999). Professora do curso de Engenharia de Software da Faculdade FGA Gama, da Universidade de Brasília UNB. Atua na área de desenvolvimento de sistemas desde 1998, tendo trabalhado como Analista de Sistemas na Empresa de Processamento de Dados do Estado de Goiás Prodago, até o ano de 2000. Em Brasília atuou na Poliedro como Consultora de Desenvolvimento e Gerência de Projetos e como Analista de Sistemas Pleno em Desenvolvimento na ECT – Empresa de Correios e Telégrafos até abril de 2010, desenvolvendo atividades na área de Governança em Tecnologia da Informação na implantação do framework COBIT. Desde 2000 dedica-se a atividades de docência universitária nos cursos de graduação e pós-graduação, atuando na área de Sistemas de Software, Redes de Petri, Engenharia de Software, Orientação a Objetos, Gerência de Projetos, Teste de Software, Arquitetura Orientada a Serviços, Programação e Governança em Tecnologia da Informação.</biography>
+					</speaker>
+					
+					<speaker id = "1">
+					    <tag> PN2</tag>
+					    <photo>rafaeltimoteo</photo>
+						<name> Rafael Timóteo de Souza Junior </name>
+						<filiation>  UnB </filiation>
+						<talk> 
+								<title> Aplicação de Tencologias de Confiança ao Controle de Serviços em Nuvens Computacionais </title> 
+								<resume> Os recentes avanços na tecnologia de computação em nuvem demonstram um aumento nos problemas relacionados à segurança, privacidade e confiança em diferentes aspectos, os quais não haviam sido previstos na concepção dos ambientes de computação em nuvem. Entre estes, o problema da confiança entre os consumidores e os provedores de serviços, e a garantia do acesso seguro aos recursos destes ambientes tem merecido uma atenção especial, principalmente na realização de transações entre diversos ambientes de nuvem. O objetivo desta palestra é apresentar uma revisão dos conceitos da computação em nuvem, no que se refere aos aspectos de confiança e reputação, e em outras questões em aberto relacionadas à segurança e privacidade em ambientes de computação em nuvem. O foco será tratar a intermediação de serviços por Arbitragem pelo uso de modelos de confiança computacional. Neste sentido, será apresentado um modelo de confiança de alto nível para garantir a operação interoperável – confiável e padrão – na composição de serviços em uma nuvem privada, apresentado o cálculo da confiança entre os diversos atores de nuvem, de acordo com as métricas estabelecidas.</resume>	
+						</talk>		
+						<biography> Possui graduação em Curso de Engenharia Elétrica pela Universidade Federal da Paraíba, Campina Grande (1984), mestrado (DEA) em Telemática e Sistemas de Informação pela Ecole Supérieure dElectricité – SUPELEC (1985) e doutorado em Processamento de Sinais e Telecomunicações pela Université de Rennes I (França, 1988). Fez pósdoutorado na Ecole Supérieure dElectricité – SUPELEC (2006-2007). Atualmente é professor adjunto da Universidade de Brasília, curso de Engenharia de Redes de Comunicação. É líder do Grupo de Pesquisa CNPq QUARELA: Aplicações em Ambiente de Qualidade de Serviços de Redes e Processamento de Alto Desempenho. Atua na pesquisa principalmente nos seguintes temas: segurança da informação e confiança computacional, gerência de redes, mobile ad-hoc networks (manet), computação distribuída na Internet.</biography>
+					</speaker>
+				</speakers>
+			</session>
+
+			<session id="2">
 				<start> 16:30 </start>
 				<end> 18:30 </end>
 				<speakers>

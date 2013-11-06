@@ -188,6 +188,12 @@
             	    </nomes>
            	    </evento>
            	    
+       		    <evento duracao="11:30-12:30">
+            	    <nomes>
+            	    	<nome tag="PN2">Palestra Nacional</nome>
+            	    </nomes>
+           	    </evento>
+           	    
        		    <evento duracao="12:30-14:30">
             	    <nomes>
             	    	<nome tag="ALM">Almoço</nome>
