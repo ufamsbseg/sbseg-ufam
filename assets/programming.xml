@@ -9,7 +9,7 @@
                 
             	<evento duracao="8:00-8:30">
             	    <nomes>
-            	    	<nome tag="INSC">Inscrição</nome>
+            	    	<nome tag="INSC">Credenciamento</nome>
             	    </nomes>
             	</evento>
             	
@@ -96,7 +96,7 @@
        		<eventos>
        		    <evento duracao="8:00-8:30">
             	    <nomes>
-            	    	<nome tag="INSC">Inscrição</nome>
+            	    	<nome tag="INSC">Credenciamento</nome>
             	    </nomes>
            	    </evento>
            	    
@@ -165,7 +165,7 @@
        		    
        		    <evento duracao="8:00-8:30">
             	    <nomes>
-            	    	<nome tag="INSC">Inscrição</nome>
+            	    	<nome tag="INSC">Credenciamento</nome>
             	    </nomes>
            	    </evento>
            	    
@@ -234,7 +234,7 @@
        		    
        		    <evento duracao="8:00-8:30">
             	    <nomes>
-            	    	<nome tag="INSC">Inscrição</nome>
+            	    	<nome tag="INSC">Credenciamento</nome>
             	    </nomes>
            	    </evento>
            	    
