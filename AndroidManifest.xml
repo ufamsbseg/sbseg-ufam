@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="br.com.sbseg"
-    android:versionCode="1"
+    package="br.com.ufam"
+    android:versionCode="2"
     android:versionName="1.0" >
 
     <uses-sdk
@@ -16,7 +16,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="br.com.sbseg.SplashActivity"
+            android:name="br.com.ufam.SplashActivity"
             android:label="@string/title_activity_splash" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" /> <!-- added para teste -->
@@ -24,7 +24,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="br.com.sbseg.activities.ProgrammingActivity"
+            android:name="br.com.ufam.activities.ProgrammingActivity"
             android:label="@string/title_activity_sbseg" >
             <intent-filter>
 
@@ -34,60 +34,58 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="br.com.sbseg.activities.Tutorials"
+            android:name="br.com.ufam.activities.Tutorials"
             android:icon="@drawable/caderno"
             android:label="@string/stringMinicursos" >
         </activity>
-        <activity android:name="br.com.sbseg.activities.DetailTutorialActivity" >
-        </activity>
+        <activity android:name="br.com.ufam.activities.DetailTutorialActivity">     </activity>
         <activity
-            android:name="br.com.sbseg.activities.DetailTutorials"
+            android:name="br.com.ufam.activities.DetailTutorials"
             android:icon="@drawable/caderno"
             android:label="@string/stringMinicurso" >
         </activity>
         <activity
-            android:name="br.com.sbseg.activities.KeynotesMainActivity"
+            android:name="br.com.ufam.activities.KeynotesMainActivity"
             android:icon="@drawable/apresentacao"
             android:label="@string/palestrasString" >
         </activity>
         <activity
-            android:name="br.com.sbseg.activities.SessoesTecnicasActivity"
+            android:name="br.com.ufam.activities.SessoesTecnicasActivity"
             android:icon="@drawable/documento"
             android:label="@string/sessoesString" >
         </activity>
         <activity
-            android:name="br.com.sbseg.activities.TechSessionActivity"
+            android:name="br.com.ufam.activities.TechSessionActivity"
             android:icon="@drawable/documento"
             android:label="@string/papersString" >
         </activity>
         <activity
-            android:name="br.com.sbseg.activities.TelaKeynoteMainActivity"
+            android:name="br.com.ufam.activities.TelaKeynoteMainActivity"
             android:icon="@drawable/apresentacao"
             android:label="@string/palestranteString" >
         </activity>
-        <activity android:name="br.com.sbseg.activities.TutorialsActivity" >
-        </activity>
+        <activity android:name="br.com.ufam.activities.TutorialsActivity"> </activity>
         <activity
-            android:name="br.com.sbseg.activities.WorkshopActivity"
+            android:name="br.com.ufam.activities.WorkshopActivity"
             android:icon="@drawable/documento"
             android:label="@string/stringWorkshop" >
         </activity>
         <activity
-            android:name="br.com.sbseg.activities.WorkshopSecondActivity"
+            android:name="br.com.ufam.activities.WorkshopSecondActivity"
             android:icon="@drawable/documento"
             android:label="@string/stringWorkshopSegundaTela" >
         </activity>
         <activity
-            android:name="br.com.sbseg.activities.SbsegMainActivity"
+            android:name="br.com.ufam.activities.SbsegMainActivity"
             android:screenOrientation="portrait"
             android:label="@string/title_activity_sbseg" >
         </activity>
         <activity
-            android:name="br.com.sbseg.FacebookSbsegMainActivity"
+            android:name="br.com.ufam.FacebookSbsegMainActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name="br.com.sbseg.InstaActivity"
+            android:name="br.com.ufam.InstaActivity"
             android:label="@string/app_name" >
         </activity>
         
