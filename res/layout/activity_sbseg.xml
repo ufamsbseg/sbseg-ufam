@@ -12,19 +12,8 @@
       	android:layout_gravity="top"
         android:src="@drawable/sbseg_inicio"
         android:contentDescription="@string/hello_world" />
-  
-    <ImageView
-        android:id="@+id/CalendarButton"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginLeft="100dp"
-        android:layout_alignTop="@+id/FaceButton"
-        android:onClick="Calendar"
-        android:clickable="true"
-        android:src="@drawable/calendario"
-        android:contentDescription="@string/hello_world" />
     
-    <ImageView
+  <!--    <ImageView
         android:id="@+id/FaceButton"
         android:layout_width="80dp"
         android:layout_height="80dp"
@@ -35,6 +24,7 @@
         android:src="@drawable/face"
         android:onClick="facebook"
         android:contentDescription="@string/hello_world" />
+	 -->
 
  <!--    <ImageView
         android:id="@+id/instagramButton"
@@ -45,5 +35,17 @@
         android:layout_marginBottom="54dp"
         android:onClick="instagram"
         android:src="@drawable/instagram" />  -->
+
+    <ImageView
+        android:id="@+id/CalendarButton"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="46dp"
+        android:clickable="true"
+        android:contentDescription="@string/hello_world"
+        android:onClick="Calendar"
+        android:src="@drawable/calendario" />
 
 </RelativeLayout>
