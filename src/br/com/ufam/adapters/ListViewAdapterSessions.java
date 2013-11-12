@@ -71,9 +71,6 @@ public class ListViewAdapterSessions extends BaseAdapter{
 			
 			TextView infoSession = (TextView) rowView.findViewById(R.id.infoSession);
 			
-			Log.e("caso 1", ""+techSessionList.get(position).getId() + ": " + techSessionList.get(position).getName());
-			Log.e("dados 1", ""+dateVerifierAnterior + " " + dateVerifierAtual + " " + TimeVerifierAnterior + " " + TimeVerifierAtual);
-			
 			infoSession.setText(techSessionList.get(position).getId() + ": " + techSessionList.get(position).getName());
 			View divider = (View)rowView.findViewById(R.id.dividerSessions);
 			divider.setVisibility(View.VISIBLE);
@@ -89,9 +86,6 @@ public class ListViewAdapterSessions extends BaseAdapter{
 			
 			TextView infoSession2 = (TextView) rowView2.findViewById(R.id.infoSession2);
 			
-			Log.e("caso 2", ""+techSessionList.get(position).getId() + ": " + techSessionList.get(position).getName());
-			Log.e("dados 2", ""+dateVerifierAnterior + " " + dateVerifierAtual + " " + TimeVerifierAnterior + " " + TimeVerifierAtual);
-			
 			infoSession2.setText(techSessionList.get(position).getId() + ": " + techSessionList.get(position).getName());
 			View divider2 = (View)rowView2.findViewById(R.id.dividerSessions2);
 			divider2.setVisibility(View.VISIBLE);
@@ -103,9 +97,6 @@ public class ListViewAdapterSessions extends BaseAdapter{
 		else if(dateVerifierAtual.equalsIgnoreCase(dateVerifierAnterior) && TimeVerifierAtual.equalsIgnoreCase(TimeVerifierAnterior)){
 			
 			TextView infoSession3 = (TextView) rowView3.findViewById(R.id.infoSession3);
-			
-			Log.e("caso 3", ""+techSessionList.get(position).getId() + ": " + techSessionList.get(position).getName());
-			Log.e("dados 3", ""+dateVerifierAnterior + " " + dateVerifierAtual + " " + TimeVerifierAnterior + " " + TimeVerifierAtual);
 			
 			infoSession3.setText(techSessionList.get(position).getId() + ": " + techSessionList.get(position).getName());
 			View divider3 = (View)rowView3.findViewById(R.id.dividerSessions3);

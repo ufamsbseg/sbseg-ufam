@@ -4,7 +4,6 @@ import java.util.ArrayList;
 
 import android.content.Context;
 import android.graphics.Color;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -68,9 +67,6 @@ public class ListViewWorkShopAdapter extends BaseAdapter{
 			
 			TextView infoSession = (TextView) rowView.findViewById(R.id.infoSession4);
 			
-			Log.e("caso 1", ""+techSessionList.get(position).getId() + ": " + techSessionList.get(position).getName());
-			Log.e("dados 1", ""+dateVerifierAnterior + " " + dateVerifierAtual + " " + TimeVerifierAnterior + " " + TimeVerifierAtual);
-			
 			infoSession.setText(techSessionList.get(position).getId() + ": " + techSessionList.get(position).getName());
 			View divider = (View)rowView.findViewById(R.id.dividerWorkshop);
 			divider.setVisibility(View.VISIBLE);
@@ -86,9 +82,6 @@ public class ListViewWorkShopAdapter extends BaseAdapter{
 			
 			TextView infoSession2 = (TextView) rowView2.findViewById(R.id.infoSession5);
 			
-			Log.e("caso 2", ""+techSessionList.get(position).getId() + ": " + techSessionList.get(position).getName());
-			Log.e("dados 2", ""+dateVerifierAnterior + " " + dateVerifierAtual + " " + TimeVerifierAnterior + " " + TimeVerifierAtual);
-			
 			infoSession2.setText(techSessionList.get(position).getId() + ": " + techSessionList.get(position).getName());
 			View divider2 = (View)rowView2.findViewById(R.id.dividerWorkshop2);
 			divider2.setVisibility(View.VISIBLE);
@@ -100,9 +93,6 @@ public class ListViewWorkShopAdapter extends BaseAdapter{
 		else if(dateVerifierAtual.equalsIgnoreCase(dateVerifierAnterior) && TimeVerifierAtual.equalsIgnoreCase(TimeVerifierAnterior)){
 			
 			TextView infoSession3 = (TextView) rowView3.findViewById(R.id.infoSession6);
-			
-			Log.e("caso 3", ""+techSessionList.get(position).getId() + ": " + techSessionList.get(position).getName());
-			Log.e("dados 3", ""+dateVerifierAnterior + " " + dateVerifierAtual + " " + TimeVerifierAnterior + " " + TimeVerifierAtual);
 			
 			infoSession3.setText(techSessionList.get(position).getId() + ": " + techSessionList.get(position).getName());
 			View divider3 = (View)rowView3.findViewById(R.id.dividerWorkshop3);

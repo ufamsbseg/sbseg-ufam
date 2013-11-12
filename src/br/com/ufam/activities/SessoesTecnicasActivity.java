@@ -11,7 +11,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
@@ -42,13 +41,12 @@ public class SessoesTecnicasActivity extends Activity {
         String[] tagAuxSplit = tagAuxString.split("#");
         tag = tagAuxSplit[0].replace("*","");
         
-        Log.e("INTEEEENT", ""+tag);
         context = this;
     
         adapter = new ListViewAdapterSessions(this,tag);
         
         techSessions = (ListView) findViewById(R.id.list_view);
-        techSessions.setAdapter(adapter); //adjustar o foco aqui.
+        techSessions.setAdapter(adapter);
         
         parseTechnicalSession();
         
@@ -101,14 +99,12 @@ public class SessoesTecnicasActivity extends Activity {
 				int counter = -1; //usado para encontrar a posição da view na listView
 				short flag = 0; //Usado para indicar se o grupo foi encontrado
 				for(TechnicalSession techS : techSessionList){
-					Log.e("Loop Status", "Entrando no foreach");
+
 					counter++;
-					Log.e("counter", ""+counter);
 					String tagAuxString = techS.getId();
 					String[] tagAux = tagAuxString.split("-");
 					String tagClass = tagAux[0];
-					Log.e("tag no foreach",""+tag);
-					Log.e("tagClass no foreach",""+tagClass);
+					
 					if(tag.equals(tagClass)){
 						techSessions.setSelection(counter);
 						flag = 1;

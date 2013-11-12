@@ -28,11 +28,10 @@ public class TechSessionActivity extends Activity {
 		//Pegando os TextViews
 		dataDayTime = (TextView)findViewById(R.id.day_data_time);
 		idNameLocal = (TextView)findViewById(R.id.id_name_local);
-//		chairInfo = (TextView)findViewById(R.id.chair_info);
+
 		//Adicionando informações aos TextViews
 		dataDayTime.setText(techSession.getDayWeek() + "," + techSession.getDate() + " " + techSession.getBeginning() + "-" + techSession.getEnd());
 		idNameLocal.setText(techSession.getId() + ":" + techSession.getName());
-//		chairInfo.setText("Chair: " + techSession.getChair().getName() + "(" + techSession.getChair().getAffiliation() + ")");
 		
 		context = this;
 	    
