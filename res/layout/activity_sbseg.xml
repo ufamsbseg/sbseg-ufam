@@ -13,7 +13,7 @@
         android:src="@drawable/sbseg_inicio"
         android:contentDescription="@string/hello_world" />
     
-  <!--    <ImageView
+     <ImageView
         android:id="@+id/FaceButton"
         android:layout_width="80dp"
         android:layout_height="80dp"
@@ -24,7 +24,7 @@
         android:src="@drawable/face"
         android:onClick="facebook"
         android:contentDescription="@string/hello_world" />
-	 -->
+	
 
  <!--    <ImageView
         android:id="@+id/instagramButton"
@@ -40,9 +40,9 @@
         android:id="@+id/CalendarButton"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="46dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/FaceButton"
+        android:layout_marginLeft="72dp"
         android:clickable="true"
         android:contentDescription="@string/hello_world"
         android:onClick="Calendar"
