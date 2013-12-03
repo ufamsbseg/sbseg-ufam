@@ -1,8 +1,10 @@
-package br.com.ufam;
+package br.com.ufam.instagramIntegration;
+
 
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
+import android.util.Log;
 
 public class SessionStore {
 	
@@ -24,6 +26,7 @@ public class SessionStore {
 		Editor editor = getSharedPreferences().edit();
 		editor.putString(ACCESS_TOKEN_KEY, accessToken);
 		editor.commit();
+		Log.e("Token Salvo","");
 	}
 	
 	public String getInstaAccessToken() {

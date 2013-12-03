@@ -9,7 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
-import br.com.ufam.R;
+import br.com.sbseg.R;
 import br.com.ufam.beans.TechnicalSession;
 
 public class ListViewWorkShopAdapter extends BaseAdapter{

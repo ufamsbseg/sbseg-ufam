@@ -5,7 +5,7 @@ import android.content.Context;
 import android.os.Bundle;
 import android.widget.ListView;
 import android.widget.TextView;
-import br.com.ufam.R;
+import br.com.sbseg.R;
 import br.com.ufam.adapters.ListViewWorkshopAdapterSecondScreen;
 import br.com.ufam.beans.TechnicalSession;
 

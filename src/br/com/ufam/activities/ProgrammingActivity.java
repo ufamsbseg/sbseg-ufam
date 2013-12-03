@@ -16,7 +16,7 @@ import android.support.v4.view.ViewPager;
 import android.util.TypedValue;
 import android.view.Menu;
 import android.view.MenuInflater;
-import br.com.ufam.R;
+import br.com.sbseg.R;
 import br.com.ufam.adapters.ViewPagerAdapter;
 import br.com.ufam.parsers.ParseProgramming;
 

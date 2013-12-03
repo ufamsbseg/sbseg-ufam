@@ -34,6 +34,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+import br.com.sbseg.R;
 
 import com.facebook.AppEventsLogger;
 import com.facebook.FacebookAuthorizationException;

@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
-import br.com.ufam.R;
+import br.com.sbseg.R;
 import br.com.ufam.beans.Palestrante;
 
 public class TelaKeynoteMainActivity extends Activity {

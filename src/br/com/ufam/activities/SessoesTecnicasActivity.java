@@ -15,7 +15,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
-import br.com.ufam.R;
+import br.com.sbseg.R;
 import br.com.ufam.adapters.ListViewAdapterSessions;
 import br.com.ufam.beans.TechnicalSession;
 import br.com.ufam.parsers.SymposiaParse;

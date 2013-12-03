@@ -14,7 +14,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
-import br.com.ufam.R;
+import br.com.sbseg.R;
 import br.com.ufam.adapters.ListViewTutorials;
 import br.com.ufam.beans.Tutorial;
 import br.com.ufam.parsers.TutorialsParse;

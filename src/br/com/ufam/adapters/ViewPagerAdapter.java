@@ -12,7 +12,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
-import br.com.ufam.R;
+import br.com.sbseg.R;
 import br.com.ufam.activities.KeynotesMainActivity;
 import br.com.ufam.activities.SessoesTecnicasActivity;
 import br.com.ufam.activities.Tutorials;

@@ -5,13 +5,12 @@ import java.util.ArrayList;
 
 import android.content.Context;
 import android.graphics.Color;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
-import br.com.ufam.R;
+import br.com.sbseg.R;
 import br.com.ufam.beans.TechnicalSession;
 
 public class ListViewAdapterSessions extends BaseAdapter{

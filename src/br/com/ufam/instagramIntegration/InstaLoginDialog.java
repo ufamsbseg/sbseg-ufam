@@ -1,4 +1,5 @@
-package br.com.ufam;
+package br.com.ufam.instagramIntegration;
+
 
 import android.annotation.SuppressLint;
 import android.app.Dialog;
@@ -94,7 +95,7 @@ public class InstaLoginDialog extends Dialog {
 			if (url.startsWith(InstaImpl.CALLBACKURL)) {
 				System.out.println(url);
 				String urls[] = url.split("=");
-				mAuthDialogListener.onComplete(urls[1]);
+				mAuthDialogListener.onComplete(urls[1]); //This is your request token.
 				InstaLoginDialog.this.dismiss();
 				return true;
 			}

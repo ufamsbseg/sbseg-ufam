@@ -5,9 +5,9 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import br.com.sbseg.R;
 import br.com.ufam.FacebookSbsegMainActivity;
-import br.com.ufam.InstaActivity;
-import br.com.ufam.R;
+import br.com.ufam.instagramIntegration.InstaActivity;
 
 public class SbsegMainActivity extends Activity{
 	

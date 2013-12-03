@@ -26,7 +26,7 @@
         android:contentDescription="@string/hello_world" />
 	
 
- <!--    <ImageView
+     <ImageView
         android:id="@+id/instagramButton"
         android:layout_width="80dp"
         android:layout_height="80dp"
@@ -34,7 +34,7 @@
         android:layout_alignLeft="@+id/CalendarButton"
         android:layout_marginBottom="54dp"
         android:onClick="instagram"
-        android:src="@drawable/instagram" />  -->
+        android:src="@drawable/instagram" />
 
     <ImageView
         android:id="@+id/CalendarButton"

@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
-import br.com.ufam.R;
+import br.com.sbseg.R;
 
 public class ListViewAdapterKeynotes extends BaseAdapter{
 	

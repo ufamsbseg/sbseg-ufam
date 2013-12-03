@@ -1,6 +1,6 @@
-package br.com.ufam;
+package br.com.ufam.instagramIntegration;
 
-import br.com.ufam.R;
+import br.com.sbseg.R;
 import android.os.Bundle;
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -9,6 +9,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -32,12 +33,12 @@ public class InstaActivity extends Activity implements OnClickListener {
 		mResponseListener = new ResponseListener();
 	}
 
-/*	@Override
+	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.activity_insta, menu);
 		return true;
-	} */
+	}
 
 	@Override
 	public void onClick(View arg0) {
@@ -45,11 +46,13 @@ public class InstaActivity extends Activity implements OnClickListener {
 		mInstaImpl.setAuthAuthenticationListener(new AuthListener());
 	}
 	
-	public class AuthListener implements br.com.ufam.InstaImpl.AuthAuthenticationListener
+	public class AuthListener implements br.com.ufam.instagramIntegration.InstaImpl.AuthAuthenticationListener
 	{
 		@Override
 		public void onSuccess() {
+			Log.e("Insta","Token Salvo4");
 			Toast.makeText(InstaActivity.this, "Instagram Authorization Successful", Toast.LENGTH_SHORT).show();
+			Log.e("Insta","Token Salvo3");
 		}
 
 		@Override
