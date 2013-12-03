@@ -84,6 +84,7 @@ public class ImageFromURLMainActivity extends Activity {
 		            Bitmap map = null;
 		            for (String url : urls) {
 		                map = downloadImage(url);
+		                map = scaleDownBitmap(map, 20, context);
 		                DownloadedImagesFromURL.add(map); //Adiciona a imagem baixada (e já convertida em um bitmap) nesse Array de bitmap
 		            }
 		            return null;
@@ -141,5 +142,17 @@ public class ImageFromURLMainActivity extends Activity {
 		            }
 		            return stream;
 		        }
+		        
+		        public Bitmap scaleDownBitmap(Bitmap photo, int newHeight, Context context) { //added
+
+		        	final float densityMultiplier = context.getResources().getDisplayMetrics().density;        
+
+		        	int h= (int) (newHeight*densityMultiplier);
+		        	int w= (int) (h * photo.getWidth()/((double) photo.getHeight()));
+
+		        	photo=Bitmap.createScaledBitmap(photo, w, h, true);
+
+		        	return photo;
+		        	}
 		    }
 }
