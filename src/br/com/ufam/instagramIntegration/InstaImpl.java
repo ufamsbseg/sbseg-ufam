@@ -21,6 +21,7 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
 import br.com.sbseg.R;
+import br.com.ufam.beans.Image;
 import br.com.ufam.instagramIntegration.InstaActivity.ResponseListener;
 
 public class InstaImpl {
@@ -39,7 +40,7 @@ public class InstaImpl {
 	public String mClient_id;
 	public String mClient_secret;
 	private String mToken;
-	private ArrayList<String> arrayURL = new ArrayList<String>(); //URL's das imagens
+	private ArrayList <Image> arrayImage = new ArrayList <Image>(); //Objeto das imagens
 	private String userIdInstagram; //ID do USER não da APLICAÇÃO!
 	
 	private AuthAuthenticationListener mAuthAuthenticationListener;
@@ -111,12 +112,19 @@ public class InstaImpl {
 				JSONArray jsonArray = jsonObject.getJSONArray("data");
 				Log.e("=P","Segunda AsyncTaks");
 				for(int x = 0; x < jsonArray.length(); x++){
-			
-					JSONObject mainImageJsonObject = jsonArray.getJSONObject(x).getJSONObject("images").getJSONObject("standard_resolution");//Use for loop to traverse through the JsonArray.
-			
-					String imageUrlString = mainImageJsonObject.getString("url");
-					arrayURL.add(imageUrlString);
-					Log.e("arrayURL: ",arrayURL.get(x));
+					Image image = new Image(null,null,null);
+
+					//Imagens em baixa resolução
+					JSONObject mainImageJsonObjectLow = jsonArray.getJSONObject(x).getJSONObject("images").getJSONObject("thumbnail");//Use for loop to traverse through the JsonArray.
+					String imageUrlStringLow = mainImageJsonObjectLow.getString("url");
+					image.setLowUrl(imageUrlStringLow);
+					//Imagens em alta resolução	
+					JSONObject mainImageJsonObjectHigh = jsonArray.getJSONObject(x).getJSONObject("images").getJSONObject("standard_resolution");//Use for loop to traverse through the JsonArray.
+					String imageUrlStringHigh = mainImageJsonObjectHigh.getString("url");
+					image.setHighUrl(imageUrlStringHigh);
+					
+					arrayImage.add(image);
+					//Log.e("arrayURL: ",arrayURL.get(x));
 					
 				}
 			}
@@ -132,7 +140,7 @@ public class InstaImpl {
 			
 			Intent i= new Intent(mContext,ImageFromURLMainActivity.class);
 			Bundle bundle = new Bundle();
-			bundle.putStringArrayList("URLs", arrayURL);
+			bundle.putSerializable("Images", arrayImage);
 			i.putExtras(bundle);
 			mContext.startActivity(i);
 			
@@ -175,7 +183,7 @@ public class InstaImpl {
 				mAccessTokenString = jsonObject.getString("access_token");
 				//Log.e(TAG, mAccessTokenString);
 				
-				mSessionStore.saveInstaAccessToke(mAccessTokenString); //salvar o access token aqui //added
+				//mSessionStore.saveInstaAccessToke(mAccessTokenString); //salvar o access token aqui //added
 				Log.e("Primeira AsyncTask","Token Salvo2");
 				//User details like, name, id, tagline, profile pic etc.
 				JSONObject userJsonObject = jsonObject.getJSONObject("user");
@@ -194,7 +202,7 @@ public class InstaImpl {
 				String name = userJsonObject.getString("full_name");
 				//Log.e(TAG, name);
 				mSessionStore.saveInstagramSession(mAccessTokenString, id, username, name);
-				showResponseDialog(name, mAccessTokenString);
+				//showResponseDialog(name, mAccessTokenString);
 			}
 			catch (Exception e) 
 			{
@@ -209,7 +217,7 @@ public class InstaImpl {
 			super.onPostExecute(result);
 			dismissDialog();
 			Log.e("Status","Iniciando a nova AsyncTask...3");
-			mAuthAuthenticationListener.onSuccess();
+			//mAuthAuthenticationListener.onSuccess();
 			//chamar GetInstagramImagesAsyncTask aqui
 			Log.e("Status","Iniciando a nova AsyncTask...");
 			new GetInstagramImagesAsyncTask().execute();

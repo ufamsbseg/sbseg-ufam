@@ -2,22 +2,22 @@ package br.com.ufam.instagramIntegration;
 
 import java.util.ArrayList;
 
-import br.com.sbseg.R;
 import android.content.Context;
-import android.graphics.Bitmap;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
+import br.com.sbseg.R;
+import br.com.ufam.beans.Image;
 
 public class ImageAdapterGridView extends BaseAdapter {
 	
 	private LayoutInflater mInflater;
-    public ArrayList<Bitmap> arrayListImages;
+    public ArrayList<Image> arrayListImages;
  
-    public ImageAdapterGridView(Context context, ArrayList<Bitmap> arrayImages)
+    public ImageAdapterGridView(Context context, ArrayList<Image> arrayImages)
     {
         //Itens que preencherão o listview
         this.arrayListImages = arrayImages;
@@ -56,7 +56,7 @@ public class ImageAdapterGridView extends BaseAdapter {
      
         
         ImageView imageView = (ImageView)view.findViewById(R.id.imageView1);
-        imageView.setImageBitmap(arrayListImages.get(position));
+        imageView.setImageBitmap(arrayListImages.get(position).getImage());
         imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
         imageView.setLayoutParams(new GridView.LayoutParams(100, 100));
         return imageView;

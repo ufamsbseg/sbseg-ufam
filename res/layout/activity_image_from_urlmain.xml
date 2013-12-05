@@ -9,6 +9,6 @@
     android:horizontalSpacing="10dp"
     android:verticalSpacing="10dp"
     android:gravity="fill|center"
-    android:stretchMode="columnWidth" > 
+    android:stretchMode="spacingWidthUniform" > 
  
 </GridView>

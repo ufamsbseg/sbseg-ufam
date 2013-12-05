@@ -1,33 +1,39 @@
 package br.com.ufam.instagramIntegration;
 
 
-import java.util.ArrayList;
-
-import br.com.sbseg.R;
 import android.app.Activity;
+import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.Menu;
 import android.widget.ImageView;
+import br.com.sbseg.R;
 
 public class FullImageMainActivity extends Activity {
-
+	
+	private String urlHigh;
+	private ProgressDialog mProgressDialog;
+	private Context context;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_full_image_main);
 		
 		// get intent data
+		context = this;
         Intent i = getIntent();
         Bundle bundle = i.getExtras();
-        ArrayList<Bitmap> images = (ArrayList <Bitmap>) bundle.getSerializable("images");
+        urlHigh = bundle.getString("images");
+        mProgressDialog = new ProgressDialog(context); 
+        DownloadImageAsyncTask test = new DownloadImageAsyncTask();
+        test.execute();
         
-        // Selected image id
-        int position = i.getExtras().getInt("id");
-        ImageAdapterGridView imageAdapter = new ImageAdapterGridView(this,images);
-        ImageView imageView = (ImageView) findViewById(R.id.full_image_view);
-        imageView.setImageBitmap(imageAdapter.arrayListImages.get(position));
+//        Image image = 
+//        ImageView imageView = (ImageView) findViewById(R.id.full_image_view);
+//        imageView.setImageBitmap(image);
 	}
 
 	@Override
@@ -37,4 +43,38 @@ public class FullImageMainActivity extends Activity {
 		return true;
 	}
 
+	
+	public  class DownloadImageAsyncTask extends AsyncTask<Void, Void, Bitmap>{
+
+		@Override
+		protected Bitmap doInBackground(Void... url) {
+			// TODO Auto-generated method stub
+			
+			DownloadImage download = new DownloadImage();
+	        Bitmap image = download.downloadImage(urlHigh);
+			return image;
+		}
+		protected void onPostExecute(Bitmap result) {
+			dismissDialog();
+			Bitmap image =  result;
+	        ImageView imageView = (ImageView) findViewById(R.id.full_image_view);
+	        imageView.setImageBitmap(image);
+        }
+		
+		protected void onPreExecute() {
+			showDialog("Abrindo foto...");
+		}
+		
+	
+	public void showDialog(String message){
+		mProgressDialog.setMessage(message);
+		mProgressDialog.show();
+	}
+    
+    public void dismissDialog(){
+		if (mProgressDialog.isShowing()) {
+			mProgressDialog.dismiss();
+		}
+	}
+  }
 }

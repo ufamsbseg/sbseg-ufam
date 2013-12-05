@@ -1,18 +1,12 @@
 package br.com.ufam.instagramIntegration;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.net.HttpURLConnection;
-import java.net.URL;
-import java.net.URLConnection;
 import java.util.ArrayList;
 
-import br.com.sbseg.R;
 import android.app.Activity;
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.Menu;
@@ -20,54 +14,72 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.GridView;
-import android.widget.ImageView;
+import br.com.sbseg.R;
+import br.com.ufam.beans.Image;
 
 public class ImageFromURLMainActivity extends Activity {
 
-	ImageView imageView;
-	ArrayList<Bitmap> DownloadedImagesFromURL = new ArrayList<Bitmap>();
-	ImageAdapterGridView adapterGridImage;
-    Context context;
-    GridView gridView;
+	//public ArrayList<Bitmap> DownloadedImagesFromURL = new ArrayList<Bitmap>();
+	public ImageAdapterGridView adapterGridImage;
+    public Context context;
+    private GridView gridView;
+    private ProgressDialog mProgressDialog;
+    private ArrayList<Image> ArrayImagesObject = new ArrayList<Image>();
+    private Bundle bundle;
     
+	@SuppressWarnings("unchecked")
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		context = this;
-		Bundle bundle = getIntent().getExtras();
-		ArrayList<String> urls = bundle.getStringArrayList("URLs");
-		String[] urlsArray = urls.toArray(new String[urls.size()]); //Trasformando o arraylist em vetor de string
 		setContentView(R.layout.activity_image_from_urlmain); 
 		
-	        // Create an object for subclass of AsyncTask
-	        GetXMLTask task = new GetXMLTask();
-	        // Execute the task
-	       // task.execute(new String[] { URL });
-	        task.execute(urlsArray);
+		context = this;
+		mProgressDialog = new ProgressDialog(context);
+		bundle = getIntent().getExtras();
+		ArrayImagesObject = (ArrayList<Image>)bundle.getSerializable("Images");
+		ArrayList<String>  arrayURLs = objectImageToStringArray(ArrayImagesObject);
+		String[] urlsArray = arrayURLs.toArray(new String[arrayURLs.size()]); //Trasformando o arraylist em vetor de string
+		
+		
+        // Create an object for subclass of AsyncTask
+        GetXMLTask task = new GetXMLTask();
+        
+        // Execute the task
+        task.execute(urlsArray);
+        
+        gridView = (GridView) findViewById(R.id.grid_view);
+        
+        gridView.setOnItemClickListener(new OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
+                // Sending image id to FullScreenActivity
+                Intent i = new Intent(getApplicationContext(), FullImageMainActivity.class);
+                Bundle bundle = new Bundle();
+                Image image = (Image)adapterGridImage.getItem(position);
+    			bundle.putString("images", image.getHighUrl());
+    			i.putExtras(bundle);
+                startActivity(i);
+            }
+        });
 	        
-	      //  listViewImages = (ListView)findViewById(R.id.listView1);
-	        
-	        gridView = (GridView) findViewById(R.id.grid_view);
-	        
-	        gridView.setOnItemClickListener(new OnItemClickListener() {
-	            @Override
-	            public void onItemClick(AdapterView<?> parent, View v,
-	                    int position, long id) {
-	 
-	                // Sending image id to FullScreenActivity
-	                Intent i = new Intent(getApplicationContext(), FullImageMainActivity.class);
-	                // passing array index
-	                i.putExtra("id", position);
-	                Bundle bundle = new Bundle();
-	    			bundle.putSerializable("images", DownloadedImagesFromURL);
-	    			i.putExtras(bundle);
-	                startActivity(i);
-	            }
-	        });
-	        
-	        // Instance of ImageAdapter Class
-	       // gridView.setAdapter(new ImageAdapter(this));
-	        
+	}
+	
+	public ArrayList<String> objectImageToStringArray(ArrayList<Image> ImageArray){
+		
+		ArrayList<String> arrayUrl = new ArrayList<String>(); 
+		
+		try{
+		
+			for(Image image : ImageArray){
+				arrayUrl.add(image.getLowUrl());
+				
+			}
+		}
+		catch(Exception e){
+			e.printStackTrace();
+		}
+		
+		return arrayUrl;
 	}
 
 	@Override
@@ -78,72 +90,50 @@ public class ImageFromURLMainActivity extends Activity {
 		
 	}
 		 
-		    private class GetXMLTask extends AsyncTask<String, Void, Bitmap> {
+		    private class GetXMLTask extends AsyncTask<String, Void, Void> {
 		        @Override
-		        protected Bitmap doInBackground(String... urls) {
+		        protected Void doInBackground(String... urls) {
 		            Bitmap map = null;
-		            for (String url : urls) {
-		                map = downloadImage(url);
-		                map = scaleDownBitmap(map, 20, context);
-		                DownloadedImagesFromURL.add(map); //Adiciona a imagem baixada (e já convertida em um bitmap) nesse Array de bitmap
+		            DownloadImage download= new DownloadImage();
+		            for (int i = 0; i < urls.length; i++) {
+		                map = download.downloadImage(urls[i]);
+		               // map = scaleDownBitmap(map, 20, context);
+		                ArrayImagesObject.get(i).setImage(map); //Adiciona a imagem baixada (e já convertida em um bitmap) nesse Array de bitmap
 		            }
 		            return null;
-//		            return map;
 		        }
 		      
+		        
+		        @Override
+				protected void onPreExecute() {
+					showDialog("Aguarde, carregando fotos...");
+					super.onPreExecute();
+				}
 		      
 		        // Sets the Bitmap returned by doInBackground
 		        @Override
-		        protected void onPostExecute(Bitmap result) {
+		        protected void onPostExecute(Void result) {
+		        	dismissDialog();
 		        	//Cria o adapter
-		        	adapterGridImage = new ImageAdapterGridView(context,DownloadedImagesFromURL);
-		     
-		            //Define o Adapter
+		        	adapterGridImage = new ImageAdapterGridView(context,ArrayImagesObject);
+		        	//Define o Adapter
 		            gridView.setAdapter(adapterGridImage);
-		            //Cor quando a lista é selecionada para ralagem.
-		            //listViewImages.setCacheColorHint(Color.TRANSPARENT);
-		            
 		        }
 		 
-		        // Creates Bitmap from InputStream and returns it
-		        private Bitmap downloadImage(String url) {
-		            Bitmap bitmap = null;
-		            InputStream stream = null;
-		            BitmapFactory.Options bmOptions = new BitmapFactory.Options();
-		            bmOptions.inSampleSize = 1;
 		 
-		            try {
-		                stream = getHttpConnection(url);
-		                bitmap = BitmapFactory.
-		                        decodeStream(stream, null, bmOptions);
-		                stream.close();
-		            } catch (IOException e1) {
-		                e1.printStackTrace();
-		            }
-		            return bitmap;
-		        }
-		 
-		        // Makes HttpURLConnection and returns InputStream
-		        private InputStream getHttpConnection(String urlString)throws IOException {
-		            InputStream stream = null;
-		            URL url = new URL(urlString);
-		            URLConnection connection = url.openConnection();
-		 
-		            try {
-		                HttpURLConnection httpConnection = (HttpURLConnection) connection;
-		                httpConnection.setRequestMethod("GET");
-		                httpConnection.connect();
-		 
-		                if (httpConnection.getResponseCode() == HttpURLConnection.HTTP_OK) {
-		                    stream = httpConnection.getInputStream();
-		                }
-		            } catch (Exception ex) {
-		                ex.printStackTrace();
-		            }
-		            return stream;
-		        }
+		        public void showDialog(String message){
+		    		mProgressDialog.setMessage(message);
+		    		mProgressDialog.show();
+		    	}
 		        
-		        public Bitmap scaleDownBitmap(Bitmap photo, int newHeight, Context context) { //added
+		        public void dismissDialog(){
+		    		if (mProgressDialog.isShowing()) {
+		    			mProgressDialog.dismiss();
+		    		}
+		    	}
+		        
+				@SuppressWarnings("unused")
+				public Bitmap scaleDownBitmap(Bitmap photo, int newHeight, Context context) { //added
 
 		        	final float densityMultiplier = context.getResources().getDisplayMetrics().density;        
 

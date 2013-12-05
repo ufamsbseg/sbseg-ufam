@@ -118,7 +118,7 @@ public class InstaLoginDialog extends Dialog {
 		public void onPageStarted(WebView view, String url, Bitmap favicon) {
 			super.onPageStarted(view, url, favicon);
 			if (!isShowing) {
-				showDialog("Loading..");
+				showDialog("Carregando...");
 			}
 			
 		}
