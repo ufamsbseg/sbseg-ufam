@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<tutorials>
+	<tutorial id="MC1">
+		<day>
+			<date>11/11/13</date>
+			<dayWeek>Segunda-Feira</dayWeek>
+		</day>
+		
+		<period>
+			<beginning>08:30</beginning>
+			<end>12:30</end>
+		</period>
+		
+		<theme>Anti-Forense Digital: conceitos, técnicas, ferramentas e estudos de caso</theme>	
+		
+		<description>Um tema bastante atual e que tem recebido significativa atenção tanto da comunidade científica como da indústria é a forense digital (também conhecida como análise forense, forense computacional e outros nomes), que trata da investigação e possível reconstrução de cenários de eventos já ocorridos no meio digital. Diante deste fato, muitas pessoas que desejam esconder ou destruir dados procuram técnicas e ferramentas para aplicação da anti-forense digital, que tem como objetivo dificultar ou até mesmo impossibilitar a análise forense. O minicurso em questão trata dos conceitos, técnicas, ferramentas e meios de identificação da aplicação de anti-forense digital (conhecida como anti-anti-forense digital). Quando fala-se em anti-forense digital, muitos pensam em criminosos que utilizam técnicas para dificultar a investigação de seus atos. Na verdade, muitas das técnicas a serem abordadas deveriam ser aplicadas por empresas para garantir sigilo de suas informações e até mesmo sua destruição quando mídias são descartadas (doação de mídias, por exemplo). No fim do minicurso, o leitor terá o conhecimento mínimo e condições de aplicar as técnicas abordadas para proteção e como identificar a utilização das mesmas, no caso de análise forense.</description>
+						
+		<speakers>
+			<speaker>			
+				<name>Evandro Della Vecchia</name>
+				<affiliation>PUCRS, IGP, Brasil</affiliation>
+			</speaker>
+
+			<speaker>			
+				<name>Daniel Weber</name>
+				<affiliation>UFRGS, Brasil</affiliation>
+			</speaker>
+
+			<speaker>			
+				<name>Avelino Zorzo</name>
+				<affiliation>PUCRS, Brasil</affiliation>
+			</speaker>
+
+		</speakers>
+
+	</tutorial>	
+
+	<tutorial id="MC2">
+		<day>
+			<date>11/11/13</date>
+			<dayWeek>Segunda-Feira</dayWeek>
+		</day>
+		
+		<period>
+			<beginning>14:30</beginning>
+			<end>18:30</end>
+		</period>
+		
+		<theme>Criptografia Pós-Quântica</theme>	
+		
+		<description>Criptossistemas denominados pós-quânticos foram inicialmente propostos para fazer frente à possibilidade tecnológica de montar ataques apoiados por computadores quânticos contra criptossistemas convencionais (como RSA e ECC). Um benefício adicional, e em certo sentido mais decisivo, dos esquemas pós-quânticos é sua eficiência potencialmente superior ao das alternativas mais comuns, especialmente em cenários envolvendo plataformas com recursos extremamente limitados (típicos de sistemas embarcados, redes de sensores sem fio e da assim chamada Internet das Coisas) e/ou altamente distribuídos (computação em nuvem), em que os esquemas convencionais (e suscetíveis a ataques quânticos) podem não ser sequer viáveis por mera carência de capacidade computacional suficiente para aplicá-los. Justifica-se, assim, mesmo num contexto puramente clássico (em que ataques previamente voltados somente a PCs tradicionais podem ser lançados contra automóveis, dispositivos celulares, e-tickets, RFIDs ou até mesmo contra marca-passos, além de poderem atingir uma escala sem precedentes devido à índole altamente distribuída da nuvem), a avaliação de criptossistemas pós-quânticos, e portanto o estudo e a pesquisa sobre o assunto. O objetivo do minicurso é introduzir noções básicas das principais linhas de pesquisa pós-quântica (códigos corretores de erros, sistemas MQ, reticulados e assinaturas baseadas em hash), bem como apresentar os estudos mais recentes visando a melhorias dos esquemas relacionadas a tamanhos de chaves, overhead de assinaturas e criptogramas.</description>
+						
+		<speakers>
+			<speaker>			
+				<name>Paulo S. L. M. Barreto</name>
+				<affiliation>USP, Brasil</affiliation>
+			</speaker>
+
+			<speaker>			
+				<name>Felipe P. Biasi</name>
+				<affiliation>USP, Brasil</affiliation>
+			</speaker>
+
+			<speaker>			
+				<name>Ricardo Dahab</name>
+				<affiliation>Unicamp, Brasil</affiliation>
+			</speaker>
+
+			<speaker>			
+				<name>Julio César López-Hernández</name>
+				<affiliation>Unicamp, Brasil</affiliation>
+			</speaker>
+
+			<speaker>			
+				<name>Eduardo Morais</name>
+				<affiliation>Unicamp, Brasil</affiliation>
+			</speaker>
+
+			<speaker>			
+				<name>Ana Karina D. S. Oliveira</name>
+				<affiliation>UFMS, Brasil</affiliation>
+			</speaker>
+
+			<speaker>			
+				<name>Thomaz Oliveira</name>
+				<affiliation>CINVESTAV-IPN, Brasil</affiliation>
+			</speaker>
+
+			<speaker>			
+				<name>Geovandro C. C. F. Pereira</name>
+				<affiliation>USP, Brasil</affiliation>
+			</speaker>
+
+			<speaker>			
+				<name>Jefferson E. Ricardini</name>
+				<affiliation>USP, Brasil</affiliation>
+			</speaker>
+
+		</speakers>
+
+	</tutorial>	
+
+	<tutorial id="MC3">
+		<day>
+			<date>14/11/13</date>
+			<dayWeek>Quinta-Feira</dayWeek>
+		</day>
+		
+		<period>
+			<beginning>08:30</beginning>
+			<end>12:30</end>
+		</period>
+		
+		<theme>Segurança de Software em Sistemas Embarcados: Ataques e Defesas</theme>	
+		
+		<description>A segurança de sistemas e aplicações computacionais é alvo de preocupação de quem as administra. Aplicações com falhas tornam-se alvos de softwares mal-intencionados que podem, entre outras práticas, obter o controle do sistema. A falha torna o sistema vulnerável e, portanto, alvo potencial de programadores mal-intencionados. Os atacantes exploram essas falhas e, assim, obtém o controle do sistema para fins diversos. Dentre as falhas exploradas pelos atacantes, encontra-se o estouro de memória (buffer overflow) que, uma vez explorada, permite ao adversário alterar o fluxo do programa corrente para executar trechos de código com fins diversos. Este minicurso trata dos ataques de estouro de arranjos de memória e vazamento de informações, bem como algumas defesas usadas para tentar evitar esses problemas.</description>
+						
+		<speakers>
+			<speaker>			
+				<name>Bruno Silva</name>
+				<affiliation>UFMG, Brasil</affiliation>
+			</speaker>
+
+			<speaker>			
+				<name>Diógenes Cecilio da Silva Jr.</name>
+				<affiliation>UFMG, Brasil</affiliation>
+			</speaker>
+
+			<speaker>			
+				<name>Evaldo M. Souza</name>
+				<affiliation>UFMG, Brasil</affiliation>
+			</speaker>
+
+			<speaker>			
+				<name>Fernando Pereira</name>
+				<affiliation>UFMG, Brasil</affiliation>
+			</speaker>
+
+			<speaker>			
+				<name>Fernando Teixeira</name>
+				<affiliation>UFMG, Brasil</affiliation>
+			</speaker>
+
+			<speaker>			
+				<name>Hao Chi Wong</name>
+				<affiliation>INTEL, Brasil</affiliation>
+			</speaker>
+			<speaker>			
+				<name>Henrique Nazaré</name>
+				<affiliation>UFMG, Brasil</affiliation>
+			</speaker>
+
+			<speaker>			
+				<name>Izabela Maffra</name>
+				<affiliation>UFMG, Brasil</affiliation>
+			</speaker>
+
+			<speaker>			
+				<name>Jean Freire</name>
+				<affiliation>UFMG, Brasil</affiliation>
+			</speaker>
+
+			<speaker>			
+				<name>Leonardo B. Oliveira</name>
+				<affiliation>UFMG, Brasil</affiliation>
+			</speaker>
+
+			<speaker>			
+				<name>Willer F. Santos</name>
+				<affiliation>UFMG, Brasil</affiliation>
+			</speaker>
+
+		</speakers>
+
+	</tutorial>	
+
+	<tutorial id="MC4">
+		<day>
+			<date>14/11/13</date>
+			<dayWeek>Quinta-Feira</dayWeek>
+		</day>
+		
+		<period>
+			<beginning>14:30</beginning>
+			<end>18:30</end>
+		</period>
+		
+		<theme>Infraestrutura de Autenticação e de Autorização para Internet das Coisas</theme>	
+		
+		<description>O próximo salto no crescimento da Internet será a ampla integração dos objetos físicos do dia a dia (coisas), conectados em redes. A ideia básica de IoT consiste na presença de uma diversidade de coisas (objetos) que interagem e cooperam entre si afim de atingir um objetivo comum, por exemplo, o compartilhamento de informações utilizando métodos de endereçamento único e protocolos de comunicação padronizados. Com o crescimento das aplicações de IoT, a preocupação com a segurança das informações aumentará. O objetivo deste minicurso é analisar os desafios de segurança e as infraestruturas de autenticação e de autorização que proveem gestão de identidades para Internet das Coisas.</description>
+						
+		<speakers>
+			<speaker>			
+				<name>Michelle S. Wangham</name>
+				<affiliation>UNIVALE, Brasil</affiliation>
+			</speaker>
+
+			<speaker>			
+				<name>Marlon Cordeiro Domenech</name>
+				<affiliation>UNIVALE, Brasil</affiliation>
+			</speaker>
+
+			<speaker>			
+				<name>Emerson Ribeiro de Mello</name>
+				<affiliation>IFSC, Brasil</affiliation>
+			</speaker>
+
+		</speakers>
+
+	</tutorial>	
+
+</tutorials>
