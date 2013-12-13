@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/activity_tech_session_item"
+    android:background="#f4f4f4"  > 
+    
+    <!-- Esse xml contem o item para o list view da segunda activity -->
+    <!-- Esse TextView é apenas para exibir o horário e o nome do paper. Os autores do paper são alocados dinamicamente . -->
+   
+   <View
+        android:id="@+id/dividerSessionsItem2"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#42a4cb"
+        android:visibility="visible" />
+   
+    <TextView 
+        android:id="@+id/view_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="#f4f4f4"
+        android:textColor="#3a3a3a"
+        android:text="@string/infoText" />
+    
+    <View
+        android:id="@+id/dividerSessionsItem"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#42a4cb"
+        android:visibility="visible" />
+    
+
+</LinearLayout>

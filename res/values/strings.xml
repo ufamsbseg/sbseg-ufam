@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SBSeg</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_sbseg">SBSeg 2013</string>
+    <string name="newapi">NewApi</string>
+
+    <!-- Strings do Jordan ==================== -->
+    <string name="infoSession">infoNull</string>
+    <string name="title_activity_tech_session">Sessões Técnicas</string>
+    <string name="action_settings">Settings</string>
+    <string name="day_data_time">null</string>
+    <string name="infoText">infoNull</string>
+    <string name="id_name_local">null</string>
+    <string name="chair_info">null</string>
+    <string name="idSession">idNull</string>
+    <string name="infoDate" />
+    <!-- ===================================== -->
+    <string name="divider">_____________________________________________________</string>
+    <string name="documento_desc">descrição</string>
+    <string name="apresentacao_desc">apresentação</string>
+    <string name="right_arrow_desc">descrição</string>
+    <string name="stringMinicurso">Minicurso</string>
+    <string name="stringMinicursos">Minicursos</string>
+    <string name="palestrasString">Palestras</string>
+    <string name="palestranteString">Palestrante</string>
+    <string name="sessoesString">Sessões Técnicas</string>
+    <string name="papersString">Papers</string>
+    <string name="stringWorkshop">Workshops</string>
+    <string name="stringWorkshopSegundaTela">Workshop</string>
+    <string name="infoTime">infoTime null</string>
+    <string name="title_activity_activity_splash">SBSeg2013</string>
+    <string name="title_activity_activity_splash_screen">SBSeg2013</string>
+    <string name="title_activity_splash">SBSeg 2013</string>
+    <string name="title_activity_facebook_sbseg_main">FacebookSbsegMainActivity</string>
+    <string name="StringFace">SBSeg</string>
+    <string name="album_name">Imagens AVD</string>
+    
+    <!--   Strings Facebook -->
+    <string name="cancelled">Cancelado</string>
+    <string name="permission_not_granted">Não é possível executar a ação selecionada porque as permissões não foram concedidos.</string>
+    <string name="ok">OK</string>
+    <string name="hello_user">Oi, %1$s!</string>
+    <string name="success">Success</string>
+    <string name="successfully_posted_post">Postado com sucesso \'%1$s\'.\nPost ID: %2$s</string>
+    <string name="error">Error</string>
+    <string name="status_update">Status de atualização para %1$s em %2$s</string>
+    <string name="photo_post">Foto postada</string>
+    <string name="you_picked">You picked:</string>
+    <string name="no_friends_selected">&lt;No friends selected&gt;</string>
+    <string name="no_place_selected">&lt;No place selected&gt;</string>
+    <string name="pick_seattle_place">Pick a Seattle Place</string>
+    <string name="exception">Exception: %1$s</string>
+    <string name="app_id">572931116113225</string>
+    
+    <!--String Instagram-->
+    <string name="instagram_id">f3e4cdda174b41818383428421544797</string>
+    <string name="instagram_secret">fcda26ea11d24bdbbdfc6cf48fd49f29</string>
+    <string name="APP_ID">449882188366752</string>
+    <string name="callbackurl">http://sbseg2013.icomp.ufam.edu.br/index.php/pt-br/</string>
+    <string name="title_activity_show_downloaded_images">ShowDownloadedImages</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_full_image_main">FullImageMainActivity</string>
+    <string name="login">Logar no Instagram</string>
+
+</resources>

@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<tutorials>
+	<tutorial id="T2">
+		<day>
+			<date> 09/06/11 </date>
+			<dayWeek> Sunday </dayWeek>
+		</day>
+		
+		<period>
+			<beginning> 9:00 </beginning>
+			<end> 12:30 </end>
+		</period>
+		
+		<theme> Network Coding: From Theory to Practice </theme>	
+		
+		<description> The tutorial provides an introduction to the rapidly growing research area of network coding. Network coding allows intermediate nodes in a network to manipulate data, for example by sending out packets that are combinations of previously received packets instead of simply forwarding them. The initial theoretical results on network coding were followed by a wealth of applications in a number of different areas that show that the theoretical insights can be translated into practical gains. The tutorial is divided into three parts. The first part provides the participants with the theoretical tools necessary to understand the field of network coding and focuses on the underlying algebraic principles. It will also introduce distributed randomized network codes and discuss their properties. We will not assume any prior knowledge of advanced algebra or optimization. The second part of the tutorial gives an overview of the different application areas and discusses, which types of networking problems are amenable to network coding (and which aren't). Finally, we will discuss implementation aspects in real-world systems, covering wireless meshed networks, distributed storage, heterogeneous networks and some more.</description>
+						
+		<speakers>
+			<speaker>			
+				<name> Muriel Médard </name>
+				<affiliation> MIT / USA</affiliation>
+				<biography> Muriel Médard is a Professor in the Electrical Engineering and Computer Science at MIT. Professor Médard received B.S. degrees in EECS and in Mathematics in 1989, a B.S. degree in Humanities in 1990, a M.S. degree in EE 1991, and a Sc D. degree in EE in 1995, all from the Massachusetts Institute of Technology (MIT), Cambridge. She serves as an associate editor for the IEEE/OSA Journal of Lightwave Technology and is a member of the Board of Governors of the IEEE Information Theory Society. Professor Médard's research interests are in the areas of network coding and reliable communications, particularly for optical and wireless networks. She was awarded the IEEE Leon K. Kirchmayer Prize Paper Award 2002 for her paper, "The Effect Upon Channel Capacity in Wireless Communications of Perfect and Imperfect Knowledge of the Channel. She was co- awarded the Best Paper Award for G. Weichenberg, V. Chan, M. Médard, "Reliable Architectures for Networks Under Stress". She received a NSF Career Award in 2001 and was co-winner 2004 Harold E. Edgerton Faculty Achievement Award, established in 1982 to honor junior faculty members "for distinction in research, teaching and service to the MIT community." She was named a 2007 Gilbreth Lecturer by the National Academy of Engineering. Professor Médard is a House Master at Next House and a Fellow of IEEE. </biography>
+			</speaker>
+			<speaker>
+				<name> Frank H. P. Fitzek </name>
+				<affiliation> University of Aalborg / Denmark</affiliation>
+				<biography> Frank H. P. Fitzek is a Professor in the department of Electronic Systems, University of Aalborg, Denmark heading the Mobile Device group. He received his diploma (Dipl.-Ing.) degree in electrical engineering from the University of Technology - Rheinisch-Westfälische Technische Hochschule (RWTH) - Aachen, Germany, in 1997 and his Ph.D. (Dr.-Ing.) in Electrical Engineering from the Technical University Berlin, Germany in 2002 and became Adjunct Professor at the University of Ferrara, Italy. He co-founded the start-up company acticom GmbH in Berlin in 1999. He has visited various research institutes including Massachusetts Institute of Technology (MIT), VTT, and Arizona State University. In 2005 he won the YRP award for the work on MIMO MDC and received the Young Elite Researcher Award of Denmark. He was selected to receive the NOKIA Champion Award four times in a row in 2007 to 2010. In 2008 he was awarded the Nokia Achievement Award for his work on cooperative networks. His current research interests are in the areas of wireless and mobile communication networks, mobile phone programming, cross layer as well as energy efficient protocol design and cooperative networking. </biography>
+			</speaker>
+
+		</speakers>
+
+	</tutorial>	
+	  		
+	<tutorial id="T3">
+		<day>
+			<date> 09/06/11 </date>
+			<dayWeek> Sunday </dayWeek>
+		</day>
+		
+		<period>
+			<beginning> 9:00 </beginning>
+			<end> 12:30 </end>
+		</period>
+		
+		<theme> Spatial Modulation (SM) for MIMO Wireless Systems </theme>	
+			
+		<description> The key challenge for future wireless communications is to make these networks energy-efficient and spectrum efficient at the same time. This results in a paradigm-shifting requirement which necessitates a clean-slate approach of wireless system design. Clearly, such approach will have to embrace the rich body of knowledge that has been created especially on Multiple-Input-Multiple-Output (MIMO) technology during the last 25 years. This motivates us to give a tutorial on an emerging wireless communications concept for "massive" MIMO systems, which is today known as Spatial Modulation (SM). SM has recently established itself as a beneficial transmission paradigm, potentially subsuming all members of the MIMO family, which exploits multiple antennas in a novel fashion. The research on SM has reached sufficient maturity to substantiate its claimed advantages compared with state-of-the-art standardized MIMO concepts, as well as its applications to other emerging wireless systems such as relay-aided, cooperative, small cell, optical wireless, and green communications. Furthermore, it has received sufficient attention to be implemented in testbeds, and holds the promise of stimulating further vigorous inter-disciplinary research in the next years. We believe that this is a timely topic and that this tutorial will be of interest to many researchers/students/practitioners with different backgrounds. </description>
+				
+		<speakers>
+			<speaker>			
+				<name> Marco Di Renzo </name>
+				<affiliation> French National Center for Scientific Research / France</affiliation>
+				
+				<biography> Marco Di Renzo (S'05-AM'07-M'09) received the Ph.D. degree in Electrical and Information Engineering from the Department of Electrical and Information Engineering, University of L'Aquila, Italy, in 2007. Since 2010, he has been a Tenured Academic Researcher with the French National Center for Scientific Research (CNRS), as well as a faculty member of the Laboratory of Signals and Systems (L2S), a joint research laboratory of the CNRS, the Ecole Suprieure d'Electricité (SUPELEC), and the University of Paris-Sud XI, Paris, France. His main research interests are in the area of wireless communications theory, signal processing, and information theory. Dr. Di Renzo is the recipient of the special mention for the outstanding five-year (1997-2003) academic career, University of L'Aquila, Italy; the THALES Communications fellowship for doctoral studies (2003-2006), University of L'Aquila, Italy; the Torres Quevedo award for his research on ultra wide band systems and cooperative localization for wireless networks (2008-2009), Ministry of Science and Innovation, Spain; the 2012 IEEE CAMAD Best Paper Award; and the 2013 Reviewer Appreciation Award from the IEEE Wireless Communications Letters. </biography>
+					
+			</speaker>
+			<speaker>
+				<name> Ali Ghrayeb </name>
+				<affiliation> Concordia University / Canada</affiliation>
+				<biography> Ali Ghrayeb (S'97-M'00-SM'06) received the Ph.D. degree in electrical engineering from the University of Arizona, Tucson, USA in 2000. He is currently a Professor with the Department of Electrical and Computer Engineering, Concordia University, Montreal, QC, Canada. He is a co-recipient of the IEEE Globecom 2010 Best Paper Award. He holds a Concordia University Research Chair in Wireless Communications. He is the co-author of the book "Coding for MIMO Communication Systems" (Wiley, 2008). His research interests include wireless and mobile communications, error correcting coding, MIMO systems, wireless cooperative networks, and cognitive radio systems. Dr. Ghrayeb has instructed/co-instructed technical tutorials related to MIMO systems at several major IEEE conferences, including ICC, Globecom, WCNC and PIMRC. He served as a co-chair of the Communications Theory Symposium of IEEE Globecom 2011, Houston, Texas. He serves as an Editor of the IEEE Transactons on Wireless Communications, the IEEE Transactions on Communications, and the Physical Communications Journal. He served as an Editor of the IEEE Transactions on Signal Processing, an Associate Editor of the IEEE Transactions on Vehicular Technology. </biography>
+			
+			</speaker>
+			<speaker>
+				<name> Harald Haas </name>
+				<affiliation> University of Edinburgh / UK</affiliation>
+
+				<biography>  Harald Haas (S'98-AM'00-M'03) holds the Chair of Mobile Communications in the Institute for Digital Communications (IDCOM) at the University of Edinburgh. He is co-founder and part-time CTO of a university spin-out company pureVLC Ltd. His main research interests are in the areas of wireless system design and analysis with a particular focus on interference coordination in wireless networks, spatial modulation, and optical wireless communication. Professor Haas holds more than 23 patents. He has published more than 55 journal papers including a Science Article and more than 160 peer-reviewed conference papers. He has co-authored a book entitled "Next Generation Mobile Access Technologies: Implementing TDD" with Cambridge University Press. Since 2007, he has been a Regular High Level Visiting Scientist supported by the Chinese "111 program" at Beijing University of Posts and Telecommunications (BUPT). He was an invited speaker at the TED Global conference 2011. He has been shortlisted for the World Technology Award for communications technology (individual) 2011. He is Associate Editor of IEEE Transactions on Communications. He has been chair and co-chair of the Optical Wireless Communications (OWC) workshop at Globecom 2011 and 2012 respectively. He recently has been awarded the EPSRC Established Career Fellowship. </biography>
+			
+			</speaker>
+
+		</speakers>
+					
+	</tutorial>
+			
+	<tutorial id="T4">
+		<day>
+			<date> 09/06/11 </date>
+			<dayWeek> Sunday </dayWeek>
+		</day>
+		
+		<period>
+			<beginning> 9:00 </beginning>
+			<end> 12:30 </end>
+		</period>
+		
+		<theme> Medium Access Control and Routing in Cognitive Radio Networks: Review, Classification, Cross-layer Approach and Challenges  </theme>	
+		
+		<description> The introduction of the cognitive paradigm in wireless networks requires a step beyond the definition of a single, "cognitive" smart device, calling for a novel approach in the design of algorithms and protocols determining the interaction between nodes, aimingat efficient use of information related to both internal network status and external environment. In the above context, this tutorial focuses on the design of Medium Access Control (MAC) and routing in cognitive wireless networks, taking into account the specific requirements deriving from the need to coexist with other wireless systems.The tutorial opens by reviewing and classifying existing approaches at MAC design, introducing a novel classification scheme that defines a set of fundamental functions of a Cognitive MAC, and identifies existing solutions and open research challenges for each of such functions. Next, the tutorial analyses the problem of routing in multi-hop overlay, interweave and underlay cognitive radio networks, and addresses the problem of routing in networks composed of devices equipped with multiple Radio Access Technologies.Finally, the tutorial addresses the information required to support the deployment of MAC and routing protocols, focusing in particular on the exchange of information between layers either along or across the traditional OSI-like layered architecture. </description>	
+		
+		<speakers>		
+			<speaker>			
+				<name>  Maria-Gabriella Di Benedetto </name>
+				<affiliation> Sapienza University of Rome / Italy</affiliation>
+				
+				<biography> Prof. Maria-Gabriella Di Benedetto obtained her Ph.D. in Telecommunications in 1987 from Sapienza University of Rome, Italy. In 1991, she joined the Faculty of Engineering of Sapienza University of Rome, where currently she is a Full Professor of Telecommunications. She has held visiting positions at the Massachusetts Institute of Technology, the University of California, Berkeley, and the University of Paris XI, France. In 1994, she received the Mac Kay Professorship award from the University of California, Berkeley. Her research interests include wireless communication systems and speech. From 1995 to 2000, she directed four European ACTS projects for the design of UMTS. Since 2000, she has been active in fostering the development of Ultra Wide Band (UWB) radio communications in Europe, and participated in several pioneering EU projects on UWB communications. Professor Di Benedetto currently coordinates COST Action IC0902 'Cognitive Radio and Networking for Cooperative Coexistence of Heterogeneous Wireless Networks' and her research group participates in the European Network of Excellence ACROPOLIS (Advanced coexistence technologies for radio optimisation in licensed and unlicensed spectrum). In October 2009, Dr. Di Benedetto received the Excellence in Research award 'SapienzaRicerca', under the auspices of President of Italy, Giorgio Napolitano </biography>
+					
+			</speaker>
+			<speaker>
+				<name> Luca De Nardis </name>
+				<affiliation> Sapienza University of Rome / Italy</affiliation>
+
+				<biography> Dr. Luca De Nardis (MIEEE '98) received both his Laurea degree and his Ph.D. from Sapienza University of Rome in 2001 and 2005, respectively. Since December 2008 he is an Assistant Professor at the DIET Department of Sapienza University of Rome. In 2007 he was a posts-doctoral fellow at the EECS Department at the University of California at Berkeley. Luca De Nardis authored or co-authored over 70 publications in international peer-reviewed journals and conferences.He is currently an Editor for the Journal of Electrical and Computer Engineering, published by Hindawi Publishing Corporation. He is also a reviewer for several international Journals and Transactions published by IEEE, ACM and EURASIP, and served as member of Technical Program Committee of over 30 international IEEE conferences. He is currently involved in two European COST Actions on Cognitive Radio: IC0902, where he is currently leading the Working Group on cross-layer design and cognitive engine, and IC0905 for which he is a national delegate for Italy and leads the Working Group on Cognitive radio application scenarios. He is also participating in the FP7 ACROPOLIS NoE, where he leads the Work Package on Neighbourhood and Network Awareness. </biography>
+				
+			</speaker>
+			<speaker>
+				<name> Liljana Gavrilovska </name>
+				<affiliation> Ss Cyril and Methodius University in Skopje / Macedonia</affiliation>
+				<biography> Prof. Liljana Gavrilovska (SMIEEE) currently holds the position of full professor and Head of the Institute of Telecommunications attention the Faculty of Electrical Engineering and Information Technologies, Ss Cyril and Methodius University in Skopje. She is also Head of the Center for Wireless and Mobile Communications (CWMC). She has received her B.Sc. and Ph.D. from Ss Cyril and Methodius University in Skopje, and her M.Sc. from University of Belgrade. She held positions of visiting professor (2000-2008) and Associate Research Professor (2001-2002) at Aalborg University, Denmark. She has participated in several EU projects since FP4, and national /international projects; shewas the General Technical Manager of FP6 MAGNET Beyond (2007-2008). She is currently partner leader in the FP7 funded QUASAR, FARAMIR and ACROPOLIS projects. She authored/co-authored over 100 research journal and conference papers. She co-authored the book Ad Hoc Networking Towards Seamless Communications (Springer, 2006) and co-edited the book Application and Multidisciplinary Aspects of Wireless Sensor Networks (Springer, 2010). Her research group achieved a best demo award atDySPAN2011. She has received the UKIM's Scientist of the year award in 2012. Her research interest is concentrated on cognitive radio networks, future mobile systems, wireless, ad hoc and personal area networks, cross-layer optimizations, broadband wireless access technologies, traffic analysis and heterogeneous wireless networks. </biography>
+				
+			</speaker>
+			<speaker>
+				<name> Oliver Holland </name>
+				<affiliation> King's College London / UK</affiliation>
+				<biography> Dr. Oliver Holland King's College London, is serving as Project Manager and Deputy Coordinator of the ICT-ACROPOLIS Network ofCOST Excellence. Oliver is a Leadership Member of IEEE DySPAN-SC, member and Vice-Chair of IEEE 1900.1 and IEEE 1900.7, and member of IEEE 1900.6. Oliver was a Technical Editor of IEEE 1900.4, and is Technical Editor of the developing IEEE 1900.1a and 1900.6a. He is Management Committee member ofCOST IC0902 and IC0905 "TERRA", holding various leadership positions therein. Oliver has served on the TPC of all major mobile and wireless communications conferences, and has served as Session Chair and Panellist at numerous conferences. Oliver had leadership positions in numerous International Workshops, Conferences, and Journals. Among many examples, he was guest editor of a prestigious special issue on Cognitive Radio appearing in IEEE Transactions on Vehicular Technology (TVT), co-chair of the "Cognitive Radio and Cooperative Communications" track of IEEE VTC 2010-Fall, Tutorials Co-Chair of IEEE CCNC 2012,TPC Co-Chair of ISWCS 2012, tutorials Co-Chair of ACM MSWiM 2012, is Co-Chair of technical tracks in IEEE VTC 2013-Spring and VTC 2013-Fall, and Tutorials Co-Chair of IEEE PIMRC 2013. Oliver is an Associate Editor of IEEE TVT, and an Officer of the IEEE Technical Committee on Cognitive Networks (TCCN), serving as liaison between TCCN and COST IC0905 "TERRA", and between TCCN and DySPAN-SC. He is Chair of the UKRI Chapter of the IEEE VTS. Oliver has authored over 100 publications with more than 500 citations. </biography>
+				
+			</speaker>
+
+		</speakers>
+					
+	</tutorial>		
+	
+	
+	<tutorial id="T1">
+		<day>
+			<date> 09/06/11 </date>
+			<dayWeek> Sunday </dayWeek>
+		</day>
+		
+		<period>
+			<beginning> 14:00 </beginning>
+			<end> 17:30 </end>
+		</period>
+
+		<theme> Foundations of Network Localization and Navigation </theme>
+				
+		<description> Network localization and navigation give rise to a new paradigm for communications and contextual information collection,enabling a variety of diverse new applications that rely on position information of mobile nodes. These applications include logistics,security tracking, medical services, search and rescue operations, control of home appliances, automotive safety, and military systems,as well as many wireless sensor network applications. The coming years will see the emergence of techniques for high-definition location-awareness (HDLA) with sub-meter accuracy and minimal infrastructure requirements, operational in challenging indoor and harshenvironments. Therefore, it becomes necessary for researchers in communications to be aware of both the fundamentals and the state ofthe art in location-aware networks. This tutorial will first cover four basic components of traditional positioning: fundamentalperformance bounds; ranging techniques; positioning algorithms; and network experimentation in real environments. Secondly, we willdiscuss the limitations of traditional positioning, and move on to the key enablers for HDLA: wideband transmission and cooperativeprocessing. This tutorial is aimed at students and practicing engineers in order to provide this knowledge in a rigorous, yet conciseform. </description>
+		
+		<speakers>		
+			<speaker>			
+				<name> Moe Z. Win </name>
+				<affiliation> MIT / USA</affiliation>
+				<biography> Moe Win is a Professor at the Massachusetts Institute of Technology (MIT). Prior to joining MIT, he was at ATeT ResearchLaboratories and at the Jet Propulsion Laboratory. His research encompasses fundamental theories, algorithm design, and experimentationfor a broad range of real-world problems. His current re search topics include network localization and navigation, network interferenc	eexploitation, intrinsic wireless secrecy, adaptive diversity techniques, and ultra-wide bandwidth systems. Professor Win is an electedMember-at-Large on the IEEE Communications Society Board of Governors (2011?2013). He was the chair for the IEEE Communications SocietyRadio Communications Committee (2004?2006). He served as an Editor (2006-2012) for IEEE TRANSACTIONS ON WIRELESS COMMUNICATIONS, as wellas Area Editor (2003?2006) and Editor (1998?2006) for the IEEE TRANSACTIONS ON COMMUNICATIONS. He was honored with two IEEE TechnicalField Awards: the IEEE Kiyo Tomiyasu Award and the IEEE Eric E. Sumner Award. He received several recognitions, including the CopernicusFellowship, the Royal Academy of Engineering Distinguished Visiting Fellowship, the Fulbright Fellowship, the Laurea Honoris Causa fromthe University of Ferrara, and the U.S. Presidential Early Career Award for Scientists and Engineers. Professor Win is elected Fellow ofthe AAAS, the IEEE, and the IET, and was an IEEE Distinguished Lecturer. </biography>
+			
+			</speaker>
+		
+		</speakers>
+					
+	</tutorial>
+	
+	<tutorial id="T6">
+		<day>
+			<date> 09/06/11 </date>
+			<dayWeek> Sunday </dayWeek>
+		</day>
+		
+		<period>
+			<beginning> 14:00 </beginning>
+			<end> 17:30 </end>
+		</period>
+		
+		<theme> Cartography for Cognitive Networks </theme>
+		<description> Communication networks have evolved from specialized, research and tactical transmission systems to large-scale and highlycomplex interconnections of intelligent devices, increasingly becoming more commercial, consumer-oriented, and heterogeneous. Propelledby emergent social networking services and high-definition streaming platforms, network traffic has grown explosively thanks to theadvances in processing speed and storage capacity of state-of-the-art communication technologies. As "netizens" demand a seamless networkingexperience that entails not only higher speeds, but also resilience and robustness to failures and malicious cyber-attacks, ample opportunitiesfor signal processing (SP) research arise. The vision is for ubiquitous smart and cognitive network devices to enable data-driven statisticallearning algorithms for distributed, robust, and online network operation and management, adaptable to the dynamically-evolving networklandscape with minimal need for human intervention. The present tutorial aims at delineating the analytical background and relevance of SPtools to dynamic network monitoring, introducing the notion of network cartography. A framework to construct maps of the dynamic networkstate in an efficient and scalable manner tailored for large-scale cognitive networks. </description>
+		
+		<speakers>
+			<speaker>			
+				<name> G. B. Giannakis </name>
+				<affiliation> University of Minnesota / USA</affiliation>
+				<biography> G. B. Giannakis (Fellow'97) received his Diploma in Electrical Engr. from the Ntl. Tech. Univ. of Athens, Greece, 1981.From 1982 to 1986 he was with the Univ. of Southern California (USC), where he received his MSc. in Electrical Engineering, 1983,MSc. in Mathematics, 1986, and Ph.D. in Electrical Engr., 1986. Since 1999 he has been a professor with the Univ. of Minnesota, wherehe now holds an ADC Chair in Wireless Telecommunications in the ECE Department, and serves as director of the Digital Technology Center.His general interests span the areas of communications, networking and statistical signal processing - subjects on which he has publishedmore than 340 journal papers, 570 conference papers, 20 book chapters, two edited books and two research monographs (h-index 100). Currentresearch focuses on sparsity in signals and systems, wireless cognitive radios, mobile ad hoc networks, wireless sensor, renewable energy,power grid, gene-regulatory, and social networks. He is the (co-) inventor of 21 patents issued, and the (co-) recipient of 8 best paperawards from the IEEE Signal Processing (SP) and Communications Societies, including the G. Marconi Prize Paper Award in WirelessCommunications. He also received Technical Achievement Awards from the SP Society (2000), from EURASIP (2005), a Young Faculty TeachingAward, and the G. W. Taylor Award for Distinguished Research from the University of Minnesota. He is a Fellow of EURASIP, and has servedthe IEEE in a number of posts, including that of a Distinguished Lecturer for the IEEE-SP Society. </biography>
+			
+			</speaker>
+			<speaker>
+				<name> Gonzalo Mateos </name>
+				<affiliation> University of Minnesota / USA</affiliation>
+				<biography> Gonzalo Mateos (M'12) received his B.Sc. degree in Electrical Engineering from Universidad de la Republica (UdelaR),Montevideo, Uruguay in 2005 and the M.Sc. and Ph.D. degrees in Electrical and Computer Engineering from the University of Minnesota,Minneapolis, in 2009 and 2011. Since 2012, he has been a post doctoral associate with the Department of Electrical and ComputerEngineering and the Digital Technology Center, University of Minnesota. Since 2003, he is an assistant with the Department ofElectrical Engineering,  UdelaR. From 2004 to 2006, he worked as a Systems Engineer at Asea Brown Boveri (ABB), Uruguay. His researchinterests lie in the areas of communication theory, signal processing and networking. His current research focuses on distributedsignal processing, sparse linear regression, and statistical learning for social data analysis and network health monitoring. </biography>
+			
+			</speaker>
+			
+		</speakers>
+				
+	</tutorial>
+	
+	<tutorial id="T11">
+		<day>
+			<date> 13/06/11 </date>
+			<dayWeek> Thursday </dayWeek>
+		</day>
+		
+		<period>
+			<beginning> 9:00 </beginning>
+			<end> 12:30 </end>
+		</period>	
+			
+		<theme>  Designing Intelligent Energy Harvesting Communication Systems </theme>
+			
+		<description> Devices powered by energy harvesting (EH) are increasingly being deployed in practice, in place of their traditional, battery-operated counterparts, when factors such as the sheer number of nodes or inaccessibility render battery replacement difficult and cost-prohibitive. Their deployment spans the whole gamut of autonomous networked systems: from machine-to-machine and sensor networks, to smart buildings and grid asset monitoring. It is no surprise that the global EH market is rapidly expanding: it is expected to reach 1894.87 million dollars by 2017 at an estimated annual growth rate of 24.31%.Moreover, the interest of the communications and networking research community on EH technologies has steadily been growing,as manifested by the ever-increasing number of publications and workshops on this topic. In contrast to battery-operated devices, where minimizing energy consumption is crucial to prolong lifetime, in EH-powered devices, the objective is the intelligent management of the harvested energy to ensure long-term, uninterrupted operation.This tutorial will provide a comprehensive overview of recent developments in the design of energy management policies for EH communication systems. We focus on analytical models that capture the main challenges related to their design: the intermittent nature of harvested energy, the limited capacity and energy leakage in energy storage devices, and the constraints on device size and complexity. We will describe analytical tools from communication theory, Markov decision processes and learning theory which are employed to characterize the optimal policies, and to evaluate the performance of low-complexity, near-optimal policies. The tutorial will examine in detail single-link and multi-link networks and explorethe implications of EH on their performance. </description>
+		
+		<speakers>
+			<speaker>			
+				<name> Kostas Stamatiou </name>
+				<affiliation> CTTC / Spain</affiliation>
+				<biography> Kostas Stamatiou received his Diploma in Electrical and Computer Engineering from the National Technical University of Athens in 2000 and the M.Sc. and Ph.D. degrees in Electrical Engineering in 2004 and 2009, respectively,from the University of California San Diego. From 2009 to 2010 he was a post-doctoral scholar in the Department of Electrical Engineering at the University of Notre Dame, South Bend, Indiana, and from 2010 to 2012 he held a research appointment at the Department of Information Engineering at the University of Padova, Italy. He currently holds a Research Associate position at the Centre Tecn\`{o}logic de Telecomunicacions de Catalunya (CTTC), Barcelona, Spain. His research interests lie in the areas of communication theory, stochastic geometry and random networks, and stochastic control as applied to the design of EH systems. Dr. Stamatiou received the California Institute of Telecommunications and InformationTechnology Fellowship (CalIT2) in 2002 and the Marie Curie Fellowship in 2010. He has served as TPC member for the CommunicationTheory Symposium of the IEEE International Conference on Communications (ICC), and as reviewer for the IEEE Transactions onCommunications, IEEE Transactions on Wireless Communications, IEEE Journal on Selected Areas in Communications and the IEEECommunications Letters. </biography>
+				
+			</speaker>
+			<speaker>
+				<name> Deniz Gunduz </name>
+				<affiliation> Imperial College London / UK</affiliation>
+				<biography> Deniz Gunduz received the B.S. degree in electrical and electronics engineering from the Middle East TechnicalUniversity in 2002, and the M.S. and Ph.D. degrees in electrical engineering from Polytechnic Institute of New York University,Brooklyn, NY in 2004 and 2007, respectively. Dr. Gunduz is currently a Lecturer (Assistant Professor) in the Electrical and Electronic Engineering Department at Imperial College, London. Between 2009 and 2012 he has been a Research Associate at CTTC in Barcelona, Spain. From 2007 until 2009 he was jointly appointed as a consulting Assistant Professor at the Department ofElectrical Engineering, Stanford University, CA, and as a post doctoral Research Associate at the Department of ElectricalEngineering, Princeton University, NJ. His research interests lie in the areas of communication theory, information the oryand networking, with special emphasis on joint source-channel coding, cooperative communications and energy efficiency.Dr. Gunduz is the recipient of a Marie Curie Reintegration Grant funded by the European Union, the 2008 Alexander Hessel Awardof Polytechnic Institute of New York University given to the best PhD Dissertation, and a recipient of the Best Student PaperAward at the 2007 IEEE International Symposium on Information Theory (ISIT). He is the guest editor of the EURASIP Journal onWireless Communications and Networking, Special Issue on Recent Advances in Optimization Techniques in Wireless CommunicationNetworks. He served as a Technical Program Co-Chair for the Transmission Technologies Track of the IEEE Vehicular TransmissionConference (VTC) Fall 2011, and as the Technical Program Co-Chair for the Communication Theory Symposium of the IEEE InternationalConference on Wireless Communications and Signal Processing (WCSP) 2012. He was the Co-Chair of the 2012 European SchoolInformation of Theory in Antalya, Turkey. </biography>
+				
+			</speaker>
+			<speaker>
+				<name> Michele Zorzi </name>
+				<affiliation> University of Padova / Italy</affiliation>
+				<biography> Michele Zorzi (S'89, M'95, SM'98, F'07) was born in Venice, Italy, on December 6th, 1966. He received the Laurea and the PhD degrees in Electrical Engineering from the University of Padova, Italy, in 1990 and 1994, respectively. During the Academic Year 1992/93, he was on leave at the University of California, San Diego (UCSD) as a visiting PhD student, workingon multiple access in mobile radio networks. In 1993, he joined the faculty of the Dipartimento di Elettronica e Informazione,Politecnico di Milano, Italy. After spending three years with the Center for Wireless Communications at UCSD, in 1998 he joined the School of Engineering of the University of Ferrara, Italy, where he became a Professor in 2000. Since November 2003, he has been on the faculty at the Information Engineering Department of the University of Padova. His present research interests include performance evaluation in mobile communications systems, random access in mobile radio networks, ad hoc and sensor networks,energy constrained communications protocols, broadband wireless access and underwater acoustic communications and networking.Dr. Zorzi was the Editor-In-Chief of the IEEE WIRELESS COMMUNICATIONS MAGAZINE from 2003 to 2005 and the Editor-In-Chief of theIEEE TRANSACTIONS ON COMMUNICATIONS from 2008 to 2011, and currently serves on the Editorial Board of the WILEY JOURNAL OFWIRELESS COMMUNICATIONS AND MOBILE COMPUTING. He was also guest editor for special issues in the IEEE PERSONAL COMMUNICATIONSMAGAZINE (Energy Management in Personal Communications Systems) IEEE WIRELESS COMMUNICATIONS MAGAZINE (Cognitive Wireless Networks)and the IEEE JOURNAL ON SELECTED AREAS IN COMMUNICATIONS (Multi-media Network Radios, and Underwater Wireless CommunicationsNetworks). He served as a Member-at-large of the Board of Governors of the IEEE Communications Society from 2009 to 2011. </biography>
+				
+			</speaker>
+			
+		</speakers>
+			
+	</tutorial>		
+	
+	<tutorial id="T16">
+		<day>
+			<date> 13/06/11 </date>
+			<dayWeek> Thursday </dayWeek>
+		</day>
+		
+		<period id="T12">
+			<beginning> 9:00 </beginning>
+			<end> 12:30 </end>
+		</period>	
+
+		<theme> Network Processing with Bayesian Graphical Models </theme>
+				
+		<description> Bayesian graphical models, such as factor graphs, are gaining increasing importance in the systematic development of algorithms in communication receivers and communication networks. Recent developments have revealed ties between graphical models, variational methods, and convex optimization. Most of these developments originate from the machine learning and statistics communities, and there is a need for communications researchers to become aware of these developments and apply state-of-the-art inference methods to important problems in our own field. This tutorial strives to address this need. It provides an overview of the theory behind graphical models and explores deeper connections between different algorithms. Particular emphasis will be placed on the application of graphical models innetwork problems, where nodes, through limited information sharing, solve a common problem. The theory will first beapp lied to a centralized problem (data detection in a receiver), and to a number of distributed problems (tracking,network synchronization, beam forming). This tutorial is suitable for graduate students, practicing engineers activein algorithm design, and faculty interested in learning about this modern inference tool. The tutorial will contain hands-on examples to maximize learning and to allow attendees to apply the knowledge from this tutorial to solve problems in their own research fields. </description>
+		
+		<speakers>
+			<speaker>			
+				<name> Henk Wymeersch </name>
+				<affiliation> Chalmers University of Technology / Sweden</affiliation>
+				<biography> Henk Wymeersch is Associate Professor with the Department of Signals and Systems at Chalmers University of Technology, Sweden. Prior to joining Chalmers, during 2006-2009 he was a Post doctoral Associate with the Laboratory for Information and Decision Systems (LIDS) at the Massachusetts Institute of Technology (MIT). Henk Wymeersch obtained the Ph.D. degree in Electrical Engineering/Applied Sciences in 2005 from Ghent University, Belgium. He is a member ofthe IEEE, Associate Editor for IEEE Communication Letters and author of the book Iterative Receiver Design (CambridgeUniversity Press, 2007). His current research interests include algorithm design for wireless transmission, statisticalinference, and distributed processing. His accolades include several best paper awards, the Alcatel-Bell Scientific Award,and a 2011 IEEE ComSoc Young Researcher Award (runner-up). </biography>
+				
+			</speaker>
+			
+		</speakers>			
+	
+	</tutorial>
+	
+	<tutorial id="T17">
+		<day>
+			<id> 2 </id>
+			<date> 13/06/11 </date>
+			<dayWeek> Thursday </dayWeek>
+		</day>
+		
+		<period>
+			<beginning> 14:00 </beginning>
+			<end> 17:30 </end>
+		</period>		
+			
+			<theme> Greening the Internet </theme>
+	
+		<description> Energy efficiency is increasingly becoming a key priority for Information and Communication Technology (ICT) organizations given the ecological and economic drivers. In this tutorial we will introduce and discuss a number of measures that can be used to reduce the power consumption in the Internet and will introduce methods for the optimum use of renewable energy in core networks to reduce the Internet's carbon footprint at a given power consumption level. We will introduce network optimization through the use of mixed integer linear programming (MILP) giving a short tutorial on MILP and build on this and heuristics inspired by it to explore a number of energy and carbon footprint reduction measures including (i) Optimum use of time varying renewable energy in core networks; (ii) Optimum resource allocation and green network design with data centres; (iii) Dynamic energy-efficient content caching for video on demand, YouTube type content and IPTV (iv) Energy-efficiency through data compression; (v) Energy-efficient peer-to-peer content distribution (vi) Physical topology design considering operational and embodied energies. We finish by outlining future directions and open research issues. This tutorial will be of particular benefit to researchers and practicing engineers interested in energy efficient designs applied to the Internet and broadly. </description>
+	
+		<speakers>	
+			<speaker>			
+				<name> Jaafar Elmirghani </name>
+				<affiliation> University of Leeds / UK</affiliation>
+				<biography> Prof. Jaafar Elmirghani is a Fellow of the IET, Fellow of the Institute of Physics and is the Director of the Institute of Integrated Information Systems and Professor of Communication Networks and Systems within the School of Electronic and Electrical Engineering, University of Leeds, UK. He was Chairman of the IEEE UK and RI Communications Chapter and was Chairman of IEEE Comsoc Transmission Access and Optical Systems Committee and is and has been on the technical program committee of 29 IEEE ICC/GLOBECOM conferences between 1995 and 2012 including ten times as Symposium Chair. Prof. Elmirghani was founding Chair of the first IEEE Comsoc Green Communications track at GLOBECOM 2011. He received the IEEE Communications Society 2005 Hal Sobol award and the 2005 Chapter Achievement award, the University of Wales Swansea inaugural 'Outstanding Research Achievement Award', 2006 and the IEEE Communications Society Signal Processing and Communication Electronics outstanding service award, 2009. He is currently an editor of IET Optoelectronics, Co-Chair of the GreenTouch® Wired, Core and Access Networks Working Group.  He has published over 350 technical papers, co-edited "Photonic Switching Technology- Systems and Networks", IEEE Press 1998, and has research interests in communication networks, and optical communication systems. </biography>
+					
+			</speaker>
+			
+		</speakers>	
+		
+	</tutorial>
+	
+	<tutorial id="T18">
+		<day>
+			<date> 13/06/11 </date>
+			<dayWeek> Thursday </dayWeek>
+		</day>
+		
+		<period>
+			<beginning> 14:00 </beginning>
+			<end> 17:30 </end>
+		</period>	
+		
+		<theme> OFDM for Optical Communications </theme>
+				
+		<description> Orthogonal Frequency Division Multiplexing (OFDM) for wired and wireless communications has been the subject of intensive research over many years, and is now used in many broadband RF wireless and wired systems. Howeverit is only very recently that OFDM has been considered for optical systems. It is now a 'hot topic' in optical communications and optical OFDM is being applied across a range of optical fiber and optical wireless systems, including long haul transmission using single mode optical fiber, optical fiber access networks, plastic optical fiber, and indoor optical wireless systems, including visible light communications. Successful research on the topic of optical OFDM requires detailed knowledge about both OFDM, and about optical systems. This tutorial will provide an introduction to optical OFDM. It will include descriptions of the various forms of optical OFDM that have been developed in the last few years, including coherent optical OFDM (CO-OFDM), direct detection optical OFDM (DDO-OFDM), asymmetrically clipped optical OFDM (ACO-OFDM) and DC biased optical OFDM (DCO-OFDM).  The tutorial is designed for an audience coming from either an OFDM or an optical communications background. It will conclude with an overview of current research in the field and a discussion of future research directions. </description>
+		
+		<speakers>
+			<speaker>			
+				<name> Jean Armstrong </name>
+				<affiliation> Monash University / Australia</affiliation>
+				<biography> Jean Armstrong is a Professor in the Department of Electrical and Computer Systems Engineering at Monash University, Victoria, Australia. Her research interests include digital communications, engineering education, and women in engineering. Most of her recent research in digital communications has been on Orthogonal Frequency Division Multiplexing (OFDM) and she has published many very highly cited papers and has six fully commercialized patents in this field. Her earlier OFDM work was on RF wireless applications, but in 2005, she recognized the potential for applying OFDM to optical communications. Asymmetrically clipped optical OFDM (ACO-OFDM), which forms the basis of one of thesepatents is the most promising modulation technique in the emerging field of visible light communications. Professor Armstrong has been the recipient of numerous awards including induction into the Victorian Honour Roll of Women, the $100,000 Peter Doherty Prize for the best commercialization opportunity in Australia in 2006 for her work on optical OFDM (joint winner), Institution of Engineers, Australia, Engineering 2000 Award, Zonta International Amelia Earhart Fellowship and Caroline Haslett Memorial Scholarship. She is a Fellow of the Institution of Engineers Australia. She is currently a member of the Australian Research Council (ARC) College of Experts. </biography>
+					
+			</speaker>
+			
+		</speakers>
+			
+	</tutorial>
+-->	
+</tutorials>

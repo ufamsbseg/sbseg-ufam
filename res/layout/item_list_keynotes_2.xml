@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/iconePalestrante"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/apresentacao" />
+
+        <TextView
+            android:id="@+id/textview_keynoteitem2"
+            android:layout_width="match_parent"
+       		android:layout_height="wrap_content"
+            android:layout_weight="0.92"
+            android:background="#f4f4f4"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:fontFamily="PetitaMedium"
+		    android:textColor="#3a3a3a"
+            android:textSize="12sp"/>
+           
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_weight="0.00"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|center_horizontal"
+            android:src="@drawable/petita_right_arrow" />
+
+    </LinearLayout>
+    
+    <View
+        android:id="@+id/dividerKeynote"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#42a4cb"
+        android:visibility="invisible" />
+
+</LinearLayout>

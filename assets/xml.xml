@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root versao="1.0">
+	<item>
+		<nome>Nome 1</nome>
+		<idade>10</idade>
+	</item>
+	<item>
+		<nome>Nome 2</nome>
+		<idade>20</idade>
+	</item>
+	<item>
+		<nome>Nome 3</nome>
+		<idade>30</idade>
+	</item>
+	<item>
+		<nome>Nome 4</nome>
+		<idade>40</idade>
+	</item>
+	<item>
+		<nome>Nome 5</nome>
+		<idade>50</idade>
+	</item>
+</root>
