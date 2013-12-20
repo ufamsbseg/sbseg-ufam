@@ -25,7 +25,7 @@ import br.com.ufam.beans.Image;
 import br.com.ufam.instagramIntegration.InstaActivity.ResponseListener;
 
 public class InstaImpl {
-
+	
 	private static final String TOKENURL = "https://api.instagram.com/oauth/access_token";
 	private static final String AUTHURL = "https://api.instagram.com/oauth/authorize/";
 	public static final String APIURL = "https://api.instagram.com/v1";
@@ -105,39 +105,51 @@ public class InstaImpl {
 //			Log.e("userId: ", userIdInstagram);
 			String urlString = APIURL + "/users/"+ "640968518" +"/media/recent/?access_token=" + "640968518.f3e4cdd.0b2d38bb2a2e4e59a69824bd9f218e17";
 
-			try{
+			do{
+				String nextUrl = null;
+				try{
 			
-				URL url = new URL(urlString);
+					URL url = new URL(urlString);
 			
-				InputStream inputStream = url.openConnection().getInputStream();
-			
-				String response = InstaImpl.streamToString(inputStream);
+					InputStream inputStream = url.openConnection().getInputStream();
+				
+				
+					String response = InstaImpl.streamToString(inputStream);
+				
+//					JSONObject response2 = new JSONObject(response);
+//					nextUrl = response2.getJSONObject("pagination").getString("next_url");
+//					Log.e("nextUrl", nextUrl);
 		
-				JSONObject jsonObject = (JSONObject) new JSONTokener(response).nextValue();
+					JSONObject jsonObject = (JSONObject) new JSONTokener(response).nextValue();
 
 				
+					JSONArray jsonArray = jsonObject.getJSONArray("data");
 				
-				JSONArray jsonArray = jsonObject.getJSONArray("data");
-				
-				for(int x = 0; x < jsonArray.length(); x++){
-					Image image = new Image(null,null,null);
+					for(int x = 0; x < jsonArray.length(); x++){
+						Image image = new Image(null,null,null);
 
-					//Imagens em baixa resolução
-					JSONObject mainImageJsonObjectLow = jsonArray.getJSONObject(x).getJSONObject("images").getJSONObject("thumbnail");//Use for loop to traverse through the JsonArray.
-					String imageUrlStringLow = mainImageJsonObjectLow.getString("url");
-					image.setLowUrl(imageUrlStringLow);
-					//Imagens em alta resolução	
-					JSONObject mainImageJsonObjectHigh = jsonArray.getJSONObject(x).getJSONObject("images").getJSONObject("standard_resolution");//Use for loop to traverse through the JsonArray.
-					String imageUrlStringHigh = mainImageJsonObjectHigh.getString("url");
-					image.setHighUrl(imageUrlStringHigh);
+						//Imagens em baixa resolução
+						JSONObject mainImageJsonObjectLow = jsonArray.getJSONObject(x).getJSONObject("images").getJSONObject("thumbnail");//Use for loop to traverse through the JsonArray.
+						String imageUrlStringLow = mainImageJsonObjectLow.getString("url");
+						image.setLowUrl(imageUrlStringLow);
+						//Imagens em alta resolução	
+						JSONObject mainImageJsonObjectHigh = jsonArray.getJSONObject(x).getJSONObject("images").getJSONObject("standard_resolution");//Use for loop to traverse through the JsonArray.
+						String imageUrlStringHigh = mainImageJsonObjectHigh.getString("url");
+						image.setHighUrl(imageUrlStringHigh);
 					
-					hashMapImage.put(imageUrlStringLow, image);	
+						hashMapImage.put(imageUrlStringLow, image);	
+					}
+					JSONObject response2 = new JSONObject(response);
+					nextUrl = response2.getJSONObject("pagination").getString("next_url");
+					Log.e("nextUrl", nextUrl);
+
 				}
-			}
-			catch(Exception e){
-				e.printStackTrace();
-				Log.e("Erro no loading da URL","");
-			}
+				catch(Exception e){
+					e.printStackTrace();
+					Log.e("Erro no loading da URL","");
+				}
+			urlString = nextUrl;
+			}while(urlString != null);
 			
 			return null;
 		}
