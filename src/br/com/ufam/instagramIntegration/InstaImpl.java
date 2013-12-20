@@ -88,10 +88,10 @@ public class InstaImpl {
 	private void getAccessToken(String token)
 	{
 		this.mToken = token;
-		//new GetInstagramTokenAsyncTask().execute();
+//		new GetInstagramTokenAsyncTask().execute();
 	}
 	//Utilizada para recuperar as imagens.
-	public class GetInstagramImagesAsyncTask extends AsyncTask<Void, Void, Void>{ //added
+	public class GetInstagramImagesAsyncTask extends AsyncTask<Void, Void, Void>{
 
 		@Override
 		protected Void doInBackground(Void... arg0) {
@@ -102,7 +102,8 @@ public class InstaImpl {
 //			mAccessTokenString = mSessionStore.getInstaAccessToken();
 //			Log.e("AcessToken: ",mAccessTokenString);
 			userIdInstagram = mSessionStore.getInstaId();
-			String urlString = APIURL + "/users/"+ userIdInstagram +"/media/recent/?access_token=" + "640968518.f3e4cdd.0b2d38bb2a2e4e59a69824bd9f218e17";
+//			Log.e("userId: ", userIdInstagram);
+			String urlString = APIURL + "/users/"+ "640968518" +"/media/recent/?access_token=" + "640968518.f3e4cdd.0b2d38bb2a2e4e59a69824bd9f218e17";
 
 			try{
 			
